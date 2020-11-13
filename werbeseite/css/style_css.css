@@ -157,7 +157,7 @@ fieldset label,select {
     border-radius: 12px;
 }
 
-input[type=submit] {
+#kontakt input[type=submit] {
     margin-left: 20px;
     color: black;
     background-color: white;
@@ -219,4 +219,12 @@ footer ul li + li {
 
 footer ul {
     text-align: center;
+}
+
+
+#apply1{
+    color: white;
+    margin-top: 5px;
+    border-color: white;
+    background-image: linear-gradient(to right,rgb(179, 89, 0),rgb(38, 38, 38));
 }

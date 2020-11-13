@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="" />
+    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/werbeseite/nl-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/css/style_css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,15 +20,21 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP v7.4" />
   <component name="ProjectId" id="1jXr06ZFpcourGrZM4ipKuKB9FX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../3" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -71,6 +84,7 @@
       <workItem from="1605089585106" duration="519000" />
       <workItem from="1605119362685" duration="3000" />
       <workItem from="1605186763962" duration="3277000" />
+      <workItem from="1605258274791" duration="11695000" />
     </task>
     <servers />
   </component>
@@ -91,6 +105,14 @@
     </state>
     <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1604400146379" />
     <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605186777568" />
+    <state x="647" y="315" key="Github.ShareDialog" timestamp="1605258327981">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="647" y="315" key="Github.ShareDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258327981" />
+    <state x="363" y="122" key="Github.UntrackedFilesDialog" timestamp="1605258350744">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="363" y="122" key="Github.UntrackedFilesDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258350744" />
     <state width="1024" height="213" key="GridCell.Tab.0.bottom" timestamp="1605188679585">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -111,22 +133,28 @@
     </state>
     <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
     <state width="1024" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
-    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1604570972256">
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1605258982022">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1604402609192" />
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258982022" />
     <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1604570972256" />
     <state x="277" y="62" key="SettingsEditor" timestamp="1603961091972">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603961091972" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1604575819280">
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605268429971">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605268429971" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1605264166337">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605264166337" />
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1604575819280" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605089789799">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605258508639">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258508639" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605089789799" />
   </component>
 </project>

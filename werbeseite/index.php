@@ -23,7 +23,8 @@ if(isset($_POST['submit'])) {
     $newsletter =[
         'name' => trim($_POST['name']?? NULL), //gesetzt?
         'email' => trim($_POST['email']?? NULL),
-        'sprache' => trim($_POST['sprache']?? NULL)
+        'sprache' => trim($_POST['sprache']?? NULL),
+        'datenschutz' => $_POST['Datenschutz'] ?? NULL
     ];
 
     $fehler = false;
@@ -154,7 +155,7 @@ if(isset($_POST['submit'])) {
                     <br><br>
 
                     <i class="fas fa-lock icon" id="copyright"></i>
-                    <input title="Zustimmung zum Datenschutz" type="checkbox" id="Datenschutz" required>
+                    <input title="Zustimmung zum Datenschutz" type="checkbox" id="Datenschutz" name="Datenschutz" required>
                     <br>
 
                     <input name="submit" id="submit" type="submit" value="Zum Newsletter anmelden" ><br><br>

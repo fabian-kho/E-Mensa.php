@@ -1,6 +1,4 @@
-a:3:{s:4:"name";s:16:"Fabian Kirchhoff";s:5:"email";s:25:"fab.kirchhoff98@gmail.com";s:7:"sprache";s:7:"Deutsch";}
-a:3:{s:4:"name";s:16:"Fabian Kirchhoff";s:5:"email";s:25:"fab.kirchhoff98@gmail.com";s:7:"sprache";s:7:"Deutsch";}
-a:3:{s:4:"name";s:16:"Fabian Kirchhoff";s:5:"email";s:25:"fab.kirchhoff98@gmail.com";s:7:"sprache";s:7:"Deutsch";}
-a:3:{s:4:"name";s:16:"Fabian Kirchhoff";s:5:"email";s:16:"trashmail@gmx.de";s:7:"sprache";s:7:"Deutsch";}
-a:3:{s:4:"name";s:16:"Fabian Kirchhoff";s:5:"email";s:25:"fab.kirchhoff98@gmail.com";s:7:"sprache";s:7:"Deutsch";}
-a:3:{s:4:"name";s:16:"Fabian Kirchhoff";s:5:"email";s:25:"fab.kirchhoff98@gmail.com";s:7:"sprache";s:7:"Deutsch";}
+a:4:{s:4:"name";s:16:"Fabian Kirchhoff";s:5:"email";s:25:"fab.kirchhoff98@gmail.com";s:7:"sprache";s:7:"Deutsch";s:11:"datenschutz";s:2:"on";}
+a:4:{s:4:"name";s:19:"Leonie Gerstenecker";s:5:"email";s:24:"Leonie-megan@t-online.de";s:7:"sprache";s:7:"Deutsch";s:11:"datenschutz";s:2:"on";}
+a:4:{s:4:"name";s:15:"Lukas Kirchhoff";s:5:"email";s:30:"kirchhoff.thorsten69@gmail.com";s:7:"sprache";s:7:"Deutsch";s:11:"datenschutz";s:2:"on";}
+a:4:{s:4:"name";s:15:"Julia Girchhoff";s:5:"email";s:27:"girchhoff.julia69@gmail.com";s:7:"sprache";s:7:"Deutsch";s:11:"datenschutz";s:2:"on";}
