@@ -1,4 +1,10 @@
 <?php
+/**
+ * Praktikum DBWT. Autoren:
+ * Fabian, Kirchhoff, 3191755
+ * Glenn, Verhaag, Matrikelnummer2
+ */
+
 
 const GET_PARAM_SEARCH_TEXT = 'search_text';
 
@@ -47,7 +53,7 @@ if (!empty($_GET[GET_PARAM_SEARCH_TEXT])) {
 <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" type="text/css" href="css/style_css.css">
-    <title> Gerichte</title>
+    <title> Newsletter Anmeldungen</title>
 </head>
 <body>
 <form method="get" >
@@ -67,7 +73,7 @@ if (!empty($_GET[GET_PARAM_SEARCH_TEXT])) {
     <?php
 
     //Gebe Tabelle aus
-    foreach ($showUser as $meal => $arrays){
+    foreach ($showUser as $a => $arrays){
         foreach ($arrays as $type => $content){
             switch ($type){
                 case "name":
