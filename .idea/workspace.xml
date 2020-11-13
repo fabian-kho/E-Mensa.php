@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP v7.4" />
+  <component name="ProjectId" id="1jXr06ZFpcourGrZM4ipKuKB9FX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../3" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fabia\Documents\Studium\3. Semester\DBWT\Praktika\M2 - Werbeseite (dynamisch mit PHP)\INF_20_Kirchhoff_2\werbeseite\Meal" />
+      <recent name="C:\Users\fabia\Documents\Studium\3. Semester\DBWT\Praktika\M2 - Werbeseite (dynamisch mit PHP)\INF_20_Kirchhoff_2\beispiele" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="M2" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="9050">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="9050">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="" />
+      <created>1603961052716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603961052716</updated>
+      <workItem from="1603961054387" duration="8940000" />
+      <workItem from="1604071648146" duration="11949000" />
+      <workItem from="1604395090177" duration="10700000" />
+      <workItem from="1604496393272" duration="9700000" />
+      <workItem from="1604508099264" duration="74000" />
+      <workItem from="1604570111788" duration="14093000" />
+      <workItem from="1604589071187" duration="50000" />
+      <workItem from="1604589158803" duration="15000" />
+      <workItem from="1604592198544" duration="940000" />
+      <workItem from="1604661014782" duration="489000" />
+      <workItem from="1604661630346" duration="35000" />
+      <workItem from="1604997176293" duration="2298000" />
+      <workItem from="1605089585106" duration="519000" />
+      <workItem from="1605119362685" duration="3000" />
+      <workItem from="1605186763962" duration="3277000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="475" y="60" key="#PHP" timestamp="1603961213226">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="475" y="60" key="#PHP/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603961213226" />
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605089970962">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605089970962" />
+    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1605186777568">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1604400146379" />
+    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605186777568" />
+    <state width="1024" height="213" key="GridCell.Tab.0.bottom" timestamp="1605188679585">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
+    <state width="1024" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
+    <state width="1024" height="213" key="GridCell.Tab.0.center" timestamp="1605188679585">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
+    <state width="1024" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
+    <state width="1024" height="213" key="GridCell.Tab.0.left" timestamp="1605188679585">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
+    <state width="1024" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
+    <state width="1024" height="213" key="GridCell.Tab.0.right" timestamp="1605188679585">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
+    <state width="1024" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1604570972256">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1604402609192" />
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1604570972256" />
+    <state x="277" y="62" key="SettingsEditor" timestamp="1603961091972">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603961091972" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1604575819280">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1604575819280" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605089789799">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605089789799" />
+  </component>
+</project>

@@ -1,0 +1,222 @@
+/**Allgemein--------------------------------------------------------*/
+hr {
+    height: 3px;
+    background-image: linear-gradient(to right,rgb(179, 89, 0),rgb(38, 38, 38));
+}
+
+main {
+    margin: auto;
+    width: 73%;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+}
+
+footer {
+    margin: auto;
+    width: 73%;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+}
+
+section {
+    padding-top: 25px;
+}
+/**LOGO--------------------------------------------------------*/
+#Logo {
+    color: white;
+    background-image: linear-gradient(to right,steelblue,seagreen);
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Agency FB";
+    padding: 5px;
+    margin-top: 10px;
+}
+#Logo_neu{
+    margin: -15px 0px -20px -35px;
+}
+/**LINKS--------------------------------------------------------*/
+#Links li {
+    display: inline;
+    margin-left: 10px;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    padding: 5px;
+}
+
+#Links {
+    margin-left: 150px;
+    margin-top: -37px;
+}
+
+#Links a {
+    color: grey;
+}
+
+#Links a:hover {
+    color: steelblue;
+}
+/**Tabelle--------------------------------------------------------*/
+#sptable {
+    font-family: "Trebuchet MS";
+    border-collapse: collapse;
+    /**Dünne ränder*/
+    width: 100%;
+}
+/**alle Spalten*/
+#sptable td, #sptable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/**nth-child() gibt jeder zweiten Spalte eine graue Farbe*/
+#sptable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#sptable tr:hover {
+    background-color: #ddd;
+}
+/**Zeilen der ersten Spalte */
+#sptable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+}
+/**Erste Zeile der Tabelle*/
+#zeile1 {
+    background-image: linear-gradient(to right,rgb(179, 89, 0),rgb(38, 38, 38));
+}
+/**zahlen--------------------------------------------------------*/
+#zahlen  div {
+    display: inline-flex;
+    border: transparent;
+    padding: 5px;
+    margin-left: -10px;
+    text-align: center;
+}
+
+#zahlen p {
+    padding: 10px;
+    margin-top: -5px;
+}
+
+#zahlen p:nth-child(1) {
+    color: white;
+    border: 2px solid;
+    background-image: linear-gradient(to right,rgb(179, 89, 0),rgb(38, 38, 38));
+    border-radius: 12px;
+}
+/**Newsletter--------------------------------------------------------*/
+fieldset {
+    border: transparent;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+fieldset label,select {
+    font-size: medium;
+    color: grey;
+}
+
+.icon {
+    padding: 10px;
+    background-image: linear-gradient(to right,rgb(179, 89, 0),rgb(38, 38, 38));
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+#copyright {
+    margin-top: 3px;
+    min-width: 20px;
+    max-height: 20px;
+    border-radius: 12px;
+    /*Abgerundete Ecken*/;
+}
+
+/*Icons*/
+.fa-envelope,.fa-language,.fa-lock {
+    margin-left: 20px;
+}
+
+.fa-user {
+    margin-left: -20px;
+}
+
+#Datenschutz {
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 12px;
+}
+
+input[type=submit] {
+    margin-left: 20px;
+    color: black;
+    background-color: white;
+    border-image: linear-gradient(to bottom, rgb(179, 89, 0), rgba(0, 0, 0, 0)) 1 100%;
+    border-radius: 12px;
+}
+/*Button nur anzeigen wenn Datenschutz checked*/
+#Datenschutz:checked ~ #submit {
+    visibility: visible;
+}
+
+#submit {
+    visibility: hidden;
+}
+/*Text unter letzter Section*/
+section + p {
+    text-align: center;
+    font-size: larger;
+}
+/*Newsletter formatieren*/
+#name,#email,#sprache {
+    border: 1px solid grey;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#name:hover,#email:hover,#sprache:hover {
+    border: 3px solid black;
+}
+/**Wichtig--------------------------------------------------------*/
+#wichtig {
+    margin-bottom: 50px;
+}
+
+#wichtig ul li {
+    padding: 5px;
+    list-style-type: none;
+    /*Keine Punkte*/;
+}
+/*Überschriften*/
+h1,h2,h3,h4,h5 {
+    font-size: larger;
+}
+/*Pfeile vor Liste*/
+.fa-angle-right {
+    margin-right: 10px;
+}
+/**footer--------------------------------------------------------*/
+footer li {
+    font-size: medium;
+    padding: 10px;
+    display: inline;
+}
+
+footer ul li + li {
+    /*Kante bei jedem element einfügen außer beim ersten*/
+    border-left: 2px solid grey;
+}
+
+footer ul {
+    text-align: center;
+}
