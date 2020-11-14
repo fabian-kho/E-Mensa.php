@@ -13,7 +13,7 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="db_mensa" />
+            <name qname="e_mensa" />
           </node>
         </introspection-scope>
       </schema-mapping>
