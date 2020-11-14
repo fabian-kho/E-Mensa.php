@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Aufgabe 2 erledigt.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/Meal/newMeal.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/Meal/newMeal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/werbeseite/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/css/style_css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/werbeseite/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/werbeseite/nl-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/nl-admin.php" afterDir="false" />
     </list>
@@ -20,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP v7.4" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHPv7.4" />
   <component name="ProjectId" id="1jXr06ZFpcourGrZM4ipKuKB9FX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -33,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../3. Semester/Datenbanken und Webtechnologien/Praktikum/3/werbeseite" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,6 +85,7 @@
       <workItem from="1605119362685" duration="3000" />
       <workItem from="1605186763962" duration="3277000" />
       <workItem from="1605258274791" duration="11898000" />
+      <workItem from="1605351720101" duration="2678000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -101,19 +105,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 2 erledigt." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="475" y="60" key="#PHP" timestamp="1603961213226">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="1064" y="104" key="#PHP" timestamp="1605351742234">
+      <screen x="0" y="0" width="3440" height="1440" />
     </state>
     <state x="475" y="60" key="#PHP/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603961213226" />
+    <state x="1064" y="104" key="#PHP/0.0.3440.1440@0.0.3440.1440" timestamp="1605351742234" />
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605089970962">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605089970962" />
-    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1605186777568">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="1227" y="297" key="FileChooserDialogImpl" timestamp="1605352513299">
+      <screen x="0" y="0" width="3440" height="1440" />
     </state>
     <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1604400146379" />
     <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605186777568" />
+    <state x="1227" y="297" key="FileChooserDialogImpl/0.0.3440.1440@0.0.3440.1440" timestamp="1605352513299" />
     <state x="647" y="315" key="Github.ShareDialog" timestamp="1605258327981">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -122,26 +128,30 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="363" y="122" key="Github.UntrackedFilesDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258350744" />
-    <state width="1024" height="213" key="GridCell.Tab.0.bottom" timestamp="1605188679585">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1895" height="413" key="GridCell.Tab.0.bottom" timestamp="1605354103265">
+      <screen x="0" y="0" width="3440" height="1440" />
     </state>
     <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
     <state width="1024" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
-    <state width="1024" height="213" key="GridCell.Tab.0.center" timestamp="1605188679585">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1895" height="413" key="GridCell.Tab.0.bottom/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
+    <state width="1895" height="413" key="GridCell.Tab.0.center" timestamp="1605354103265">
+      <screen x="0" y="0" width="3440" height="1440" />
     </state>
     <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
     <state width="1024" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
-    <state width="1024" height="213" key="GridCell.Tab.0.left" timestamp="1605188679585">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1895" height="413" key="GridCell.Tab.0.center/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
+    <state width="1895" height="413" key="GridCell.Tab.0.left" timestamp="1605354103265">
+      <screen x="0" y="0" width="3440" height="1440" />
     </state>
     <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
     <state width="1024" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
-    <state width="1024" height="213" key="GridCell.Tab.0.right" timestamp="1605188679585">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1895" height="413" key="GridCell.Tab.0.left/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
+    <state width="1895" height="413" key="GridCell.Tab.0.right" timestamp="1605354103265">
+      <screen x="0" y="0" width="3440" height="1440" />
     </state>
     <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
     <state width="1024" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
+    <state width="1895" height="413" key="GridCell.Tab.0.right/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
     <state x="604" y="341" key="NewPhpFileDialog" timestamp="1605258982022">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

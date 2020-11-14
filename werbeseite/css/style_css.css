@@ -1,7 +1,7 @@
 /**
  * Praktikum DBWT. Autoren:
  * Fabian, Kirchhoff, 3191755
- * Glenn, Verhaag, Matrikelnummer2
+ * Glenn, Verhaag, 3173673
  */
 
 /**Allgemein--------------------------------------------------------*/
@@ -39,24 +39,26 @@ section {
     margin-top: 10px;
 }
 #Logo_neu{
-    margin: -15px 0px -20px -35px;
+    margin: 0px 0px -20px -35px;
 }
 /**LINKS--------------------------------------------------------*/
 #Links li {
     display: inline;
     margin-left: 10px;
     font-family: "Trebuchet MS";
-    font-size: 20px;
+    font-size: 40px;
     padding: 5px;
 }
 
 #Links {
-    margin-left: 150px;
-    margin-top: -37px;
+    margin-left: 200px;
+    margin-top: -110px;
+    font-size: 40px;
 }
 
 #Links a {
-    color: grey;
+    color: saddlebrown;
+    text-decoration: none;
 }
 
 #Links a:hover {

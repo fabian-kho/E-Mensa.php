@@ -2,7 +2,7 @@
 /**
  * Praktikum DBWT. Autoren:
  * Fabian, Kirchhoff, 3191755
- * Glenn, Verhaag, Matrikelnummer2
+ * Glenn, Verhaag, 3173673
  */
 
 

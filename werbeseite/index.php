@@ -2,10 +2,10 @@
 /**
  * Praktikum DBWT. Autoren:
  * Fabian, Kirchhoff, 3191755
- * Glenn, Verhaag, Matrikelnummer2
+ * Glenn, Verhaag, 3173673
  */
 
-/**Newsletter*************************/
+/****Newsletter*************************/
 
 
 $blacklist = [  1 => 'rcpt.at',
@@ -57,13 +57,35 @@ if(isset($_POST['submit'])) {
     $Userdata = file_put_contents('./data.txt', serialize($newsletter)."\r\n", FILE_APPEND);
 }
 
+/****Zähler*************************/
+
+$dateiname = "besucher.txt";
+$counter = fopen ($dateiname, "r");
+$aufrufe = fread ($counter, filesize ($dateiname)); //alten counter einlesen
+fclose ($counter);
+
+$aufrufe=$aufrufe+1; //counter um 1 erhöhen
+
+$counter = fopen ("besucher.txt", "w");
+fwrite ($counter, $aufrufe); //neuen counter speichern
+fclose ($counter);
+
+$anmeldungen = 0;
+$file="data.txt";
+$handle = fopen($file, "r");
+while(!feof($handle)){
+    $line = fgets($handle);
+    $anmeldungen++;
+}
+fclose($handle);
+
 ?>
 
 <!DOCTYPE html>
 <!--
 - Praktikum DBWT. Autoren:
 - Fabian, Kirchhoff, 3191755
-- Vorname2, Nachname2, Matrikelnummer2
+- Glenn, Verhaag, 3173673
 -->
 <html lang="de">
 <head>
@@ -75,7 +97,7 @@ if(isset($_POST['submit'])) {
 </head>
 <body>
         <!--<section id="Logo">E-Mensa</section>-->
-        <img id="Logo_neu" src="image/EMensa_Logo_neu.png." alt="Logo" width="250" height="150">
+        <img id="Logo_neu" src="image/EMensa_Logo_neu.png." alt="Logo" width="300" height="175">
         <nav id="Links">
             <ul>
                 <li><a href="#ankündigung">Ankündigung</a></li>
@@ -119,7 +141,7 @@ if(isset($_POST['submit'])) {
                                         echo "<td>{$content}</td></tr>";
                                         break;
                                     case "image":
-                                        echo   "<img class='image' src='./image/{$content}' width='250' height='200' style='margin:10px 0px 20px 20px' align='left'>";
+                                        echo   "<img class='image' src='./image/{$content}' width='250' height='175' style='margin:10px 0px 20px 20px' align='left'>";
                                     default:
                                         
                                 }
@@ -133,9 +155,9 @@ if(isset($_POST['submit'])) {
         <!--Zahlen----------------------------------------------------->
         <section id="zahlen">
                 <h3>E-Mensa in Zahlen</h3>
-                <div id="zahl1"><p>99</p> <p>Besucher</p></div>
-                <div id="zahl2"><p>99</p> <p>Anmeldungen zum Newsletter</p></div>
-                <div id="zahl3"><p>02</p> <p>Speisen</p></div>
+                <div id="zahl1"><p><?php echo $aufrufe ?></p> <p>Besuche</p></div>
+                <div id="zahl2"><p><?php echo $anmeldungen?></p> <p>Anmeldungen zum Newsletter</p></div>
+                <div id="zahl3"><p><?php echo count($meals) ?></p> <p>Speisen</p></div>
 
         </section>
         <!--Newsletter----------------------------------------------------->
@@ -189,7 +211,7 @@ if(isset($_POST['submit'])) {
     <footer>
         <ul>
             <li>(c) E-Mensa GmbH</li>
-            <li>Fabian Kirchhoff</li>
+            <li>Fabian Kirchhoff & Glenn Verhaag</li>
             <li>Impressum</li>
         </ul>
     </footer>
