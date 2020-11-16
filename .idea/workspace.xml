@@ -3,14 +3,40 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Aufgabe 2 erledigt.">
+    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="E_Mensa.sql added">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]/Dossier.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]/~$ossier.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]/~WRL0003.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]1/Dossier.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]1/~$ossier.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]1/~WRL0003.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beispiele/accesslog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beispiele/erstesPhp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beispiele/m2_4a_standardparameter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beispiele/m2_4b_include.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beispiele/m2_4c_addform.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beispiele/m2_4d_array.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beispiele/m2_4e_accesslog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beispiele/meal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/werbeseite/sql/Aufgabe_5.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~WRL2274.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d572ea17-ef54-4de5-bfb8-8ae34d8c6cdd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d572ea17-ef54-4de5-bfb8-8ae34d8c6cdd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/Meal/newMeal.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/Meal/newMeal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/css/style_css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/nl-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/nl-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dossier.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Dossier.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$ossier.docx" beforeDir="false" afterPath="$PROJECT_DIR$/~$ossier.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +51,22 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHPv7.4" />
   <component name="ProjectId" id="1jXr06ZFpcourGrZM4ipKuKB9FX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../3. Semester/Datenbanken und Webtechnologien/Praktikum/3/werbeseite" />
+    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/werbeseite/sql/E_Mensa.sql" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,7 +74,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -86,6 +116,8 @@
       <workItem from="1605186763962" duration="3277000" />
       <workItem from="1605258274791" duration="11898000" />
       <workItem from="1605351720101" duration="2678000" />
+      <workItem from="1605358374413" duration="9211000" />
+      <workItem from="1605526247352" duration="3723000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -94,15 +126,51 @@
       <option name="project" value="LOCAL" />
       <updated>1605270652110</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Aufgabe 4 erledigt.">
+      <created>1605356904605</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605356904605</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Aufgabe 4 erledigt.">
+      <created>1605357031461</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605357031461</updated>
+    </task>
+    <task id="LOCAL-00004" summary="E_Mensa.sql added">
+      <created>1605359773538</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605359773538</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Aufgabe 2 erledigt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 2 erledigt." />
+    <MESSAGE value="Aufgabe 4 erledigt." />
+    <MESSAGE value="E_Mensa.sql added" />
+    <option name="LAST_COMMIT_MESSAGE" value="E_Mensa.sql added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1064" y="104" key="#PHP" timestamp="1605351742234">
@@ -110,16 +178,25 @@
     </state>
     <state x="475" y="60" key="#PHP/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603961213226" />
     <state x="1064" y="104" key="#PHP/0.0.3440.1440@0.0.3440.1440" timestamp="1605351742234" />
-    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605089970962">
+    <state x="194" y="256" key="#SQL_Dialects" timestamp="1605529990127">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="194" y="256" key="#SQL_Dialects/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605529990127" />
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605358911849">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605089970962" />
-    <state x="1227" y="297" key="FileChooserDialogImpl" timestamp="1605352513299">
-      <screen x="0" y="0" width="3440" height="1440" />
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1605358911849" />
+    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1605359714561">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1604400146379" />
-    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605186777568" />
+    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605359714561" />
     <state x="1227" y="297" key="FileChooserDialogImpl/0.0.3440.1440@0.0.3440.1440" timestamp="1605352513299" />
+    <state x="593" y="319" key="Github.CreateGistDialog" timestamp="1605359450564">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="593" y="319" key="Github.CreateGistDialog/0.0.1536.834@0.0.1536.834" timestamp="1605359450564" />
     <state x="647" y="315" key="Github.ShareDialog" timestamp="1605258327981">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -128,52 +205,66 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="363" y="122" key="Github.UntrackedFilesDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258350744" />
-    <state width="1895" height="413" key="GridCell.Tab.0.bottom" timestamp="1605354103265">
-      <screen x="0" y="0" width="3440" height="1440" />
+    <state width="1112" height="372" key="GridCell.Tab.0.bottom" timestamp="1605529967708">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
-    <state width="1024" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
+    <state width="1112" height="372" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605529967708" />
+    <state width="1310" height="372" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605526478797" />
     <state width="1895" height="413" key="GridCell.Tab.0.bottom/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1895" height="413" key="GridCell.Tab.0.center" timestamp="1605354103265">
-      <screen x="0" y="0" width="3440" height="1440" />
+    <state width="1112" height="372" key="GridCell.Tab.0.center" timestamp="1605529967708">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
-    <state width="1024" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
+    <state width="1112" height="372" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605529967708" />
+    <state width="1310" height="372" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605526478797" />
     <state width="1895" height="413" key="GridCell.Tab.0.center/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1895" height="413" key="GridCell.Tab.0.left" timestamp="1605354103265">
-      <screen x="0" y="0" width="3440" height="1440" />
+    <state width="1112" height="372" key="GridCell.Tab.0.left" timestamp="1605529967708">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
-    <state width="1024" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
+    <state width="1112" height="372" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605529967708" />
+    <state width="1310" height="372" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605526478797" />
     <state width="1895" height="413" key="GridCell.Tab.0.left/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1895" height="413" key="GridCell.Tab.0.right" timestamp="1605354103265">
-      <screen x="0" y="0" width="3440" height="1440" />
+    <state width="1112" height="372" key="GridCell.Tab.0.right" timestamp="1605529967708">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603976654129" />
-    <state width="1024" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605188679585" />
+    <state width="1112" height="372" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605529967708" />
+    <state width="1310" height="372" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605526478797" />
     <state width="1895" height="413" key="GridCell.Tab.0.right/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1605358516783">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1605358516783" />
     <state x="604" y="341" key="NewPhpFileDialog" timestamp="1605258982022">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258982022" />
     <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1604570972256" />
-    <state x="277" y="62" key="SettingsEditor" timestamp="1603961091972">
+    <state x="277" y="62" key="SettingsEditor" timestamp="1605358657027">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603961091972" />
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605270662409">
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605358657027" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605359791051">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605359791051" />
+    <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605358738238">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1605358738238" />
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605357570384">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605270662409" />
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1605357570384" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1605264166337">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605264166337" />
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1604575819280" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605258508639">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605529815492">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258508639" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605089789799" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605529815492" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605357208025" />
   </component>
 </project>
