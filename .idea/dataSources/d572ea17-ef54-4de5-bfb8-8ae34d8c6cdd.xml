@@ -1215,10 +1215,20 @@
       <Position>4</Position>
       <DataType>varchar(80)|0s</DataType>
     </column>
-    <key id="372" parent="338" name="PRIMARY">
+    <index id="372" parent="338" name="kategorie_kategorie_eltern_id_fk">
+      <ColNames>eltern_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="373" parent="338" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+    <foreign-key id="374" parent="338" name="kategorie_kategorie_eltern_id_fk">
+      <ColNames>eltern_id</ColNames>
+      <RefTableName>kategorie</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
   </database-model>
 </dataSource>
