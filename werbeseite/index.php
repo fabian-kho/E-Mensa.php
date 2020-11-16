@@ -5,7 +5,7 @@
  * Glenn, Verhaag, 3173673
  */
 
-/****Newsletter*************************/
+/****-Newsletter-****************************************************************************************************/
 
 
 $blacklist = [  1 => 'rcpt.at',
@@ -57,7 +57,7 @@ if(isset($_POST['submit'])) {
     $Userdata = file_put_contents('./data.txt', serialize($newsletter)."\r\n", FILE_APPEND);
 }
 
-/****Zähler*************************/
+/****-E-Mensa in Zahlen-******************************************************************************************************/
 
 $dateiname = "besucher.txt";
 $counter = fopen ($dateiname, "r");
@@ -96,7 +96,6 @@ fclose($handle);
     <script src="https://kit.fontawesome.com/2661bde70a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        <!--<section id="Logo">E-Mensa</section>-->
         <img id="Logo_neu" src="image/EMensa_Logo_neu.png." alt="Logo" width="300" height="175">
         <nav id="Links">
             <ul>
@@ -148,8 +147,6 @@ fclose($handle);
                             }
                         }
                     ?>
-
-
             </table>
         </section>
         <!--Zahlen----------------------------------------------------->
