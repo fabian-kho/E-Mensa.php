@@ -162,7 +162,7 @@ fclose($handle);
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<tr>";
 
-                echo "<td>{$row['name']}<span style='float: right'>{$row['code']}</span></td>";
+                echo "<td>{$row['name']}<span style='font-size: medium; float: right'>{$row['code']}</span></td>";
 
                 $number = str_replace('.', ',', sprintf('%01.2f', $row['preis_intern']));       //Geld Format
                 echo "<td>{$number}</td>";
