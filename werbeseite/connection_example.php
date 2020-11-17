@@ -1,8 +1,8 @@
 <?php
 $link=mysqli_connect("localhost", // Host der Datenbank
     "root",                 // Benutzername zur Anmeldung
-"root123",    // Passwort
-"e_mensa"    // Auswahl der Datenbanken (bzw. des Schemas)
+"Leonie3009",    // Passwort
+"e_mensa",3306      // Auswahl der Datenbanken (bzw. des Schemas)
         // optional port der Datenbank
 );
 
@@ -19,9 +19,9 @@ if (!$result) {
     exit();
 }
 
-while ($row = mysqli_fetch_assoc($result)) {
+/*while ($row = mysqli_fetch_assoc($result)) {
     echo '<li>',$row['id'], ':', $row['name'], '</li>';
-}
+}*/
 
-mysqli_free_result($result);
-mysqli_close($link);
+/*mysqli_free_result($result);
+mysqli_close($link);*/
