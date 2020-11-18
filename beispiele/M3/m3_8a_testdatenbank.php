@@ -5,7 +5,7 @@
  * Glenn, Verhaag, 3173673
  */
 
-$link=mysqli_connect("localhost", // Host der Datenbank
+$link = mysqli_connect("localhost", // Host der Datenbank
     "root",                 // Benutzername zur Anmeldung
     "root123",    // Passwort
     "e_mensa"    // Auswahl der Datenbanken (bzw. des Schemas)
@@ -25,9 +25,9 @@ if (!$result) {
     exit();
 }
 echo '<table>';
-echo '<tr>','<th>',"Gericht", '</th>','<th>',"Beschreibung", '</th>','</tr>'; //Erste Zeile der Tabelle
+echo '<tr>', '<th>', "Gericht", '</th>', '<th>', "Beschreibung", '</th>', '</tr>'; //Erste Zeile der Tabelle
 while ($row = mysqli_fetch_assoc($result)) {
-    echo '<tr>','<th>',$row['name'], '</th>','<th>', $row['beschreibung'], '</th>','</tr>'; //Die Gerichte mit Beschreibung ausgeben
+    echo '<tr>', '<th>', $row['name'], '</th>', '<th>', $row['beschreibung'], '</th>', '</tr>'; //Die Gerichte mit Beschreibung ausgeben
 }
 echo '</table>';
 

@@ -7,53 +7,44 @@
 /**Allgemein--------------------------------------------------------*/
 hr {
     height: 3px;
-    background-image: linear-gradient(to right,rgb(179, 89, 0),rgb(38, 38, 38));
+    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
 }
 
 main {
     margin: auto;
     width: 73%;
-    font-family: "Trebuchet MS";
+    font-family: Trebuchet MS, "Times New Roman", serif;
     font-size: 20px;
 }
 
 footer {
     margin: auto;
     width: 73%;
-    font-family: "Trebuchet MS";
+    font-family: Trebuchet MS, "Times New Roman", serif;
     font-size: 20px;
 }
 
 section {
     padding-top: 25px;
 }
-/**LOGO--------------------------------------------------------*/
-#Logo {
-    color: white;
-    background-image: linear-gradient(to right,steelblue,seagreen);
-    display: inline-block;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: "Agency FB";
-    padding: 5px;
-    margin-top: 10px;
-}
+/**Logo--------------------------------------------------------*/
 #Logo_neu{
-    margin: 0px 0px -20px -35px;
+    margin: 0px 0px -30px -50px;
 }
+
+
 /**LINKS--------------------------------------------------------*/
 #Links li {
     display: inline;
     margin-left: 10px;
-    font-family: "Trebuchet MS";
-    font-size: 40px;
+    font-family: Trebuchet MS, "Times New Roman", serif;
+    font-size: 25px;
     padding: 5px;
 }
 
 #Links {
-    margin-left: 200px;
-    margin-top: -110px;
-    font-size: 40px;
+    margin-left: 170px;
+    margin-top: -37px;
 }
 
 #Links a {
@@ -64,13 +55,15 @@ section {
 #Links a:hover {
     color: steelblue;
 }
+
 /**Tabelle--------------------------------------------------------*/
 #sptable {
-    font-family: "Trebuchet MS";
+    font-family: Trebuchet MS, "Times New Roman", serif;
     border-collapse: collapse;
     /**Dünne ränder*/
     width: 100%;
 }
+
 /**alle Spalten*/
 #sptable td, #sptable th {
     border: 1px solid #ddd;
@@ -85,6 +78,7 @@ section {
 #sptable tr:hover {
     background-color: #ddd;
 }
+
 /**Zeilen der ersten Spalte */
 #sptable th {
     padding-top: 12px;
@@ -92,12 +86,14 @@ section {
     text-align: left;
     color: white;
 }
+
 /**Erste Zeile der Tabelle*/
 #zeile1 {
-    background-image: linear-gradient(to right,rgb(179, 89, 0),rgb(38, 38, 38));
+    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
 }
+
 /**zahlen--------------------------------------------------------*/
-#zahlen  div {
+#zahlen div {
     display: inline-flex;
     border: transparent;
     padding: 5px;
@@ -113,9 +109,10 @@ section {
 #zahlen p:nth-child(1) {
     color: white;
     border: 2px solid;
-    background-image: linear-gradient(to right,rgb(179, 89, 0),rgb(38, 38, 38));
+    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
     border-radius: 12px;
 }
+
 /**Newsletter--------------------------------------------------------*/
 fieldset {
     border: transparent;
@@ -125,14 +122,16 @@ fieldset {
     margin-bottom: 15px;
 }
 
-fieldset label,select {
+fieldset label, select {
     font-size: medium;
     color: grey;
 }
 
+
+/*Styling der ICONS*/
 #kontakt .icon {
     padding: 10px;
-    background-image: linear-gradient(to right,rgb(179, 89, 0),rgb(38, 38, 38));
+    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
     color: white;
     min-width: 50px;
     text-align: center;
@@ -140,6 +139,17 @@ fieldset label,select {
     border-top-left-radius: 12px;
 }
 
+/*Icons*/
+.fa-envelope, .fa-language, .fa-lock {
+    margin-left: 20px;
+}
+
+.fa-user {
+    margin-left: -20px;
+}
+
+
+/*Styling des icons des Datenschutzes*/
 #copyright {
     margin-top: 3px;
     min-width: 20px;
@@ -148,15 +158,7 @@ fieldset label,select {
     /*Abgerundete Ecken*/;
 }
 
-/*Icons*/
-.fa-envelope,.fa-language,.fa-lock {
-    margin-left: 20px;
-}
-
-.fa-user {
-    margin-left: -20px;
-}
-
+/*Styling des checkbox des Datenschutzes*/
 #Datenschutz {
     margin-top: 10px;
     height: 25px;
@@ -165,6 +167,7 @@ fieldset label,select {
     border-radius: 12px;
 }
 
+/*Styling des Newsletter Submit buttons*/
 #kontakt input[type=submit] {
     margin-left: 20px;
     color: black;
@@ -172,29 +175,36 @@ fieldset label,select {
     border-image: linear-gradient(to bottom, rgb(179, 89, 0), rgba(0, 0, 0, 0)) 1 100%;
     border-radius: 12px;
 }
-/*Button nur anzeigen wenn Datenschutz checked*/
+
+/*Button submit nur anzeigen wenn Datenschutz checked*/
 #Datenschutz:checked ~ #submit {
     visibility: visible;
 }
 
+/*Button submit nicht anzeigen*/
 #submit {
     visibility: hidden;
 }
-/*Text unter letzter Section*/
+
+/*Text unter letzter Section
 section + p {
     text-align: center;
     font-size: larger;
-}
+}*/
+
 /*Newsletter formatieren*/
-#name,#email,#sprache {
+#name, #email, #sprache {
     border: 1px solid grey;
     border-bottom-right-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-#name:hover,#email:hover,#sprache:hover {
+/*Hover effect*/
+#name:hover, #email:hover, #sprache:hover {
     border: 3px solid black;
 }
+
+
 /**Wichtig--------------------------------------------------------*/
 #wichtig {
     margin-bottom: 50px;
@@ -205,14 +215,17 @@ section + p {
     list-style-type: none;
     /*Keine Punkte*/;
 }
+
 /*Überschriften*/
-h1,h2,h3,h4,h5 {
+h1, h2, h3, h4, h5 {
     font-size: larger;
 }
+
 /*Pfeile vor Liste*/
 .fa-angle-right {
     margin-right: 10px;
 }
+
 /**footer--------------------------------------------------------*/
 footer li {
     font-size: medium;
@@ -220,8 +233,8 @@ footer li {
     display: inline;
 }
 
+/*Kante bei jedem element einfügen außer beim ersten*/
 footer ul li + li {
-    /*Kante bei jedem element einfügen außer beim ersten*/
     border-left: 2px solid grey;
 }
 
@@ -229,38 +242,43 @@ footer ul {
     text-align: center;
 }
 
-
-#apply1{
-    color: white;
-    margin-top: 5px;
-    border-color: white;
-    background-image: linear-gradient(to right,rgb(179, 89, 0),rgb(38, 38, 38));
+/*Text unter Liste zentrieren*/
+#wichtig + p {
+    text-align: center;
 }
 
 
 /**Allergene--------------------------------------------------------*/
-.allergens{
-    columns: 4 12em;        /*In 4 Reihen anzeigen*/
+.allergens {
+    columns: 4 12em; /*In 4 Reihen anzeigen*/
     font-size: xx-small;
     padding: 10px;
     line-height: 0.5em;
 }
-#Allergene ul li{
-    list-style-type: none;  /*Keine Punkte*/
+
+/*Keine "Listenpunkte" */
+#Allergene ul li {
+    list-style-type: none;
 }
-#Allergene{
-    margin-top: -25px;      /*Button position erhöhen*/
+
+/*Button position erhöhen*/
+#Allergene {
+    margin-top: -25px;
 }
-#Allergene .icon{           /*Design vom icon*/
+
+/*Design vom icon*/
+#Allergene .icon {
     padding: 5px;
-    background-image: linear-gradient(to right,rgb(179, 89, 0),rgb(38, 38, 38));
+    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
     color: white;
     min-width: 45px;
     text-align: center;
     border-bottom-left-radius: 12px;
     border-top-left-radius: 12px;
 }
-#Abutton {          /*Design Button*/
+
+/*Design Button*/
+#Abutton {
     margin-top: 10px;
     height: 20px;
     width: 20px;
@@ -268,11 +286,13 @@ footer ul {
     border-radius: 12px;
 }
 
-#Abutton:checked ~ #allergens {/*Wenn checkbox = checked -> zeige Liste der Allergene*/
-    display: block ;
+/*Wenn checkbox = checked -> zeige Liste der Allergene*/
+#Abutton:checked ~ #allergens {
+    display: block;
 }
 
-#allergens{
+/*Zeige Liste der Allergen nicht*/
+#allergens {
     display: none;
 }
 

@@ -17,7 +17,7 @@ include "connection_example.php";
 $link = mysqli_connect("localhost", // Host der Datenbank
     "root",                 // Benutzername zur Anmeldung
     "Leonie3009",    // Passwort
-    "e_mensa", 3306      // Auswahl der Datenbanken (bzw. des Schemas)
+    "e_mensa"    // Auswahl der Datenbanken (bzw. des Schemas)
 // optional port der Datenbank
 );
 
@@ -68,17 +68,19 @@ if (isset($_POST['submit'])) {
         }
     }
 
+    //E-mail auf zulässigkeit prüfen
     if (find_text_in_array($blacklist, $newsletter['email'])) {
         $fehler = 'Diese E-Mail ist nicht zulässig.';
     }
 
     //Store
     if (!$fehler)
-        $Userdata = file_put_contents('./data.txt', serialize($newsletter) . "\r\n", FILE_APPEND);
+        $Userdata = file_put_contents('./Newsletter/NL_Anmeldungen.txt', serialize($newsletter) . "\r\n", FILE_APPEND);
 }
 
 /****Zähler*************************/
 
+//Persistenten Zähler für di Anzahl der Besucher
 $dateiname = "besucher.txt";
 $counter = fopen($dateiname, "r");
 $aufrufe = fread($counter, filesize($dateiname)); //alten counter einlesen
@@ -90,12 +92,14 @@ $counter = fopen("besucher.txt", "w");
 fwrite($counter, $aufrufe); //neuen counter speichern
 fclose($counter);
 
+
+//Zähler für Anzahl der Anmeldungen zum Newsletter
 $anmeldungen = 0;
-$file = "data.txt";
+$file = "./Newsletter/NL_Anmeldungen.txt";
 $handle = fopen($file, "r");
 while (!feof($handle)) {
     $line = fgets($handle);
-    $anmeldungen++;
+    if (!empty($line)) $anmeldungen++;   //Wenn datei nicht leer, dann zähle hoch
 }
 fclose($handle);
 
@@ -116,7 +120,6 @@ fclose($handle);
     <script src="https://kit.fontawesome.com/2661bde70a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!--<section id="Logo">E-Mensa</section>-->
 <img id="Logo_neu" src="image/EMensa_Logo_neu.png." alt="Logo" width="300" height="175">
 <nav id="Links">
     <ul>
@@ -141,7 +144,7 @@ fclose($handle);
             sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
             sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
     </section>
-    <!--Tabelle----------------------------------------------------->
+    <!--Tabelle----------------------------------------------------------------------------->
     <section id="speisen">
         <h2>Köstlichkeiten, die Sie erwarten</h2>
         <table id="sptable">
@@ -151,10 +154,13 @@ fclose($handle);
                 <th>Preis extern</th>
             </tr>
             <?php
+
+            /** Füge die Gerichte (inklusive der Allergene) in die Tabelle ein **********************************/
             $sql = "SELECT name, GROUP_CONCAT(code) as code  ,preis_intern, preis_extern FROM gericht
-                        Left JOIN gericht_hat_allergen gha on gericht.id = gha.gericht_id
-                        GROUP BY name
-                        LIMIT 5";
+                    LEFT JOIN gericht_hat_allergen gha on gericht.id = gha.gericht_id
+                    GROUP BY name
+                    ORDER BY name ASC
+                    LIMIT 5";
 
             $result = mysqli_query($link, $sql);
 
@@ -164,10 +170,12 @@ fclose($handle);
 
                 echo "<td>{$row['name']}<span style='font-size: medium; float: right'>{$row['code']}</span></td>";
 
-                $number = str_replace('.', ',', sprintf('%01.2f', $row['preis_intern']));       //Geld Format
+                //Geld Format & tausche . gegen ,
+                $number = str_replace('.', ',', sprintf('%01.2f', $row['preis_intern']));
                 echo "<td>{$number}</td>";
 
-                $number = str_replace('.', ',', sprintf('%01.2f', $row['preis_extern']));       //Geld Format
+                //Geld Format & tausche . gegen ,
+                $number = str_replace('.', ',', sprintf('%01.2f', $row['preis_extern']));
                 echo "<td>{$number}</td>";
 
                 echo "</tr>";
@@ -182,11 +190,12 @@ fclose($handle);
             mysqli_free_result($result); ?>
         </table>
     </section>
-    <!--Allergene----------------------------------------------------->
+    <!--Allergene-------------------------------------------------------------------------------------->
     <section id="Allergene">
         <i class="fas fa-allergies icon" id="copyright"></i>
         <input title="Allergene anzeigen" type="checkbox" id="Abutton" name="Abutton" required>
         <?php
+        /** Füge alle verwendeten Allerge in eine Liste ein**********************************************/
 
         $sql = "SELECT DISTINCT gha.code as Code, a.name as Allergen FROM gericht_hat_allergen gha
                             LEFT JOIN allergen a on a.code = gha.code";
@@ -223,17 +232,19 @@ fclose($handle);
             <fieldset>
 
                 <i class="fa fa-user icon"></i>
-                <input type="text" id="name" name="name" size="30" placeholder="Bitte geben Sie Ihren Namen ein"
-                       required>
+                <label for="name"></label><input type="text" id="name" name="name" size="30"
+                                                 placeholder="Bitte geben Sie Ihren Namen ein"
+                                                 required>
                 <br><br>
 
                 <i class="fa fa-envelope icon"></i>
-                <input type="text" id="email" name="email" size="30" placeholder="Bitte geben Sie Ihre E-Mail ein"
-                       required>
+                <label for="email"></label><input type="text" id="email" name="email" size="30"
+                                                  placeholder="Bitte geben Sie Ihre E-Mail ein"
+                                                  required>
                 <br><br>
 
                 <i class="fas fa-language icon"></i>
-                <select name="sprache" id="sprache" size="1">
+                <label for="sprache"></label><select name="sprache" id="sprache" size="1">
                     <option value="English">English</option>
                     <option value="Deutsch" selected>Deutsch</option>
                     <option value="Denglisch">Denglisch</option>
