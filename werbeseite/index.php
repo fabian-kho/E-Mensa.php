@@ -43,7 +43,7 @@ function find_text_in_array(array $array, $text): bool
     return false;
 }
 
-
+$fehler = false;
 if (isset($_POST['submit'])) {
 
     $newsletter = [
@@ -52,8 +52,6 @@ if (isset($_POST['submit'])) {
         'sprache' => trim($_POST['sprache'] ?? NULL),
         'datenschutz' => $_POST['Datenschutz'] ?? NULL
     ];
-
-    $fehler = false;
 
     //Prüfen ob leer?
     if (empty($newsletter['name'])) {

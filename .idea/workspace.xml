@@ -13,29 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Aufgabe 7 update.">
-      <change afterPath="$PROJECT_DIR$/beispiele/M2/accesslog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beispiele/M2/erstesPhp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beispiele/M2/m2_4a_standardparameter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beispiele/M2/m2_4b_include.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beispiele/M2/m2_4c_addform.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beispiele/M2/m2_4d_array.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beispiele/M2/m2_4e_accesslog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beispiele/M2/meal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/werbeseite/Newsletter/NL_Anmeldungen.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/werbeseite/Newsletter/nl-admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/werbeseite/besucher.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/INF_20_Kirchhoff_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/INF_20_Kirchhoff_2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beispiele/m3_8a_testdatenbank.php" beforeDir="false" afterPath="$PROJECT_DIR$/beispiele/M3/m3_8a_testdatenbank.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/Meal/meals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/beispiele/Meal/meals.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/Meal/newMeal.php" beforeDir="false" afterPath="$PROJECT_DIR$/beispiele/Meal/newMeal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/connection_example.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/connection_example.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/css/style_css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/nl-admin.php" beforeDir="false" />
-    </list>
+    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="-Code bereinigt...&#10;-Push des Ordners Beispiele" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +101,7 @@
       <workItem from="1605610745929" duration="7226000" />
       <workItem from="1605642333533" duration="597000" />
       <workItem from="1605705218469" duration="2256000" />
-      <workItem from="1605707503564" duration="2970000" />
+      <workItem from="1605707503564" duration="3090000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -181,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605617405366</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="-Code bereinigt...&#10;-Push des Ordners Beispiele">
+      <created>1605710591264</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605710591264</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +192,8 @@
     <MESSAGE value="Aufgabe_5.sql added" />
     <MESSAGE value="Aufgabe 7 erledigt.&#10;Änderungen in CSS file." />
     <MESSAGE value="Aufgabe 7 update." />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 7 update." />
+    <MESSAGE value="-Code bereinigt...&#10;-Push des Ordners Beispiele" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Code bereinigt...&#10;-Push des Ordners Beispiele" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="60" key="#PHP" timestamp="1605530882784">
@@ -288,20 +274,20 @@
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603961091972" />
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605706823941" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605617408545">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605710596275">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605530082598" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605617408545" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605710596275" />
     <state x="93" y="93" width="1350" height="648" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605709680843">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1605709680843" />
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605617417047">
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605710608564">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605543296601" />
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1605617417047" />
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1605710608564" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1605264166337">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

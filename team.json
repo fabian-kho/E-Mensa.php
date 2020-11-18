@@ -1,12 +1,16 @@
 {
-	"team" : "INF_20",
+	"team" : "INF20",
 	"mitglieder":
 	[
+	  {
+		"matrikelnummer": 3173673,
+		"name": "Glenn Verhaag",
+		"ilias" : "gv4488s"
+	  },
 	  {
 		"matrikelnummer": 3191755,
 		"name": "Fabian Kirchhoff",
 		"ilias" : "fk4131s"
 	  }
-
 	]
 }
