@@ -57,7 +57,7 @@ section {
 }
 
 /**Tabelle--------------------------------------------------------*/
-#sptable {
+#gerichtTabelle {
     font-family: Trebuchet MS, "Times New Roman", serif;
     border-collapse: collapse;
     /**Dünne ränder*/
@@ -65,22 +65,22 @@ section {
 }
 
 /**alle Spalten*/
-#sptable td, #sptable th {
+#gerichtTabelle td, #gerichtTabelle th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
 /**nth-child() gibt jeder zweiten Spalte eine graue Farbe*/
-#sptable tr:nth-child(even) {
+#gerichtTabelle tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-#sptable tr:hover {
+#gerichtTabelle tr:hover {
     background-color: #ddd;
 }
 
 /**Zeilen der ersten Spalte */
-#sptable th {
+#gerichtTabelle th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -150,7 +150,7 @@ fieldset label, select {
 
 
 /*Styling des icons des Datenschutzes*/
-#copyright {
+#lock {
     margin-top: 3px;
     min-width: 20px;
     max-height: 20px;
@@ -249,7 +249,7 @@ footer ul {
 
 
 /**Allergene--------------------------------------------------------*/
-.allergens {
+.AllergenListe {
     columns: 4 12em; /*In 4 Reihen anzeigen*/
     font-size: xx-small;
     padding: 10px;
@@ -278,7 +278,7 @@ footer ul {
 }
 
 /*Design Button*/
-#Abutton {
+#AllergenButton {
     margin-top: 10px;
     height: 20px;
     width: 20px;
@@ -287,12 +287,12 @@ footer ul {
 }
 
 /*Wenn checkbox = checked -> zeige Liste der Allergene*/
-#Abutton:checked ~ #allergens {
+#AllergenButton:checked ~ #AllergenListe {
     display: block;
 }
 
 /*Zeige Liste der Allergen nicht*/
-#allergens {
+#AllergenListe {
     display: none;
 }
 

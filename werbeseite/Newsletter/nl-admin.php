@@ -58,7 +58,7 @@ if (!empty($_GET[GET_PARAM_SEARCH_TEXT])) {
 </head>
 <body>
 <form method="get">
-    <table id="sptable">
+    <table id="gerichtTabelle">
         <tr id="zeile1">
             <th>Name
                 <label style="float:  right">Sortiere

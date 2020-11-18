@@ -13,7 +13,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="-Code bereinigt...&#10;-Push des Ordners Beispiele" />
+    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Die Variable $fehler war nicht deklariert..">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/Newsletter/nl-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/Newsletter/nl-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/besucher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/besucher.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/css/style_css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/werbeseite/sql/E_Mensa.sql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -102,6 +108,7 @@
       <workItem from="1605642333533" duration="597000" />
       <workItem from="1605705218469" duration="2256000" />
       <workItem from="1605707503564" duration="3090000" />
+      <workItem from="1605711533548" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -166,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605710591264</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Die Variable $fehler war nicht deklariert..">
+      <created>1605711736865</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605711736865</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +207,8 @@
     <MESSAGE value="Aufgabe 7 erledigt.&#10;Änderungen in CSS file." />
     <MESSAGE value="Aufgabe 7 update." />
     <MESSAGE value="-Code bereinigt...&#10;-Push des Ordners Beispiele" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Code bereinigt...&#10;-Push des Ordners Beispiele" />
+    <MESSAGE value="Die Variable $fehler war nicht deklariert.." />
+    <option name="LAST_COMMIT_MESSAGE" value="Die Variable $fehler war nicht deklariert.." />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="60" key="#PHP" timestamp="1605530882784">
@@ -274,11 +289,11 @@
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1603961091972" />
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605706823941" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605710596275">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605711745480">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605530082598" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605710596275" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605711745480" />
     <state x="93" y="93" width="1350" height="648" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605709680843">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

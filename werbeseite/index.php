@@ -145,7 +145,7 @@ fclose($handle);
     <!--Tabelle----------------------------------------------------------------------------->
     <section id="speisen">
         <h2>Köstlichkeiten, die Sie erwarten</h2>
-        <table id="sptable">
+        <table id="gerichtTabelle">
             <tr id="zeile1">
                 <th></th>
                 <th>Preis intern</th>
@@ -190,8 +190,8 @@ fclose($handle);
     </section>
     <!--Allergene-------------------------------------------------------------------------------------->
     <section id="Allergene">
-        <i class="fas fa-allergies icon" id="copyright"></i>
-        <input title="Allergene anzeigen" type="checkbox" id="Abutton" name="Abutton" required>
+        <i class="fas fa-allergies icon" id="lock"></i>
+        <input title="Allergene anzeigen" type="checkbox" id="AllergenButton" name="AllergenButton" required>
         <?php
         /** Füge alle verwendeten Allerge in eine Liste ein**********************************************/
 
@@ -200,7 +200,7 @@ fclose($handle);
 
         $result = mysqli_query($link, $sql);
 
-        echo '<ul id="allergens" class="allergens">';
+        echo '<ul id="AllergenListe" class="AllergenListe">';
         while ($row = mysqli_fetch_assoc($result)) {        //Trage Zeile für Zeile $row in Liste ein
             echo '<li><i class="fas fa-angle-right"></i>';
             echo $row['Allergen'];
@@ -249,7 +249,7 @@ fclose($handle);
                 </select>
                 <br><br>
 
-                <i class="fas fa-lock icon" id="copyright"></i>
+                <i class="fas fa-lock icon" id="lock"></i>
                 <input title="Zustimmung zum Datenschutz" type="checkbox" id="Datenschutz" name="Datenschutz" required>
                 <br>
 
@@ -257,7 +257,7 @@ fclose($handle);
             </fieldset>
         </form>
         <p><?php if ($fehler) echo $fehler;
-            else if (is_bool($fehler)) echo 'Erfolgreich zum Newsletter angemeldet!'
+            else if (!empty($fehler)) echo 'Erfolgreich zum Newsletter angemeldet!'
             ?></p>
 
     </section>
