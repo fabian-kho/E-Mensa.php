@@ -3,6 +3,7 @@
  * Fabian, Kirchhoff, 3191755
  * Glenn, Verhaag, 3173673
  */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 /**Allgemein--------------------------------------------------------*/
 hr {
@@ -13,14 +14,14 @@ hr {
 main {
     margin: auto;
     width: 73%;
-    font-family: Trebuchet MS, "Times New Roman", serif;
+    font-family: Julius Sans One, "Times New Roman", serif;
     font-size: 20px;
 }
 
 footer {
     margin: auto;
     width: 73%;
-    font-family: Trebuchet MS, "Times New Roman", serif;
+    font-family: Julius Sans One, "Times New Roman", serif;
     font-size: 20px;
 }
 
@@ -37,7 +38,7 @@ section {
 #Links li {
     display: inline;
     margin-left: 10px;
-    font-family: Trebuchet MS, "Times New Roman", serif;
+    font-family: Julius Sans One, "Times New Roman", serif;
     font-size: 25px;
     padding: 5px;
 }
@@ -58,7 +59,7 @@ section {
 
 /**Tabelle--------------------------------------------------------*/
 #gerichtTabelle {
-    font-family: Trebuchet MS, "Times New Roman", serif;
+    font-family: Julius Sans One, "Times New Roman", serif;
     border-collapse: collapse;
     /**Dünne ränder*/
     width: 100%;

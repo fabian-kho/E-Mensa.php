@@ -7,7 +7,8 @@
 
 /**
  * TO_DO
- * Currywurst wird als erstes Gericht angezeigt.
+ * Fabian: Aufgaben -> 1,7 / 6 c,d
+ * Glenn: Aufgaben -> 2,8 / 6 a,b
  */
 
 
@@ -16,8 +17,8 @@ include "connection_example.php";
 
 $link = mysqli_connect("localhost", // Host der Datenbank
     "root",                 // Benutzername zur Anmeldung
-    "Leonie3009",    // Passwort
-    "e_mensa"    // Auswahl der Datenbanken (bzw. des Schemas)
+    "Leonie3009",       // Passwort
+    "e_mensa"           // Auswahl der Datenbanken (bzw. des Schemas)
 // optional port der Datenbank
 );
 
@@ -118,7 +119,7 @@ fclose($handle);
     <script src="https://kit.fontawesome.com/2661bde70a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<img id="Logo_neu" src="image/EMensa_Logo_neu.png." alt="Logo" width="300" height="175">
+<img id="Logo_neu" src="image/EMensa_Logo_neu.png" alt="Logo" width="300" height="175">
 <nav id="Links">
     <ul>
         <li><a href="#ankündigung">Ankündigung</a></li>
