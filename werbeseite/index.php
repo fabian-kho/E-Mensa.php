@@ -73,8 +73,10 @@ if (isset($_POST['submit'])) {
     }
 
     //Store
-    if (!$fehler)
+    if (!$fehler) {
         $Userdata = file_put_contents('./Newsletter/NL_Anmeldungen.txt', serialize($newsletter) . "\r\n", FILE_APPEND);
+        $fehler='stored';
+    }
 }
 
 /****Zähler*************************/
@@ -257,8 +259,8 @@ fclose($handle);
                 <input name="submit" id="submit" type="submit" value="Zum Newsletter anmelden"><br><br>
             </fieldset>
         </form>
-        <p><?php if ($fehler) echo $fehler;
-            else if (!empty($fehler)) echo 'Erfolgreich zum Newsletter angemeldet!'
+        <p><?php if (!empty($fehler) && $fehler!= 'stored') echo $fehler;
+            else if ($fehler === 'stored') echo 'Erfolgreich zum Newsletter angemeldet!'
             ?></p>
 
     </section>

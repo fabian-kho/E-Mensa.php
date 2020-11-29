@@ -15,7 +15,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Augabe 1 erledigt.&#10;-Datenbankstruktur erweitert&#10;-wunschgericht.php hinzugefügt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/wunschgerichte.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/wunschgerichte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/Newsletter/NL_Anmeldungen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/Newsletter/NL_Anmeldungen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/besucher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/besucher.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Code-Review" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -152,6 +154,10 @@
       <workItem from="1606565945065" duration="7338000" />
       <workItem from="1606647207691" duration="11946000" />
       <workItem from="1606660367718" duration="183000" />
+      <workItem from="1606661144411" duration="2604000" />
+      <workItem from="1606664104058" duration="298000" />
+      <workItem from="1606664430866" duration="630000" />
+      <workItem from="1606673396862" duration="314000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -237,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606658873606</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Augabe 1 erledigt.&#10;-Datenbankstruktur erweitert&#10;-wunschgericht.php hinzugefügt">
+      <created>1606661160639</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606661160639</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,11 +317,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1536.834@0.0.1536.834" timestamp="1606654854724" />
-    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1606660550262">
+    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1606664398684">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606565590438" />
-    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1606660550262" />
+    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1606664398684" />
     <state x="1227" y="297" key="FileChooserDialogImpl/0.0.3440.1440@0.0.3440.1440" timestamp="1605352513299" />
     <state x="593" y="319" key="Github.CreateGistDialog" timestamp="1605359450564">
       <screen x="0" y="0" width="1536" height="834" />
@@ -364,11 +377,11 @@
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606564768370" />
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1606492194063" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605712492951">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1606661163839">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605530082598" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605712492951" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606661163839" />
     <state x="631" y="305" width="354" height="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606655481090">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
