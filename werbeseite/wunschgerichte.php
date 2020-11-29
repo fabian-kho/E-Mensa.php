@@ -29,16 +29,16 @@ try {
 $fehler = false;
 if (isset($_POST['submit'])) {
 
-//Prüfen ob leer?
+    //Prüfen ob leer?
     if (empty($_POST['gerichtName'])) {
         $fehler = 'Der Gerichtname darf nicht leer sein. ';
     }
-//Prüfen ob leer?
+    //Prüfen ob leer?
     if (empty($_POST['beschreibung'])) {
         $fehler = 'Die Beschreibung darf nicht leer sein.';
     }
 
-//E-Mail validierung
+    //E-Mail validierung
     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         $fehler = 'Die E-Mail hat das falsche Format.    ';
         if (empty($wunschgericht['email'])) {
@@ -60,9 +60,8 @@ if (isset($_POST['submit'])) {
             $stmt = $pdo->prepare("SELECT count(email) as cnt FROM ersteller WHERE email = ?");
             $stmt->execute([$_POST['email']]);
             $check = $stmt->fetch();
-            $vorhanden=$check['cnt'];
             //Wenn Benutzer noch nicht vorhanden, erstelle einen
-            if ($vorhanden==0) {
+            if ($check['cnt'] == 0) {
                 $pdo->prepare("INSERT INTO ersteller (email, name) VALUES (?,?)")
                     ->execute([$_POST['email'], $_POST['name']]);
             }
@@ -71,12 +70,12 @@ if (isset($_POST['submit'])) {
             $stmt = $pdo->prepare("Select id From wunschgericht where name = ?");
             $stmt->execute([$_POST['gerichtName']]);
             $array = $stmt->fetch();
-            $id = $array['id'];
             //In Tabelle ersteller_wunschgericht einfügen
             $pdo->prepare('INSERT INTO ersteller_wunschgericht (wunschgericht_id, ersteller_email) VALUES (?,?)')
-                ->execute([$id, $_POST['email']]);
+                ->execute([$array['id'], $_POST['email']]);
 
             $pdo->commit();     //pdo übergeben
+
         } catch (PDOException $e) {
             echo $e->getMessage();
         }

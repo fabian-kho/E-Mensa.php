@@ -13,24 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Variablennamen auf Sinnhaftigkeit geprüft und geändert.">
-      <change afterPath="$PROJECT_DIR$/Aufgabe 8/8.1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Aufgabe 8/RM_Aufgabe_8.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Aufgabe 8/Untitled Diagram.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/werbeseite/css/wunschgerichte_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/werbeseite/sql/Aufgabe1.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/werbeseite/wunschgerichte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d572ea17-ef54-4de5-bfb8-8ae34d8c6cdd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d572ea17-ef54-4de5-bfb8-8ae34d8c6cdd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]1/Dossier.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]1/~$ossier.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27_[Default_Changelist]1/~WRL0003.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_11_2020_13_27__Default_Changelist_1.xml" beforeDir="false" />
+    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Augabe 1 erledigt.&#10;-Datenbankstruktur erweitert&#10;-wunschgericht.php hinzugefügt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/Newsletter/NL_Anmeldungen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/Newsletter/NL_Anmeldungen.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/besucher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/besucher.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/css/style_css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/wunschgerichte.php" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/wunschgerichte.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/werbeseite/wunschgerichte.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Code-Review" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -165,7 +150,8 @@
       <workItem from="1606473124867" duration="10587000" />
       <workItem from="1606565822458" duration="37000" />
       <workItem from="1606565945065" duration="7338000" />
-      <workItem from="1606647207691" duration="11462000" />
+      <workItem from="1606647207691" duration="11946000" />
+      <workItem from="1606660367718" duration="183000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -244,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605712355202</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Augabe 1 erledigt.&#10;-Datenbankstruktur erweitert&#10;-wunschgericht.php hinzugefügt">
+      <created>1606658873606</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606658873606</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +266,8 @@
     <MESSAGE value="-Code bereinigt...&#10;-Push des Ordners Beispiele" />
     <MESSAGE value="Die Variable $fehler war nicht deklariert.." />
     <MESSAGE value="Variablennamen auf Sinnhaftigkeit geprüft und geändert." />
-    <option name="LAST_COMMIT_MESSAGE" value="Variablennamen auf Sinnhaftigkeit geprüft und geändert." />
+    <MESSAGE value="Augabe 1 erledigt.&#10;-Datenbankstruktur erweitert&#10;-wunschgericht.php hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Augabe 1 erledigt.&#10;-Datenbankstruktur erweitert&#10;-wunschgericht.php hinzugefügt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="72" key="#CLI_Interpreters" timestamp="1606564767089">
@@ -310,11 +304,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1536.834@0.0.1536.834" timestamp="1606654854724" />
-    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1606565590438">
+    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1606660550262">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606565590438" />
-    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605707085798" />
+    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1606660550262" />
     <state x="1227" y="297" key="FileChooserDialogImpl/0.0.3440.1440@0.0.3440.1440" timestamp="1605352513299" />
     <state x="593" y="319" key="Github.CreateGistDialog" timestamp="1605359450564">
       <screen x="0" y="0" width="1536" height="834" />
@@ -328,29 +322,29 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="363" y="122" key="Github.UntrackedFilesDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258350744" />
-    <state width="1112" height="200" key="GridCell.Tab.0.bottom" timestamp="1606658746531">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1606659255091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606573828138" />
-    <state width="1112" height="200" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606658746531" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606659255091" />
     <state width="1895" height="413" key="GridCell.Tab.0.bottom/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1112" height="200" key="GridCell.Tab.0.center" timestamp="1606658746531">
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1606659255091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606573828138" />
-    <state width="1112" height="200" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606658746531" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606659255091" />
     <state width="1895" height="413" key="GridCell.Tab.0.center/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1112" height="200" key="GridCell.Tab.0.left" timestamp="1606658746531">
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1606659255091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606573828138" />
-    <state width="1112" height="200" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606658746531" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606659255091" />
     <state width="1895" height="413" key="GridCell.Tab.0.left/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1112" height="200" key="GridCell.Tab.0.right" timestamp="1606658746531">
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1606659255091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606573828138" />
-    <state width="1112" height="200" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606658746531" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606659255091" />
     <state width="1895" height="413" key="GridCell.Tab.0.right/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1605358516783">
       <screen x="0" y="0" width="1536" height="834" />
