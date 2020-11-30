@@ -17,7 +17,7 @@ include "connection_example.php";
 
 $link = mysqli_connect("localhost", // Host der Datenbank
     "root",                 // Benutzername zur Anmeldung
-    "Leonie3009",       // Passwort
+    "",       // Passwort
     "e_mensa"           // Auswahl der Datenbanken (bzw. des Schemas)
 // optional port der Datenbank
 );
@@ -54,6 +54,10 @@ if (isset($_POST['submit'])) {
         'datenschutz' => $_POST['Datenschutz'] ?? NULL
     ];
 
+    //Benutzereingabe in HTML Code umwandeln um XSS zu verhindern
+    $newsletter['name']=htmlspecialchars($newsletter['name']);
+    $newsletter['email']=htmlspecialchars($newsletter['email']);
+
     //Prüfen ob leer?
     if (empty($newsletter['name'])) {
         $fehler = 'Der Name darf nicht leer sein.';
@@ -81,7 +85,7 @@ if (isset($_POST['submit'])) {
 
 /****Zähler*************************/
 
-//Persistenten Zähler für di Anzahl der Besucher
+//Persistenten Zähler für die Anzahl der Besucher
 $dateiname = "besucher.txt";
 $counter = fopen($dateiname, "r");
 $aufrufe = fread($counter, filesize($dateiname)); //alten counter einlesen
