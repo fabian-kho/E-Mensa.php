@@ -17,7 +17,7 @@ include "connection_example.php";
 
 $link = mysqli_connect("localhost", // Host der Datenbank
     "root",                 // Benutzername zur Anmeldung
-    "",       // Passwort
+    "root123",       // Passwort
     "e_mensa"           // Auswahl der Datenbanken (bzw. des Schemas)
 // optional port der Datenbank
 );
@@ -55,6 +55,7 @@ if (isset($_POST['submit'])) {
     ];
 
     //Benutzereingabe in HTML Code umwandeln um XSS zu verhindern
+    $newsletter['name']=strip_tags($newsletter['name']);
     $newsletter['name']=htmlspecialchars($newsletter['name']);
     $newsletter['email']=htmlspecialchars($newsletter['email']);
 
