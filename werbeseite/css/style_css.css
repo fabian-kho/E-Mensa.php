@@ -173,7 +173,7 @@ fieldset label, select {
     margin-left: 20px;
     color: black;
     background-color: white;
-    border-image: linear-gradient(to bottom, rgb(179, 89, 0), rgba(0, 0, 0, 0)) 1 100%;
+    border-color: rgb(179, 89, 0);
     border-radius: 12px;
 }
 
@@ -252,7 +252,7 @@ footer ul {
 /**Allergene--------------------------------------------------------*/
 .AllergenListe {
     columns: 4 12em; /*In 4 Reihen anzeigen*/
-    font-size: xx-small;
+    font-size: small;
     padding: 10px;
     line-height: 0.5em;
 }

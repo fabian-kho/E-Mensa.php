@@ -7,7 +7,7 @@
 
 /***PDO-Connection**************************/
 $host = 'localhost';
-$db = 'e_mensa';
+$db = 'e_mensa';        //Datenbank
 $user = 'root';
 $pass = 'Leonie3009';
 $port = "3306";
@@ -26,6 +26,11 @@ try {
 }
 
 /*****Wunschgericht zur Datenbank hinzufügen****************************/
+/**
+ * To-Do
+ * -Max zecihen für eingabe festlegen
+ * -ggf whitelist
+ */
 $fehler = false;
 if (isset($_POST['submit'])) {
 

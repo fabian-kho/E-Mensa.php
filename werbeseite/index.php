@@ -17,7 +17,7 @@ include "connection_example.php";
 
 $link = mysqli_connect("localhost", // Host der Datenbank
     "root",                 // Benutzername zur Anmeldung
-    "root123",       // Passwort
+    "Leonie3009",       // Passwort
     "e_mensa"           // Auswahl der Datenbanken (bzw. des Schemas)
 // optional port der Datenbank
 );
