@@ -15,18 +15,13 @@ ALTER TABLE gericht_hat_allergen
 ALTER TABLE gericht_hat_kategorie
     ADD CONSTRAINT delete_from_kategorie
         FOREIGN KEY (gericht_id)
-    REF
-    ERENCES gericht (id)
+    REFERENCES gericht (id)
     ON DELETE CASCADE;
 /* 8.4 */
 /* 1 */
 ALTER TABLE gericht_hat_kategorie
     add CONSTRAINT kategorie_in_verwendung FOREIGN KEY(Kategorie_id) REFERENCES kategorie(id)
         ON DELETE RESTRICT;
-/* 2 */
-ALTER TABLE kategorie
-    ADD CONSTRAINT kategorie_kategorie_eltern_id_fk
-        FOREIGN KEY (eltern_id) REFERENCES kategorie(id);
 /* 8.5 */
 ALTER TABLE gericht_hat_allergen
     add CONSTRAINT change_allergen FOREIGN KEY(code) REFERENCES allergen(code)

@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Aufgabe7 erledigt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/sql/E_Mensa.sql" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/sql/E_Mensa.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Aufgabe7_test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -158,12 +157,14 @@
       <item itemvalue="JavaScript Debug.m4_6a_queryparameter.blade.php" />
       <item itemvalue="PHP Built-in Web Server.E-Mensa" />
       <item itemvalue="PHP Built-in Web Server.M2" />
-      <item itemvalue="PHP Script.wunschgericht" />
       <item itemvalue="PHP Script.index.php" />
+      <item itemvalue="PHP Script.wunschgericht" />
       <item itemvalue="PHP Script.index.php (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.index.php (1)" />
+        <item itemvalue="JavaScript Debug.m4_6a_queryparameter.blade.php" />
         <item itemvalue="JavaScript Debug.m4_6a_queryparameter.blade.php" />
         <item itemvalue="PHP Script.index.php (1)" />
       </list>
@@ -508,6 +509,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="478" y="16" width="579" height="801" key="find.popup/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606921786411" />
+    <state x="396" y="130" key="git4idea.branch.GitSmartOperationDialog" timestamp="1607021321256">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="396" y="130" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607021321256" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1605264166337">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
