@@ -46,4 +46,21 @@ class ExampleController
         ];
         return view('examples.pages.m4_6d_page_2',$vars);
     }
+
+    public function werbeseite() {
+        $vars = [
+            'data' => $data = db_gericht_select_all(),
+            'title' => $title = 'E-Mensa'
+        ];
+        return view('e_mensa.werbeseite',$vars);
+    }
+    /*public function layout() {
+        $vars = [
+            'data' => $data = db_gericht_select_all(),
+            'title' => $title = 'E-Mensa'
+        ];
+        return view('e_mensa.e_mensa',$vars);
+    }*/
+
+
 }

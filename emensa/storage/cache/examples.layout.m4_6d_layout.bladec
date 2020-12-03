@@ -4,21 +4,20 @@
  <title><?php echo $this->yieldContent('title'); ?></title>
 </head>
 <body>
- <header>
+<header>
  <?php $this->startSection('header'); ?>
  header
  <?php echo $this->yieldSection(); ?>
- </header>
- <main>
+</header>
+<main>
  <?php $this->startSection('main'); ?>
  <?php echo $this->yieldSection(); ?>
- </main>
- <footer>
+</main>
+<footer>
  <?php $this->startSection('footer'); ?>
  <?php echo $this->yieldSection(); ?>
- </footer>
+</footer>
 </body>
-
 
 
 </html>

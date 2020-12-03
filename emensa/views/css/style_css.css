@@ -1,0 +1,299 @@
+/**
+ * Praktikum DBWT. Autoren:
+ * Fabian, Kirchhoff, 3191755
+ * Glenn, Verhaag, 3173673
+ */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+/**Allgemein--------------------------------------------------------*/
+hr {
+    height: 3px;
+    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+}
+
+main {
+    margin: auto;
+    width: 73%;
+    font-family: Julius Sans One, "Times New Roman", serif;
+    font-size: 20px;
+}
+
+footer {
+    margin: auto;
+    width: 73%;
+    font-family: Julius Sans One, "Times New Roman", serif;
+    font-size: 20px;
+}
+
+section {
+    padding-top: 25px;
+}
+/**Logo--------------------------------------------------------*/
+#Logo_neu{
+    margin: 0px 0px -30px -50px;
+}
+
+
+/**LINKS--------------------------------------------------------*/
+#Links li {
+    display: inline;
+    margin-left: 10px;
+    font-family: Julius Sans One, "Times New Roman", serif;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#Links {
+    margin-left: 170px;
+    margin-top: -37px;
+}
+
+#Links a {
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+#Links a:hover {
+    color: steelblue;
+}
+
+/**Tabelle--------------------------------------------------------*/
+#gerichtTabelle {
+    font-family: Julius Sans One, "Times New Roman", serif;
+    border-collapse: collapse;
+    /**Dünne ränder*/
+    width: 100%;
+}
+
+/**alle Spalten*/
+#gerichtTabelle td, #gerichtTabelle th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/**nth-child() gibt jeder zweiten Spalte eine graue Farbe*/
+#gerichtTabelle tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#gerichtTabelle tr:hover {
+    background-color: #ddd;
+}
+
+/**Zeilen der ersten Spalte */
+#gerichtTabelle th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+}
+
+/**Erste Zeile der Tabelle*/
+#zeile1 {
+    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+}
+
+/**zahlen--------------------------------------------------------*/
+#zahlen div {
+    display: inline-flex;
+    border: transparent;
+    padding: 5px;
+    margin-left: -10px;
+    text-align: center;
+}
+
+#zahlen p {
+    padding: 10px;
+    margin-top: -5px;
+}
+
+#zahlen p:nth-child(1) {
+    color: white;
+    border: 2px solid;
+    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+    border-radius: 12px;
+}
+
+/**Newsletter--------------------------------------------------------*/
+fieldset {
+    border: transparent;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+fieldset label, select {
+    font-size: medium;
+    color: grey;
+}
+
+
+/*Styling der ICONS*/
+#kontakt .icon {
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+/*Icons*/
+.fa-envelope, .fa-language, .fa-lock {
+    margin-left: 20px;
+}
+
+.fa-user {
+    margin-left: -20px;
+}
+
+
+/*Styling des icons des Datenschutzes*/
+#lock {
+    margin-top: 3px;
+    min-width: 20px;
+    max-height: 20px;
+    border-radius: 12px;
+    /*Abgerundete Ecken*/;
+}
+
+/*Styling des checkbox des Datenschutzes*/
+#Datenschutz {
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 12px;
+}
+
+/*Styling des Newsletter Submit buttons*/
+#kontakt input[type=submit] {
+    margin-left: 20px;
+    color: black;
+    background-color: white;
+    border-color: rgb(179, 89, 0);
+    border-radius: 12px;
+}
+
+/*Button submit nur anzeigen wenn Datenschutz checked*/
+#Datenschutz:checked ~ #submit {
+    visibility: visible;
+}
+
+/*Button submit nicht anzeigen*/
+#submit {
+    visibility: hidden;
+}
+
+/*Text unter letzter Section
+section + p {
+    text-align: center;
+    font-size: larger;
+}*/
+
+/*Newsletter formatieren*/
+#name, #email, #sprache {
+    border: 1px solid grey;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/*Hover effect*/
+#name:hover, #email:hover, #sprache:hover {
+    border: 3px solid black;
+}
+
+
+/**Wichtig--------------------------------------------------------*/
+#wichtig {
+    margin-bottom: 50px;
+}
+
+#wichtig ul li {
+    padding: 5px;
+    list-style-type: none;
+    /*Keine Punkte*/;
+}
+
+/*Überschriften*/
+h1, h2, h3, h4, h5 {
+    font-size: larger;
+}
+
+/*Pfeile vor Liste*/
+.fa-angle-right {
+    margin-right: 10px;
+}
+
+/**footer--------------------------------------------------------*/
+footer li {
+    font-size: medium;
+    padding: 10px;
+    display: inline;
+}
+
+/*Kante bei jedem element einfügen außer beim ersten*/
+footer ul li + li {
+    border-left: 2px solid grey;
+}
+
+footer ul {
+    text-align: center;
+}
+
+/*Text unter Liste zentrieren*/
+#wichtig + p {
+    text-align: center;
+}
+
+
+/**Allergene--------------------------------------------------------*/
+.AllergenListe {
+    columns: 4 12em; /*In 4 Reihen anzeigen*/
+    font-size: small;
+    padding: 10px;
+    line-height: 0.5em;
+}
+
+/*Keine "Listenpunkte" */
+#Allergene ul li {
+    list-style-type: none;
+}
+
+/*Button position erhöhen*/
+#Allergene {
+    margin-top: -25px;
+}
+
+/*Design vom icon*/
+#Allergene .icon {
+    padding: 5px;
+    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+    color: white;
+    min-width: 45px;
+    text-align: center;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+/*Design Button*/
+#AllergenButton {
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 12px;
+}
+
+/*Wenn checkbox = checked -> zeige Liste der Allergene*/
+#AllergenButton:checked ~ #AllergenListe {
+    display: block;
+}
+
+/*Zeige Liste der Allergen nicht*/
+#AllergenListe {
+    display: none;
+}
+
