@@ -16,7 +16,7 @@
         <ul>
             <li><a href="/demo/demo">Demo</a></li>
             <li><a href="/demo/dbconnect">Datenbank: Gerichte</a></li>
-            <li><a href="/werbeseite/pages/werbeseite">E-Mensa Werbeseite</a></li>
+            <li><a href="/werbeseite">E-Mensa Werbeseite</a></li>
         </ul>
     </nav>
     <footer>

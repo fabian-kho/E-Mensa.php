@@ -1,6 +1,7 @@
 <?php
 require_once('../models/kategorie.php');
 require_once('../models/gericht.php');
+require_once ('../models/gerichteÜbersicht.php');
 
 
 class ExampleController
@@ -31,6 +32,8 @@ class ExampleController
             return $this->m4_6d_page_2();
         else if($vars['no']== '1')
             return $this->m4_6d_page_1();
+
+        return $this->m4_6d_page_1();
     }
     public function m4_6d_page_1() {
         $vars = [
@@ -48,11 +51,9 @@ class ExampleController
     }
 
     public function werbeseite() {
-        $vars = [
-            'data' => $data = db_gericht_select_all(),
-            'title' => $title = 'E-Mensa'
-        ];
-        return view('e_mensa.werbeseite',$vars);
+
+        $data = db_gericht_select_all_new();
+        return view('e_mensa.werbeseite',['data' => $data]);
     }
     /*public function layout() {
         $vars = [

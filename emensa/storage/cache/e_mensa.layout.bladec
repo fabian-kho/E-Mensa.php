@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <title><?php echo $this->yieldContent('title'); ?></title>
+ <?php $this->startSection('head'); ?>
+ <?php echo $this->yieldSection(); ?>
+</head>
+<body>
+<header>
+ <?php $this->startSection('header'); ?>
+ <?php echo $this->yieldSection(); ?>
+ <?php $this->startSection('nav'); ?>
+ <?php echo $this->yieldSection(); ?>
+</header>
+<main>
+ <?php $this->startSection('text'); ?>
+ <?php echo $this->yieldSection(); ?>
+ <?php $this->startSection('gerichte'); ?>
+ <?php echo $this->yieldSection(); ?>
+ <?php $this->startSection('misc'); ?>
+ <?php echo $this->yieldSection(); ?>
+</main>
+<?php $this->startSection('trennlinie'); ?>
+<?php echo $this->yieldSection(); ?>
+<footer>
+ <?php $this->startSection('footer'); ?>
+ <?php echo $this->yieldSection(); ?>
+</footer>
+</body>
+
+
+</html>

@@ -9,7 +9,6 @@ function db_gericht_select_all() {
     $result = mysqli_query($link, $sql);
 
     $data = mysqli_fetch_all($result, MYSQLI_BOTH);
-
     mysqli_close($link);
     return $data;
 }
