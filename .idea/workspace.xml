@@ -13,23 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Aufgabe7">
-      <change afterPath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.layout.bladec" afterDir="false" />
+    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Aufgabe7 erledigt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/controllers/ExampleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/controllers/ExampleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/models/gericht.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/gericht.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/models/gerichteÜbersicht.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/gerichteÜbersicht.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/home.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/home.bladec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/werbeseite.pages.child.bladec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/werbeseite.pages.werbeseite.bladec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/werbeseite.werbeseite.bladec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/style_css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/e_mensa/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/e_mensa/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/besucher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/besucher.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werbeseite/sql/werbeseite_daten.sql" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/sql/werbeseite_daten.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/sql/E_Mensa.sql" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/sql/E_Mensa.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +225,7 @@
       <workItem from="1606918356629" duration="357000" />
       <workItem from="1606918729394" duration="11172000" />
       <workItem from="1606999787733" duration="5466000" />
-      <workItem from="1607006922332" duration="9880000" />
+      <workItem from="1607006922332" duration="12750000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -353,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607008392925</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Aufgabe7 erledigt">
+      <created>1607017684470</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607017684470</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +379,8 @@
     <MESSAGE value="Meldung 'Erfolgreich zum Newsletter angemeldet!' hinzugefügt" />
     <MESSAGE value="Aufgabe 6 c und d erledigt" />
     <MESSAGE value="Aufgabe7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe7" />
+    <MESSAGE value="Aufgabe7 erledigt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe7 erledigt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="72" key="#CLI_Interpreters" timestamp="1606564767089">
@@ -445,28 +439,28 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="363" y="122" key="Github.UntrackedFilesDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258350744" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1607016461959">
+    <state width="1112" height="200" key="GridCell.Tab.0.bottom" timestamp="1607020003555">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607016461959" />
+    <state width="1112" height="200" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607020003555" />
     <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606911694471" />
     <state width="1895" height="413" key="GridCell.Tab.0.bottom/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1607016461959">
+    <state width="1112" height="200" key="GridCell.Tab.0.center" timestamp="1607020003555">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607016461959" />
+    <state width="1112" height="200" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607020003555" />
     <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606911694470" />
     <state width="1895" height="413" key="GridCell.Tab.0.center/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1607016461958">
+    <state width="1112" height="200" key="GridCell.Tab.0.left" timestamp="1607020003555">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607016461958" />
+    <state width="1112" height="200" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607020003555" />
     <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606911694470" />
     <state width="1895" height="413" key="GridCell.Tab.0.left/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1607016461959">
+    <state width="1112" height="200" key="GridCell.Tab.0.right" timestamp="1607020003555">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607016461959" />
+    <state width="1112" height="200" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607020003555" />
     <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606911694471" />
     <state width="1895" height="413" key="GridCell.Tab.0.right/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1605358516783">
@@ -491,15 +485,15 @@
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606900194784" />
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1606492194063" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1607008432299">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1607020126041">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607008432299" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607020126041" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606673935989" />
-    <state x="631" y="305" width="354" height="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606655481090">
+    <state x="631" y="305" width="354" height="264" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1607018079492">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="631" y="305" width="354" height="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606567181404" />
+    <state x="631" y="305" width="354" height="264" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607018079492" />
     <state x="631" y="305" width="312" height="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834@0.0.1536.834" timestamp="1606655481090" />
     <state x="93" y="93" width="1350" height="648" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605709680843">
       <screen x="0" y="0" width="1536" height="834" />

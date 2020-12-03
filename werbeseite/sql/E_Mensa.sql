@@ -48,7 +48,10 @@ create table kategorie
         primary key,
     name      varchar(80) not null,
     eltern_id tinyint     null,
-    bildname  varchar(80) null
+    bildname  varchar(80) null,
+    constraint kategorie_kategorie_eltern_id_fk
+        foreign key (eltern_id) references kategorie (id)
+            on update cascade
 );
 
 create table gericht_hat_kategorie

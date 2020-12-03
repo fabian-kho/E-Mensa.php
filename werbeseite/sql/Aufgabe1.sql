@@ -25,3 +25,7 @@ create table ersteller_wunschgericht
         foreign key (ersteller_email) references ersteller (email)
             on update cascade
 );
+
+ALTER TABLE kategorie
+    ADD CONSTRAINT kategorie_kategorie_eltern_id_fk
+        FOREIGN KEY (eltern_id) REFERENCES kategorie(id);
