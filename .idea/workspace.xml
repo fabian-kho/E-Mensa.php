@@ -13,8 +13,25 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Aufgabe7 erledigt">
+    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Aufgabe8 hinzugefügt">
+      <change afterPath="$PROJECT_DIR$/emensa/models/allergeneÜbersicht.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emensa/models/newsletter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emensa/models/zaehler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emensa/public/css/wunschgerichte_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emensa/public/db/besucher.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emensa/public/nl-admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emensa/public/wunschgerichte.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/To-Do.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/controllers/ExampleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/controllers/ExampleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/models/gerichteÜbersicht.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/gerichteÜbersicht.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/public/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/style_css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.layout.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.layout.bladec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/views/e_mensa/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/e_mensa/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/Newsletter/NL_Anmeldungen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/db/NL_Anmeldungen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werbeseite/sql/Aufgabe1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/werbeseite/sql/Aufgabe1.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +106,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Meilenstein 1/INF_20_Kirchhoff_1/werbeseite/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/emensa/public/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -103,22 +120,23 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\Meilenstein 2_3\INF_WI_20_Kirchhoff_Verhaag_3\emensa\controllers" />
-      <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\Meilenstein 2_3\INF_WI_20_Kirchhoff_Verhaag_3\emensa\views\werbeseite\layout" />
-      <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\Meilenstein 2_3\INF_WI_20_Kirchhoff_Verhaag_3\emensa\public\img" />
-      <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\Meilenstein 2_3\INF_WI_20_Kirchhoff_Verhaag_3\emensa\views\werbeseite" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\INF_WI_20_Kirchhoff_Verhaag\emensa\public\db" />
+      <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\INF_WI_20_Kirchhoff_Verhaag\emensa\public" />
       <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\Meilenstein 2_3\INF_WI_20_Kirchhoff_Verhaag_3\emensa\public" />
       <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\Meilenstein 2_3\INF_WI_20_Kirchhoff_Verhaag_3\emensa\views" />
       <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\Meilenstein 2_3\INF_WI_20_Kirchhoff_Verhaag_3\emensa\views\werbeseite" />
-      <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\Meilenstein 2_3\INF_WI_20_Kirchhoff_Verhaag_3\emensa\public\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\INF_WI_20_Kirchhoff_Verhaag\emensa\public\css" />
+      <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\INF_WI_20_Kirchhoff_Verhaag\emensa\public" />
+      <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\INF_WI_20_Kirchhoff_Verhaag\emensa\views" />
+      <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\Meilenstein 2_3\INF_WI_20_Kirchhoff_Verhaag_3\emensa\controllers" />
       <recent name="C:\Users\fabia\Documents\Studium\3.Semester\DBWT\Praktika\Meilenstein 2_3\INF_WI_20_Kirchhoff_Verhaag_3\emensa\views\werbeseite\layout" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.E-Mensa">
-    <configuration name="m4_6a_queryparameter.blade.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/index.php/emensa/views/examples/m4_6a_queryparameter.blade.php" useBuiltInWebServerPort="true">
+    <configuration name="m4_6a_queryparameter.blade.php" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/index.php/emensa/views/examples/m4_6a_queryparameter.blade.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="wunschgerichte.php" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/index.php/werbeseite/wunschgerichte.php" useBuiltInWebServerPort="true">
@@ -133,7 +151,7 @@
     <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="9050">
       <method v="2" />
     </configuration>
-    <configuration name="index.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/emensa/public/index.php">
+    <configuration name="index.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/emensa/public/index.php">
       <method v="2" />
     </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/werbeseite/index.php">
@@ -163,8 +181,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.index.php (1)" />
-        <item itemvalue="JavaScript Debug.m4_6a_queryparameter.blade.php" />
         <item itemvalue="JavaScript Debug.m4_6a_queryparameter.blade.php" />
         <item itemvalue="PHP Script.index.php (1)" />
       </list>
@@ -227,6 +243,12 @@
       <workItem from="1606918729394" duration="11172000" />
       <workItem from="1606999787733" duration="5466000" />
       <workItem from="1607006922332" duration="12750000" />
+      <workItem from="1607022402573" duration="35000" />
+      <workItem from="1607354459982" duration="127000" />
+      <workItem from="1607421134014" duration="1541000" />
+      <workItem from="1607423775079" duration="46000" />
+      <workItem from="1607437448022" duration="166000" />
+      <workItem from="1607505471373" duration="5992000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -347,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607017684470</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Aufgabe8 hinzugefügt">
+      <created>1607021490582</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607021490582</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +410,8 @@
     <MESSAGE value="Aufgabe 6 c und d erledigt" />
     <MESSAGE value="Aufgabe7" />
     <MESSAGE value="Aufgabe7 erledigt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe7 erledigt" />
+    <MESSAGE value="Aufgabe8 hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe8 hinzugefügt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="72" key="#CLI_Interpreters" timestamp="1606564767089">
@@ -405,10 +435,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="194" y="256" key="#SQL_Dialects/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605529990127" />
-    <state x="270" y="25" width="1089" height="809" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607007888378">
+    <state x="270" y="25" width="1089" height="809" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607022425648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="270" y="25" width="1089" height="809" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607007888378" />
+    <state x="270" y="25" width="1089" height="809" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607022425648" />
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1606898011506" />
     <state x="536" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606926567982">
       <screen x="0" y="0" width="1536" height="834" />
@@ -440,29 +470,29 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="363" y="122" key="Github.UntrackedFilesDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258350744" />
-    <state width="1112" height="200" key="GridCell.Tab.0.bottom" timestamp="1607020003555">
+    <state width="1493" height="251" key="GridCell.Tab.0.bottom" timestamp="1607511508685">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1112" height="200" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607020003555" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606911694471" />
+    <state width="1493" height="234" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607422687750" />
+    <state width="1493" height="251" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1607511508685" />
     <state width="1895" height="413" key="GridCell.Tab.0.bottom/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1112" height="200" key="GridCell.Tab.0.center" timestamp="1607020003555">
+    <state width="1493" height="251" key="GridCell.Tab.0.center" timestamp="1607511508685">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1112" height="200" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607020003555" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606911694470" />
+    <state width="1493" height="234" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607422687750" />
+    <state width="1493" height="251" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1607511508685" />
     <state width="1895" height="413" key="GridCell.Tab.0.center/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1112" height="200" key="GridCell.Tab.0.left" timestamp="1607020003555">
+    <state width="1493" height="251" key="GridCell.Tab.0.left" timestamp="1607511508684">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1112" height="200" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607020003555" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606911694470" />
+    <state width="1493" height="234" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607422687750" />
+    <state width="1493" height="251" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1607511508684" />
     <state width="1895" height="413" key="GridCell.Tab.0.left/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1112" height="200" key="GridCell.Tab.0.right" timestamp="1607020003555">
+    <state width="1493" height="251" key="GridCell.Tab.0.right" timestamp="1607511508685">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1112" height="200" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607020003555" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606911694471" />
+    <state width="1493" height="234" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607422687750" />
+    <state width="1493" height="251" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1607511508685" />
     <state width="1895" height="413" key="GridCell.Tab.0.right/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1605358516783">
       <screen x="0" y="0" width="1536" height="834" />
@@ -476,20 +506,20 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="407" y="179" key="MultipleFileMergeDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606923383691" />
-    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1606928121599">
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1607509025542">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606928121599" />
-    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1606675841391" />
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1607509025542" />
     <state x="277" y="62" key="SettingsEditor" timestamp="1606900194784">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606900194784" />
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1606492194063" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1607020126041">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1607021494380">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607020126041" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607021494380" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606673935989" />
     <state x="631" y="305" width="354" height="264" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1607018079492">
       <screen x="0" y="0" width="1536" height="834" />
@@ -500,10 +530,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1605709680843" />
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606923400082">
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607021376495">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606923400082" />
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607021376495" />
     <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1606897224234" />
     <state x="478" y="16" width="579" height="801" key="find.popup" timestamp="1606921786411">
       <screen x="0" y="0" width="1536" height="834" />
@@ -518,10 +548,10 @@
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605264166337" />
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1604575819280" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1607005094561">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1607508891483">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607005094561" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1606492196258" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1607508891483" />
   </component>
 </project>

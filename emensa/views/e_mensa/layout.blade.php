@@ -13,20 +13,12 @@
     @show
 </header>
 <main>
-    @section('text')
-    @show
-    @section('gerichte')
-    @show
-    @section('misc')
+    @section('main')
     @show
 </main>
-@section('trennlinie')
-@show
 <footer>
     @section('footer')
     @show
 </footer>
 </body>
-
-
 </html>

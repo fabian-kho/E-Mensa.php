@@ -13,20 +13,12 @@
  <?php echo $this->yieldSection(); ?>
 </header>
 <main>
- <?php $this->startSection('text'); ?>
- <?php echo $this->yieldSection(); ?>
- <?php $this->startSection('gerichte'); ?>
- <?php echo $this->yieldSection(); ?>
- <?php $this->startSection('misc'); ?>
+ <?php $this->startSection('main'); ?>
  <?php echo $this->yieldSection(); ?>
 </main>
-<?php $this->startSection('trennlinie'); ?>
-<?php echo $this->yieldSection(); ?>
 <footer>
  <?php $this->startSection('footer'); ?>
  <?php echo $this->yieldSection(); ?>
 </footer>
 </body>
-
-
 </html>

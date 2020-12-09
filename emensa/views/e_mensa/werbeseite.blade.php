@@ -1,5 +1,7 @@
 @extends('e_mensa.layout')
 
+
+
 @section('title','E-Mensa')
 
 @section('head')
@@ -27,7 +29,7 @@
     <hr/>
 @endsection
 
-@section('text')
+@section('main')
 
     <section id="ankündigung">
         <h1>Bald gibt es Essen auch online ;)</h1>
@@ -41,9 +43,6 @@
             sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
     </section>
 
-@endsection
-
-@section('gerichte')
     <section id="speisen">
         <h2>Köstlichkeiten, die Sie erwarten</h2>
         <table id="gerichtTabelle">
@@ -52,7 +51,7 @@
                 <th>Preis intern</th>
                 <th>Preis extern</th>
             </tr>
-            @forelse($data as $a)
+            @forelse($gerichte as $a)
                 <td>{{$a['name']}} <span style='font-size: medium; float: right'>{{$a['code']}}</span></td>
                 <td>{{$a['preis_intern']}}</td>
                 <td>{{$a['preis_extern']}}</td>
@@ -60,11 +59,80 @@
             @empty
                 <td>Leer!!!!!!!!!!</td></tr>
             @endforelse
+
         </table>
     </section>
-@endsection
 
-@section('misc')
+    <!--Allergene-------------------------------------------------------------------------------------->
+    <section id="Allergene">
+        <i class="fas fa-allergies icon" id="lock"></i>
+        <input title="Allergene anzeigen" type="checkbox" id="AllergenButton" name="AllergenButton" required>
+
+        <ul id="AllergenListe" class="AllergenListe">
+        @forelse($allergene as $a)
+                <li><i class="fas fa-angle-right"></i>
+                    {{$a['Allergen']}}
+                    {{$a['Code']}}</li>
+        @empty
+            <td>Leer!!!!!!!!!!</td></tr>
+        @endforelse
+        </ul>
+
+        </section>
+
+    <!--Zahlen----------------------------------------------------->
+    <section id="zahlen">
+        <h3>E-Mensa in Zahlen</h3>
+        <div id="zahl1"><p>{{$besucher}}</p>
+            <p>Besuche</p></div>
+        <div id="zahl2"><p>{{$anmeldungen}} </p>
+            <p>Anmeldungen zum Newsletter</p></div>
+        <div id="zahl3"><p>{{$anzahlGerichte['anzahl']}}</p>
+            <p>Speisen</p></div>
+
+    </section>
+
+    <!--Newsletter----------------------------------------------------->
+    <section id="kontakt">
+        <h4>Interesse geweckt? Wir informieren Sie!</h4>
+        <form method="post">
+            <fieldset>
+
+                <i class="fa fa-user icon"></i>
+                <label for="name"></label><input type="text" id="name" name="name" size="30"
+                                                 placeholder="Bitte geben Sie Ihren Namen ein"
+                                                 required>
+                <br><br>
+
+                <i class="fa fa-envelope icon"></i>
+                <label for="email"></label><input type="text" id="email" name="email" size="30"
+                                                  placeholder="Bitte geben Sie Ihre E-Mail ein"
+                                                  required>
+                <br><br>
+
+                <i class="fas fa-language icon"></i>
+                <label for="sprache"></label><select name="sprache" id="sprache" size="1">
+                    <option value="English">English</option>
+                    <option value="Deutsch" selected>Deutsch</option>
+                    <option value="Denglisch">Denglisch</option>
+                </select>
+                <br><br>
+
+                <i class="fas fa-lock icon" id="lock"></i>
+                <input title="Zustimmung zum Datenschutz" type="checkbox" id="Datenschutz" name="Datenschutz" required>
+                <br>
+
+                <input name="submit" id="submit" type="submit" value="Zum Newsletter anmelden"><br><br>
+            </fieldset>
+        </form>
+        <p>@if(!empty($fehler) && $fehler!= 'stored'){{$fehler}}
+            @elseif($fehler === 'stored') Erfolgreich zum Newsletter angemeldet!
+                @endif
+        </p>
+
+    </section>
+
+    <!--Wichtig----------------------------------------------------->
     <section id="wichtig">
         <h5>Das ist uns Wichtig</h5>
         <ul>
@@ -77,11 +145,10 @@
     <p>Wir freuen uns auf Ihren Besuch!</p>
 @endsection
 
-@section('trennlinie')
-    <hr>
-@endsection
+
 
 @section('footer')
+    <hr>
     <ul>
         <li>(c) E-Mensa GmbH</li>
         <li>Fabian Kirchhoff & Glenn Verhaag</li>

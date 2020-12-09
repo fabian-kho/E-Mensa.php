@@ -29,3 +29,6 @@ create table ersteller_wunschgericht
 ALTER TABLE kategorie
     ADD CONSTRAINT kategorie_kategorie_eltern_id_fk
         FOREIGN KEY (eltern_id) REFERENCES kategorie(id);
+
+
+Select * FROM wunschgericht LIMIT 5;

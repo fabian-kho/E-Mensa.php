@@ -2,6 +2,11 @@
 require_once('../models/kategorie.php');
 require_once('../models/gericht.php');
 require_once ('../models/gerichteÜbersicht.php');
+require_once ('../models/allergeneÜbersicht.php');
+require_once ('../models/zaehler.php');
+require_once ('../models/newsletter.php');
+
+
 
 
 class ExampleController
@@ -51,9 +56,17 @@ class ExampleController
     }
 
     public function werbeseite() {
+        $vars = [
+            'gerichte' => $gerichte = db_gericht_select_all_new(),
+            'allergene' =>  $allergene = db_allergene_select_all_new(),
+            'besucher' =>  $besucher = zaehlerBesucher(),
+            'anmeldungen' =>  $anmeldungen = zaehlerAnmeldungen(),
+            'anzahlGerichte' =>  $anzahlGerichte = zaehlerGerichte(),
+            'fehler' =>  $fehler = newsletter_anmeldung()
 
-        $data = db_gericht_select_all_new();
-        return view('e_mensa.werbeseite',['data' => $data]);
+        ];
+
+        return view('e_mensa.werbeseite',$vars);
     }
     /*public function layout() {
         $vars = [

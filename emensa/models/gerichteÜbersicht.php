@@ -7,7 +7,7 @@ function db_gericht_select_all_new()
     $sql = "SELECT name, GROUP_CONCAT(code) as code  ,preis_intern, preis_extern FROM gericht
                     LEFT JOIN gericht_hat_allergen gha on gericht.id = gha.gericht_id
                     GROUP BY name
-                    ORDER BY name ASC ";
+                    ORDER BY name ASC LIMIT 5";
 
     $result = mysqli_query($link, $sql);
     $i=0;

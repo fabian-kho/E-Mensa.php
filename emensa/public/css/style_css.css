@@ -17,14 +17,12 @@ main {
     font-family: Julius Sans One, "Times New Roman", serif;
     font-size: 20px;
 }
-
-footer {
+/*footer:not(hr){
     margin: auto;
     width: 73%;
     font-family: Julius Sans One, "Times New Roman", serif;
     font-size: 20px;
-}
-
+}*/
 section {
     padding-top: 25px;
 }
