@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <title>Werbeseite</title>
     <link rel="stylesheet" type="text/css" href="css/style_css.css">
+
     <!-- Icon Kit -->
     <script src="https://kit.fontawesome.com/2661bde70a.js" crossorigin="anonymous"></script>
 @endsection
@@ -43,6 +44,25 @@
             sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
     </section>
 
+    <div class="container">
+        <div class="box">
+            <img src="mySlides/Bratkartoffeln.jpg">
+            <span>Bratkartoffeln</span>
+        </div>
+        <div class="box">
+            <img src="https://image.brigitte.de/11724870/t/_Z/v3/w1440/r1/-/pommes-frites-mit-currywurst.jpg">
+            <span>Currywurst</span>
+        </div>
+        <div class="box">
+            <img src="https://images.lecker.de/,id=e18f900c,b=lecker,w=610,cg=c.jpg">
+            <span>Kartoffelpuffer</span>
+        </div>
+        <div class="box">
+            <img src="https://img.chefkoch-cdn.de/rezepte/3300951490191326/bilder/1136594/crop-960x720/spaghettigemuese-mit-forellenfilet.jpg">
+            <span>Forellenfilet</span>
+        </div>
+    </div>
+
     <section id="speisen">
         <h2>Köstlichkeiten, die Sie erwarten</h2>
         <table id="gerichtTabelle">
@@ -52,7 +72,7 @@
                 <th>Preis extern</th>
             </tr>
             @forelse($gerichte as $a)
-                <td>{{$a['name']}} <span style='font-size: medium; float: right'>{{$a['code']}}</span></td>
+                <td>{{$a['name']}} <span id="allergenCode" style='font-size: medium; float: right'>{{$a['code']}}</span></td>
                 <td>{{$a['preis_intern']}}</td>
                 <td>{{$a['preis_extern']}}</td>
                 </tr>
