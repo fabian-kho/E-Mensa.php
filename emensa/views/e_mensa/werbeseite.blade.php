@@ -1,13 +1,15 @@
 @extends('e_mensa.layout')
 
-
+<!--Fabian -> 2,4,5
+    Glenn 1,3-->
 
 @section('title','E-Mensa')
 
 @section('head')
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Werbeseite</title>
     <link rel="stylesheet" type="text/css" href="css/style_css.css">
+    <script type="text/javascript" src="slideshow.js"></script>
 
     <!-- Icon Kit -->
     <script src="https://kit.fontawesome.com/2661bde70a.js" crossorigin="anonymous"></script>
@@ -44,24 +46,52 @@
             sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
     </section>
 
-    <div class="container">
-        <div class="box">
-            <img src="mySlides/Bratkartoffeln.jpg">
-            <span>Bratkartoffeln</span>
+    <!--Images--------------------------------------------------------->
+
+    @for($i=0;$i<$anzahlGerichte['anzahl'];$i)
+        <div class="container ">
+            <div class="box">
+                @if(file_exists($bilder[$i]['bildname']))
+                    <img src="img/gerichte/00_image_missing.jpg">
+                @else
+                    <img src="img/gerichte/{{$bilder[$i]['bildname']}}">
+                @endif
+                <span>{{$bilder[$i++]['name']}}</span>
+            </div>
+            <div class="box">
+                @if(file_exists($bilder[$i]['bildname']))
+                    <img src="img/gerichte/00_image_missing.jpg">
+                @else
+                    <img src="img/gerichte/{{$bilder[$i]['bildname']}}">
+                @endif
+                <span>{{$bilder[$i++]['name']}}</span>
+            </div>
+            <div class="box">
+                @if(file_exists($bilder[$i]['bildname']))
+                    <img src="img/gerichte/00_image_missing.jpg">
+                @else
+                    <img src="img/gerichte/{{$bilder[$i]['bildname']}}">
+                @endif
+                <span>{{$bilder[$i++]['name']}}</span>
+            </div>
+            <div class="box">
+                @if(file_exists($bilder[$i]['bildname']))
+                    <img src="img/gerichte/00_image_missing.jpg">
+                @else
+                    <img src="img/gerichte/{{$bilder[$i]['bildname']}}">
+                @endif
+                <span>{{$bilder[$i++]['name']}}</span>
+            </div>
         </div>
-        <div class="box">
-            <img src="https://image.brigitte.de/11724870/t/_Z/v3/w1440/r1/-/pommes-frites-mit-currywurst.jpg">
-            <span>Currywurst</span>
-        </div>
-        <div class="box">
-            <img src="https://images.lecker.de/,id=e18f900c,b=lecker,w=610,cg=c.jpg">
-            <span>Kartoffelpuffer</span>
-        </div>
-        <div class="box">
-            <img src="https://img.chefkoch-cdn.de/rezepte/3300951490191326/bilder/1136594/crop-960x720/spaghettigemuese-mit-forellenfilet.jpg">
-            <span>Forellenfilet</span>
-        </div>
-    </div>
+    @endfor
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+    </script>
+    <!--Tabelle---------------------------------------------------------->
 
     <section id="speisen">
         <h2>Köstlichkeiten, die Sie erwarten</h2>
@@ -72,7 +102,8 @@
                 <th>Preis extern</th>
             </tr>
             @forelse($gerichte as $a)
-                <td>{{$a['name']}} <span id="allergenCode" style='font-size: medium; float: right'>{{$a['code']}}</span></td>
+                <td>{{$a['name']}} <span id="allergenCode" style='font-size: medium; float: right'>{{$a['code']}}</span>
+                </td>
                 <td>{{$a['preis_intern']}}</td>
                 <td>{{$a['preis_extern']}}</td>
                 </tr>
@@ -89,16 +120,21 @@
         <input title="Allergene anzeigen" type="checkbox" id="AllergenButton" name="AllergenButton" required>
 
         <ul id="AllergenListe" class="AllergenListe">
-        @forelse($allergene as $a)
+            @forelse($allergene as $a)
                 <li><i class="fas fa-angle-right"></i>
                     {{$a['Allergen']}}
                     {{$a['Code']}}</li>
-        @empty
-            <td>Leer!!!!!!!!!!</td></tr>
-        @endforelse
+            @empty
+                <td>Leer!!!!!!!!!!</td></tr>
+            @endforelse
         </ul>
 
-        </section>
+    </section>
+    <!--Wunschgericht-------------------------------------------------------------------------------------->
+    <h6><a id="wunschgerichtLink" href="/wunschgerichte">Wunschgericht</a></h6>
+    <p id="wunschgericht">Wenn Sie Gerichte haben die Sie sich wünschen, klicken Sie einfach auf die Überschrift um ihr
+        persönliches Wunschgericht zu erstellen.
+        Mit etwas Glück gibt es ihr Gericht schon bald bei uns im Angebot.</p>
 
     <!--Zahlen----------------------------------------------------->
     <section id="zahlen">
@@ -147,7 +183,7 @@
         </form>
         <p>@if(!empty($fehler) && $fehler!= 'stored'){{$fehler}}
             @elseif($fehler === 'stored') Erfolgreich zum Newsletter angemeldet!
-                @endif
+            @endif
         </p>
 
     </section>

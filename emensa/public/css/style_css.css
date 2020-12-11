@@ -17,6 +17,7 @@ main {
     font-family: Julius Sans One, "Times New Roman", serif;
     font-size: 20px;
 }
+
 /*footer:not(hr){
     margin: auto;
     width: 73%;
@@ -26,8 +27,9 @@ main {
 section {
     padding-top: 25px;
 }
+
 /**Logo--------------------------------------------------------*/
-#Logo_neu{
+#Logo_neu {
     margin: 0px 0px -30px -50px;
 }
 
@@ -64,12 +66,14 @@ section {
     height: 100vh;
 }
 
+/**Images--------------------------------------------------------*/
+
 .box {
     flex: 1;
     overflow: hidden;
     transition: .5s;
     margin: 0 2%;
-    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
     line-height: 0;
 }
 
@@ -81,18 +85,81 @@ section {
 }
 
 .box > span {
-    font-size: 3.8vh;
+    font-size: 3.2vh;
     display: block;
     text-align: center;
     height: 10vh;
     line-height: 2.6;
+    margin-top: 10px;
 }
 
-.box:hover { flex: 1 1 50%; }
+.box:hover {
+    flex: 1 1 50%;
+}
+
 .box:hover > img {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 10vh);
 }
+
+/*W3 Slideshow ***********************************************************/
+.w3-display-left {
+    position: absolute;
+    top: 110%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.w3-display-right {
+    position: absolute;
+    top: 110%;
+    right: 10%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.container {
+    display: none;
+}
+
+.w3-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
+
+.w3-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.w3-disabled *, :disabled * {
+    pointer-events: none
+}
+
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.w3-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
 
 /**Tabelle--------------------------------------------------------*/
 #gerichtTabelle {
@@ -100,6 +167,14 @@ section {
     border-collapse: collapse;
     /**Dünne ränder*/
     width: 100%;
+}
+
+#gerichtTabelle tr:nth-child(n + 12) {
+    visibility: unset;
+}
+
+#gerichtTabelle:hover tr:nth-child(n + 12) {
+    visibility: inherit;
 }
 
 /**alle Spalten*/
@@ -128,6 +203,22 @@ section {
 /**Erste Zeile der Tabelle*/
 #zeile1 {
     background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+}
+
+/*--Wunschgericht--------------------------------------------------------------------------------------*/
+#wunschgericht {
+    margin-top: -40px;
+    font-size: 15px;
+}
+
+#wunschgerichtLink {
+    text-decoration: none;
+    color: black;
+
+}
+
+#wunschgerichtLink:hover {
+    color: steelblue;
 }
 
 /**zahlen--------------------------------------------------------*/
@@ -255,7 +346,7 @@ section + p {
 }
 
 /*Überschriften*/
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-size: larger;
 }
 

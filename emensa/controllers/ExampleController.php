@@ -1,10 +1,10 @@
 <?php
 require_once('../models/kategorie.php');
 require_once('../models/gericht.php');
-require_once('../models/gerichteÜbersicht.php');
-require_once('../models/allergeneÜbersicht.php');
+require_once('../models/allergene.php');
 require_once('../models/zaehler.php');
 require_once('../models/newsletter.php');
+require_once('../models/wunschgerichte.php');
 
 
 class ExampleController
@@ -70,11 +70,20 @@ class ExampleController
             'besucher' => $besucher = zaehlerBesucher(),
             'anmeldungen' => $anmeldungen = zaehlerAnmeldungen(),
             'anzahlGerichte' => $anzahlGerichte = zaehlerGerichte(),
-            'fehler' => $fehler = newsletter_anmeldung()
+            'fehler' => $fehler = newsletter_anmeldung(),
+            'bilder' => $bilder = db_gerichtBilder_select_all()
 
         ];
 
         return view('e_mensa.werbeseite', $vars);
+    }
+
+    public function wunschgerichte()
+    {
+        $vars = [
+            'fehler_WG' => $fehler_WG = wunschgericht_anmeldung()
+        ];
+        return view('e_mensa.wunschgerichte', $vars);
     }
     /*public function layout() {
         $vars = [
