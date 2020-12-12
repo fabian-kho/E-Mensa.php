@@ -1,4 +1,5 @@
 <?php
+session_start();
 const PUBLIC_DIRNAME = "public";
 const CONFIG_WEBROUTES = '../config/web.php';
 const CONFIG_DB = '../config/db.php';

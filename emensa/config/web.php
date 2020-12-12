@@ -24,5 +24,11 @@ return array(
     '/werbeseite'      => 'ExampleController@werbeseite',
     //'/layout'      => 'ExampleController@e_mensa',
 
+    //login
+    '/anmeldung' => 'LoginController@index',
+    '/anmeldung_verifizieren' => 'LoginController@check',
+    '/ende' => 'LoginController@ende',
+
+
 
 );
