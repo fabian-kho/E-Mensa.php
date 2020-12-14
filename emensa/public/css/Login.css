@@ -69,10 +69,18 @@ form.form1 {
 
 
 .email:focus, .password:focus {
-    border: 1px solid rgba(0, 0, 0, 0.18) !important;
+    border: px solid rgba(0, 0, 0, 0.18) !important;
 
 }
 
+.error{
+    padding-bottom: 20px;
+    padding-left: 100px;
+    color:crimson;
+}
+.abschicken{
+    padding-right: 30px;
+}
 .submit {
     cursor: pointer;
     border-radius: 5em;
