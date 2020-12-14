@@ -125,6 +125,11 @@
  </ul>
 
  </section>
+ <!--Wunschgericht-------------------------------------------------------------------------------------->
+ <h6><a id="wunschgerichtLink" href="/wunschgerichte">Wunschgericht</a></h6>
+ <p id="wunschgericht">Wenn Sie Gerichte haben die Sie sich wünschen, klicken Sie einfach auf die Überschrift um ihr
+ persönliches Wunschgericht zu erstellen.
+ Mit etwas Glück gibt es ihr Gericht schon bald bei uns im Angebot.</p>
 
  <!--Zahlen----------------------------------------------------->
  <section id="zahlen">

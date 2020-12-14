@@ -6,7 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 /**Allgemein--------------------------------------------------------*/
-
+hr {
+    height: 3px;
+    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+}
 
 main {
     margin: auto;
@@ -110,7 +113,7 @@ header {
 /*W3 Slideshow ***********************************************************/
 .w3-display-left {
     position: absolute;
-    top: 110%;
+    top: 90%;
     left: 10%;
     transform: translate(0%, -50%);
     -ms-transform: translate(-0%, -50%)
@@ -118,7 +121,7 @@ header {
 
 .w3-display-right {
     position: absolute;
-    top: 110%;
+    top: 90%;
     right: 10%;
     transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%)
@@ -172,7 +175,12 @@ header {
     /**Dünne ränder*/
     width: 100%;
 }
-
+#gerichtTabelle tr:nth-child(n + 12) {
+    visibility:  unset;
+}
+#gerichtTabelle:hover tr:nth-child(n + 12){
+    visibility: inherit;
+}
 /**alle Spalten*/
 #gerichtTabelle td, #gerichtTabelle th {
     border: 1px solid #ddd;
@@ -200,7 +208,20 @@ header {
 #zeile1 {
     background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
 }
+/*--Wunschgericht--------------------------------------------------------------------------------------*/
+#wunschgericht{
+    margin-top: -40px;
+    font-size: 15px;
+}
+#wunschgerichtLink{
+    text-decoration: none;
+    color: black;
 
+}
+
+#wunschgerichtLink:hover {
+    color: steelblue;
+}
 /**zahlen--------------------------------------------------------*/
 #zahlen div {
     display: inline-flex;
@@ -326,7 +347,7 @@ section + p {
 }
 
 /*Überschriften*/
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6{
     font-size: larger;
 }
 
