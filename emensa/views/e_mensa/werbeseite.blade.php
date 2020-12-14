@@ -1,7 +1,6 @@
 @extends('e_mensa.layout')
 
-<!--Fabian -> 2,4,5
-    Glenn 1,3-->
+
 
 @section('title','E-Mensa')
 
@@ -16,37 +15,34 @@
 @endsection
 
 @section('header')
-    <img id="Logo_neu" src="img/EMensa_Logo_neu.png" alt="Logo" width="300" height="175">
-@endsection
 
-@section('nav')
-    <nav id="Links">
-        <ul>
+        <img class="logo" src="img/EMensa_Logo_neu.png" alt="Logo" width="250" height="150">
+
+        <ul class="nav">
+            <li>
+                @if ($_SESSION['login_ok'])
+                    <a href="/abmeldung">{{$_SESSION["name"]}} Abmelden</a>
+                @else
+                    <a href="/anmeldung">Anmelden</a>
+                @endif
+            </li>
             <li><a href="#ankündigung">Ankündigung</a></li>
             <li><a href="#speisen">Speisen</a></li>
             <li><a href="#zahlen">Zahlen</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
             <li><a href="#wichtig">Wichtig für uns</a></li>
         </ul>
-    </nav>
-    <hr/>
+
 @endsection
 
 @section('main')
 
     <section id="ankündigung">
-        <h1>Bald gibt es Essen auch online ;)</h1>
+        <h1>Bald gibt es Essen auch online</h1>
         <p id="textfeld">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
             ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea takimata sanctus est Lorem ipsum dolor
-            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-            labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
     </section>
-
-    <!--Images--------------------------------------------------------->
 
     @for($i=0;$i<$anzahlGerichte['anzahl'];$i)
         <div class="container ">
@@ -91,7 +87,6 @@
         var slideIndex = 1;
         showDivs(slideIndex);
     </script>
-    <!--Tabelle---------------------------------------------------------->
 
     <section id="speisen">
         <h2>Köstlichkeiten, die Sie erwarten</h2>
@@ -102,8 +97,7 @@
                 <th>Preis extern</th>
             </tr>
             @forelse($gerichte as $a)
-                <td>{{$a['name']}} <span id="allergenCode" style='font-size: medium; float: right'>{{$a['code']}}</span>
-                </td>
+                <td>{{$a['name']}} <span id="allergenCode" style='font-size: medium; float: right'>{{$a['code']}}</span></td>
                 <td>{{$a['preis_intern']}}</td>
                 <td>{{$a['preis_extern']}}</td>
                 </tr>
@@ -120,21 +114,16 @@
         <input title="Allergene anzeigen" type="checkbox" id="AllergenButton" name="AllergenButton" required>
 
         <ul id="AllergenListe" class="AllergenListe">
-            @forelse($allergene as $a)
+        @forelse($allergene as $a)
                 <li><i class="fas fa-angle-right"></i>
                     {{$a['Allergen']}}
                     {{$a['Code']}}</li>
-            @empty
-                <td>Leer!!!!!!!!!!</td></tr>
-            @endforelse
+        @empty
+            <td>Leer!!!!!!!!!!</td></tr>
+        @endforelse
         </ul>
 
-    </section>
-    <!--Wunschgericht-------------------------------------------------------------------------------------->
-    <h6><a id="wunschgerichtLink" href="/wunschgerichte">Wunschgericht</a></h6>
-    <p id="wunschgericht">Wenn Sie Gerichte haben die Sie sich wünschen, klicken Sie einfach auf die Überschrift um ihr
-        persönliches Wunschgericht zu erstellen.
-        Mit etwas Glück gibt es ihr Gericht schon bald bei uns im Angebot.</p>
+        </section>
 
     <!--Zahlen----------------------------------------------------->
     <section id="zahlen">
@@ -183,7 +172,7 @@
         </form>
         <p>@if(!empty($fehler) && $fehler!= 'stored'){{$fehler}}
             @elseif($fehler === 'stored') Erfolgreich zum Newsletter angemeldet!
-            @endif
+                @endif
         </p>
 
     </section>

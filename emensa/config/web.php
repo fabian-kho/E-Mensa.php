@@ -24,12 +24,10 @@ return array(
     '/werbeseite'      => 'ExampleController@werbeseite',
     '/wunschgerichte'      => 'ExampleController@wunschgerichte',
 
-    //'/layout'      => 'ExampleController@e_mensa',
-
     //login
     '/anmeldung' => 'LoginController@index',
     '/anmeldung_verifizieren' => 'LoginController@check',
-    '/ende' => 'LoginController@ende',
+    '/abmeldung' => 'LoginController@logout',
 
 
 
