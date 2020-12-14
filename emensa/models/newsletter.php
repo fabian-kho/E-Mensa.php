@@ -1,6 +1,7 @@
 <?php
-
-/** Füge die Gerichte (inklusive der Allergene) in die Tabelle ein **********************************/
+/**
+ * Diese Datei regelt die Anmeldung zum Newsletter
+ */
 function newsletter_anmeldung()
 {
     $blacklist = [1 => 'rcpt.at',

@@ -1,6 +1,6 @@
 <?php
 /**
- * Diese Datei enthält alle SQL Statements für die Tabelle "kategorie"
+ * Diese Datei zählt alle Besucher, Anmeldungen und Gerichte
  */
 function zaehlerBesucher()
 {

@@ -22,6 +22,8 @@ return array(
 
     //Werbeseite:
     '/werbeseite'      => 'ExampleController@werbeseite',
+    '/wunschgerichte'      => 'ExampleController@wunschgerichte',
+
     //'/layout'      => 'ExampleController@e_mensa',
 
     //login
