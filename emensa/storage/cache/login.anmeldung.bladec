@@ -1,3 +1,8 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title','Login'); ?>
+
+<?php $this->startSection('head'); ?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -6,7 +11,9 @@
  <meta name="viewport" content="width=device-width, initial-scale=1" />
  <title>Anmelden</title>
 </head>
+<?php $this->stopSection(); ?>
 
+<?php $this->startSection('main'); ?>
 <body>
 <div class="main">
  <p class="sign" align="center">Anmelden</p>
@@ -21,3 +28,5 @@
 
 </body>
 </html>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('e_mensa.layout'); } ?>

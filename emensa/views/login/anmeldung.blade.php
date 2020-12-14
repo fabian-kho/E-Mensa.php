@@ -1,3 +1,8 @@
+@extends('e_mensa.layout')
+
+@section('title','Login')
+
+@section('head')
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -6,7 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Anmelden</title>
 </head>
+@endsection
 
+@section('main')
 <body>
 <div class="main">
     <p class="sign" align="center">Anmelden</p>
@@ -21,3 +28,4 @@
 
 </body>
 </html>
+@endsection

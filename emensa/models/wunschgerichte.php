@@ -66,6 +66,8 @@ function wunschgericht_anmeldung()
 
                 $pdo->commit();     //pdo übergeben
 
+                $fehler='stored';
+
             } catch (PDOException $e) {
                 echo $e->getMessage();
             }
