@@ -13,17 +13,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Login hinzugefügt">
+    <list default="true" id="2e3518a5-0e66-4e5c-97e0-605812b597b6" name="Default Changelist" comment="Wunschgericht styling angepasst">
+      <change afterPath="$PROJECT_DIR$/beispiele/sql/M5_Aufgabe5.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d572ea17-ef54-4de5-bfb8-8ae34d8c6cdd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d572ea17-ef54-4de5-bfb8-8ae34d8c6cdd.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/models/wunschgerichte.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/wunschgerichte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/style_css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/wunschgerichte_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/wunschgerichte_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beispiele/sql/Aufgabe1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/beispiele/sql/wunschgericht.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beispiele/sql/Aufgabe_5.sql" beforeDir="false" afterPath="$PROJECT_DIR$/beispiele/sql/Aufgabe_5.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beispiele/sql/M5_Aufgabe_4.sql" beforeDir="false" afterPath="$PROJECT_DIR$/beispiele/sql/M5_Aufgabe_4.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beispiele/sql/M5_aufgabe_2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/beispiele/sql/M5_aufgabe_2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/models/Login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/public/db/NL_Anmeldungen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/db/NL_Anmeldungen.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/public/db/besucher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/db/besucher.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.wunschgerichte.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.wunschgerichte.bladec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/login.anmeldung.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/login.anmeldung.bladec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/e_mensa/wunschgerichte.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/e_mensa/wunschgerichte.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/login/anmeldung.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/login/anmeldung.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +255,11 @@
       <workItem from="1607607021194" duration="13891000" />
       <workItem from="1607690351730" duration="9065000" />
       <workItem from="1607961145274" duration="696000" />
-      <workItem from="1607962979667" duration="5864000" />
+      <workItem from="1607962979667" duration="11022000" />
+      <workItem from="1607982887253" duration="1397000" />
+      <workItem from="1608029446644" duration="6854000" />
+      <workItem from="1608114094452" duration="1088000" />
+      <workItem from="1608201704423" duration="5401000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -403,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607964468948</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Wunschgericht styling angepasst">
+      <created>1607969737314</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1607969737314</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +454,8 @@
     <MESSAGE value="Bilder animation hinzugefügt" />
     <MESSAGE value="Wunschgerichte.php in layout überführt und Design angepasst" />
     <MESSAGE value="Login hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login hinzugefügt" />
+    <MESSAGE value="Wunschgericht styling angepasst" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wunschgericht styling angepasst" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="72" key="#CLI_Interpreters" timestamp="1606564767089">
@@ -510,42 +523,42 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="363" y="122" key="Github.UntrackedFilesDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605258350744" />
-    <state width="1493" height="251" key="GridCell.Tab.0.bottom" timestamp="1607969425010">
+    <state width="1112" height="229" key="GridCell.Tab.0.bottom" timestamp="1608207166206">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607969425010" />
-    <state width="1493" height="251" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1607597520228" />
+    <state width="1493" height="251" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1608036640141" />
+    <state width="1112" height="229" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608207166206" />
     <state width="1895" height="413" key="GridCell.Tab.0.bottom/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1493" height="251" key="GridCell.Tab.0.center" timestamp="1607969425010">
+    <state width="1112" height="229" key="GridCell.Tab.0.center" timestamp="1608207166205">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607969425010" />
-    <state width="1493" height="251" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1607597520228" />
+    <state width="1493" height="251" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1608036640141" />
+    <state width="1112" height="229" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1608207166205" />
     <state width="1895" height="413" key="GridCell.Tab.0.center/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1493" height="251" key="GridCell.Tab.0.left" timestamp="1607969425009">
+    <state width="1112" height="229" key="GridCell.Tab.0.left" timestamp="1608207166205">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607969425009" />
-    <state width="1493" height="251" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1607597520227" />
+    <state width="1493" height="251" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1608036640141" />
+    <state width="1112" height="229" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1608207166205" />
     <state width="1895" height="413" key="GridCell.Tab.0.left/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
-    <state width="1493" height="251" key="GridCell.Tab.0.right" timestamp="1607969425010">
+    <state width="1112" height="229" key="GridCell.Tab.0.right" timestamp="1608207166205">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607969425010" />
-    <state width="1493" height="251" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1607597520228" />
+    <state width="1493" height="251" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1608036640141" />
+    <state width="1112" height="229" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1608207166205" />
     <state width="1895" height="413" key="GridCell.Tab.0.right/0.0.3440.1440@0.0.3440.1440" timestamp="1605354103265" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1605358516783">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1605358516783" />
-    <state x="147" y="66" key="MergeDialog" timestamp="1605543363874">
+    <state x="147" y="66" key="MergeDialog" timestamp="1607969778719">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="147" y="66" key="MergeDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1605543363874" />
-    <state x="407" y="179" key="MultipleFileMergeDialog" timestamp="1606923383691">
+    <state x="147" y="66" key="MergeDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607969778719" />
+    <state x="407" y="179" key="MultipleFileMergeDialog" timestamp="1607969779736">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="407" y="179" key="MultipleFileMergeDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606923383691" />
+    <state x="407" y="179" key="MultipleFileMergeDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607969779736" />
     <state x="604" y="341" key="NewPhpFileDialog" timestamp="1607621830734">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -556,24 +569,24 @@
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1606900194784" />
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1606492194063" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1607964473188">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1607969839137">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607964473188" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607969839137" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1607597543703" />
-    <state x="631" y="305" width="354" height="264" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1607964127118">
+    <state x="631" y="305" width="354" height="264" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1608202790101">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="631" y="305" width="354" height="264" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607964127118" />
-    <state x="631" y="305" width="312" height="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834@0.0.1536.834" timestamp="1606655481090" />
+    <state x="631" y="305" width="354" height="264" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607977832560" />
+    <state x="631" y="305" width="312" height="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834@0.0.1536.834" timestamp="1608202790101" />
     <state x="93" y="93" width="1350" height="648" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607969404724">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1605709680843" />
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607964945969">
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607977111665">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607964945969" />
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1607977111665" />
     <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1606897224234" />
     <state x="478" y="16" width="579" height="801" key="find.popup" timestamp="1606921786411">
       <screen x="0" y="0" width="1536" height="834" />

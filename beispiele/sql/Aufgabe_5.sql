@@ -61,7 +61,7 @@ SELECT * FROM allergen;
 
 /*----16-----*/
 INSERT INTO gericht
-VALUES (2,'Currywurst mit Pommes', 'nichts','2020-08-25',0,0,4,2.3);
+VALUES (2,'Currywurst mit Pommes', 'nichts','2020-08-25',0,0,4,2.3,'00_image_missing.jpg');
 
 SELECT * FROM gericht;
 

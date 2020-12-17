@@ -2,6 +2,7 @@ USE E_Mensa;
 
 ALTER TABLE gericht ADD bildname varchar(200) DEFAULT '00_image_missing.jpg' ;
 
+
 UPDATE gericht Set gericht.bildname = '01_bratkartoffel.jpg' WHERE id=1;
 UPDATE gericht Set gericht.bildname = '03_bratkartoffel.jpg' WHERE id=3;
 UPDATE gericht Set gericht.bildname = '04_Grilltofu.jpg' WHERE id=4;
