@@ -210,8 +210,8 @@ class FrontController
 
     function logger(){
 
-        $stream= new StreamHandler(__DIR__.'/storage/logs/my_app.log', Logger::DEBUG);
-        $logger= new Logger('test');
+        $stream= new StreamHandler(dirname(__DIR__).'/storage/logs/my_app.log', Logger::INFO);
+        $logger= new Logger('Logger');
         $logger->pushHandler($stream);
 
         return $logger;

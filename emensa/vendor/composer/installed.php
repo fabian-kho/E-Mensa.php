@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '224931f340f0941e2c1c291015e31ecf1ddebc96',
+    'reference' => '58cf9770b3ec2543fc464dc8429cb0adc2b8df4a',
     'name' => 'emensa/mvc',
   ),
   'versions' => 
@@ -27,7 +27,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '224931f340f0941e2c1c291015e31ecf1ddebc96',
+      'reference' => '58cf9770b3ec2543fc464dc8429cb0adc2b8df4a',
     ),
     'monolog/monolog' => 
     array (

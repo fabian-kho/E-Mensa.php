@@ -44,12 +44,8 @@ class LoginController
     public function logout(RequestData $rd)
     {
         $_SESSION['login_ok'] = false;
-        $email = $rd->query['email'] ?? false;
-        $stream= new StreamHandler(__DIR__.'/storage/logs/my_app.log', Logger::DEBUG);
-        $logger= new Logger('Informationen');
-        $logger->pushHandler($stream);
-
-        $logger->info('Abmeldung', ['email'=>$email]);
+        $logger=logger();
+        $logger->info('Abmeldung', ['email'=>$_SESSION["name"]]);
         header('Location: /werbeseite');
     }
 }
