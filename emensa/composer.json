@@ -3,6 +3,7 @@
     "require": {
         "eftec/bladeone": "^3.47",
       "ext-mysqli": "*",
-      "ext-pdo": "*"
+      "ext-pdo": "*",
+      "monolog/monolog": "^2.2"
     }
 }

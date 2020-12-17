@@ -9,8 +9,6 @@
 <header>
     @section('header')
     @show
-    @section('nav')
-    @show
 </header>
 <main>
     @section('main')

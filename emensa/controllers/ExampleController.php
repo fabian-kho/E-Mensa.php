@@ -5,8 +5,8 @@ require_once('../models/allergene.php');
 require_once('../models/zaehler.php');
 require_once('../models/newsletter.php');
 require_once('../models/wunschgerichte.php');
-
-
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 class ExampleController
 {
     public function m4_6a_queryparameter(RequestData $rd)
@@ -64,6 +64,16 @@ class ExampleController
 
     public function werbeseite()
     {
+        $stream= new StreamHandler(__DIR__.'/storage/logs/my_app.log', Logger::DEBUG);
+        $logger= new Logger('Informationen');
+        $logger->pushHandler($stream);
+        $logger->warning('test123');
+
+       // $log=logger();
+        //echo $log->getName();
+       // $log->info('test123');
+
+
         $vars = [
             'gerichte' => $gerichte = db_gericht_select_all_new(),
             'allergene' => $allergene = db_allergene_select_all_new(),
@@ -74,7 +84,6 @@ class ExampleController
             'bilder' => $bilder = db_gerichtBilder_select_all()
 
         ];
-
         return view('e_mensa.werbeseite', $vars);
     }
 
@@ -85,13 +94,5 @@ class ExampleController
         ];
         return view('e_mensa.wunschgerichte', $vars);
     }
-    /*public function layout() {
-        $vars = [
-            'data' => $data = db_gericht_select_all(),
-            'title' => $title = 'E-Mensa'
-        ];
-        return view('e_mensa.e_mensa',$vars);
-    }*/
-
 
 }

@@ -3,6 +3,8 @@ session_start();
 const PUBLIC_DIRNAME = "public";
 const CONFIG_WEBROUTES = '../config/web.php';
 const CONFIG_DB = '../config/db.php';
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 
 require_once $_SERVER['DOCUMENT_ROOT']."/../vendor/autoload.php";
 use eftec\bladeone\BladeOne;
@@ -46,10 +48,10 @@ class RequestData {
 class FrontController
 {
 
-    public static function handleRequest($url, $method = 'GET',$verbosity=0, $configPath = CONFIG_WEBROUTES)
+    public static function handleRequest($url, $method = 'GET', $verbosity = 0, $configPath = CONFIG_WEBROUTES)
     {
         $scriptPath = dirname(__FILE__, 2) . '/';
-        $controllerDirectory = $scriptPath.'controllers/';
+        $controllerDirectory = $scriptPath . 'controllers/';
 
         // get a router/web-like config array to override filebased convention
         $config = FrontController::getConfig($configPath);
@@ -60,15 +62,15 @@ class FrontController
         $actionName = 'index';
         $args = array();
         $query = array();
-        parse_str($request['query'] ?? "",$query);
+        parse_str($request['query'] ?? "", $query);
         // check, if route has two levels
-        if(strpos($ctrlName,'/',1)>0) {
-            $path = explode('/',$request['path']); // Werbeseite/Speise/1/mobile?pretty=true&user=marcel
+        if (strpos($ctrlName, '/', 1) > 0) {
+            $path = explode('/', $request['path']); // Werbeseite/Speise/1/mobile?pretty=true&user=marcel
             array_shift($path);                             // skip once
             $ctrlName = array_shift($path);         // Werbeseite
             $actionName = array_shift($path);       // Speise
-            $args =  $path; // remainder of path-parts     // [1][mobile]
-            if($verbosity>1) {
+            $args = $path; // remainder of path-parts     // [1][mobile]
+            if ($verbosity > 1) {
                 echo "<pre>Request\n", print_r($request), "</pre>";
                 echo "<pre>Path\n", print_r($path), "</pre>";
                 echo "<pre>Query\n", print_r($query), "</pre>";
@@ -76,41 +78,40 @@ class FrontController
         }
 
         // fix: trim slashes
-        $ctrlName = trim($ctrlName,'/');
-        $actionName = trim($actionName,'/');
+        $ctrlName = trim($ctrlName, '/');
+        $actionName = trim($actionName, '/');
 
         // $config based renaming of Controller/Action, precedes filebased convention
         // $config values must use syntax <ClassController>@<actionname>
-        if (array_key_exists('/'.$ctrlName.'/'.$actionName,$config)) {
-            $routingConfig = explode('@',$config['/'.$ctrlName.'/'.$actionName]);
-            if($verbosity>0) {
+        if (array_key_exists('/' . $ctrlName . '/' . $actionName, $config)) {
+            $routingConfig = explode('@', $config['/' . $ctrlName . '/' . $actionName]);
+            if ($verbosity > 0) {
                 echo "<p>Routing Config matched request for <code>/" . $ctrlName . "/" . $actionName . "</code>:</p><p>routing config is</p><pre>" . print_r($routingConfig, 1) . '</pre>';
             }
             // important: overwriting controller and action name
             $ctrlClass = $routingConfig[0];
             $actionName = $routingConfig[1];
-        }
-        elseif(array_key_exists($request['path'],$config)) {
+        } elseif (array_key_exists($request['path'], $config)) {
             // exact match on full path, this also means "/"
-            $routingConfig = explode('@',$config[$request['path']]);
-            if($verbosity>0) {
-                echo "<p>Routing Config matched for full path <code>".$request['path']."</code>:</p><p>routing config is</p><pre>".print_r($routingConfig,1).'</pre>';
+            $routingConfig = explode('@', $config[$request['path']]);
+            if ($verbosity > 0) {
+                echo "<p>Routing Config matched for full path <code>" . $request['path'] . "</code>:</p><p>routing config is</p><pre>" . print_r($routingConfig, 1) . '</pre>';
             }
             // important: overwriting controller and action name
             $ctrlClass = $routingConfig[0];
             $actionName = $routingConfig[1];
         } else {
-            if($verbosity>0) {
+            if ($verbosity > 0) {
                 echo "Request $ctrlName/$actionName was not in \$config.";
             }
 
             // fall back to filebased convention: match controller classes in directory
-            $ctrlClass = ucfirst($ctrlName.'Controller');
+            $ctrlClass = ucfirst($ctrlName . 'Controller');
         }
 
-        $ctrlFile = ($ctrlClass.'.php');
+        $ctrlFile = ($ctrlClass . '.php');
         $validControllers = FrontController::getValidControllers($controllerDirectory);
-        if (!in_array($controllerDirectory.$ctrlFile, $validControllers)) {
+        if (!in_array($controllerDirectory . $ctrlFile, $validControllers)) {
             if ($verbosity > 0) {
                 echo "<div><p>Controller: $ctrlFile not found in</p><pre>" . print_r($validControllers, 1) . "</pre><p>Config Array:</p><pre>" . print_r($config, 1) . "</pre></div>";
             }
@@ -120,28 +121,28 @@ class FrontController
 
         // a file matching has been found, now try to load the class
         try {
-            require_once $controllerDirectory.$ctrlFile;
+            require_once $controllerDirectory . $ctrlFile;
             // instantiate the controller
 
             $controller = new $ctrlClass();
             $rd = new RequestData($method, $args, $query);
 
             if ($verbosity > 0) {
-                var_dump($controller,$rd);
+                var_dump($controller, $rd);
             }
             // the controller will load model and view and return some html
             print call_user_func_array(array($controller, $actionName), array($rd));
-        }
-        catch (Exception $ex) {
-            print("<h2>HTTP 404 &mdash Not found.</h2><p>Make sure, the path is correct and a corresponding Controller/Action exists.</p><p>The routing config array had ".count($config)." items.</p>");
+        } catch (Exception $ex) {
+            print("<h2>HTTP 404 &mdash Not found.</h2><p>Make sure, the path is correct and a corresponding Controller/Action exists.</p><p>The routing config array had " . count($config) . " items.</p>");
             print($ex->getMessage());
         }
     }
 
-    public static function getConfig($configPath) {
+    public static function getConfig($configPath)
+    {
         try {
             // load the $config Array from a file given in $configPath
-            $config = include $_SERVER['DOCUMENT_ROOT'].'/'.$configPath;
+            $config = include $_SERVER['DOCUMENT_ROOT'] . '/' . $configPath;
         } catch (Exception $e) {
             $config = array('/' => 'HomeController@index');
         } finally {
@@ -156,49 +157,63 @@ class FrontController
         }
         return glob($path . '*Controller.php');
     }
+
+
 }
 
-/***PDO-Connection**************************/
-function connectdb_PDO()
-{
-    $host = 'localhost';
-    $db = 'e_mensa';        //Datenbank
-    $user = 'root';
-    $pass = 'Leonie3009';
-    $port = "3306";
-    $charset = 'utf8mb4';
+    /***PDO-Connection**************************/
+    function connectdb_PDO()
+    {
+        $host = 'localhost';
+        $db = 'e_mensa';        //Datenbank
+        $user = 'root';
+        $pass = 'root123';
+        $port = "3306";
+        $charset = 'utf8mb4';
 
-    $options = [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::ATTR_EMULATE_PREPARES => false,
-    ];
-    $dsn = "mysql:host=$host;dbname=$db;charset=$charset;port=$port";
-    try {
-        $pdo = new PDO($dsn, $user, $pass, $options);
-    } catch (PDOException $e) {
-        throw new PDOException($e->getMessage(), (int)$e->getCode());
+        $options = [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES => false,
+        ];
+        $dsn = "mysql:host=$host;dbname=$db;charset=$charset;port=$port";
+        try {
+            $pdo = new PDO($dsn, $user, $pass, $options);
+        } catch (PDOException $e) {
+            throw new PDOException($e->getMessage(), (int)$e->getCode());
+        }
+        return $pdo;
     }
-    return $pdo;
-}
 
-function connectdb() {
-    $config = include CONFIG_DB;
-    $link = mysqli_connect('p:'. $config['host'], // Host der Datenbank (p: Persistent connection)
-        $config['user'],       // Benutzername zur Anmeldung
-        $config['password'],   // Passwort zur Anmeldung
-        $config['database']);  // Auswahl der Datenbank
-    if (!$link) {
-        echo "Verbindung fehlgeschlagen: ", mysqli_connect_error();
-        exit();
+    function connectdb()
+    {
+        $config = include CONFIG_DB;
+        $link = mysqli_connect('p:' . $config['host'], // Host der Datenbank (p: Persistent connection)
+            $config['user'],       // Benutzername zur Anmeldung
+            $config['password'],   // Passwort zur Anmeldung
+            $config['database']);  // Auswahl der Datenbank
+        if (!$link) {
+            echo "Verbindung fehlgeschlagen: ", mysqli_connect_error();
+            exit();
+        }
+        return $link;
     }
-    return $link;
-}
 
-function view($viewname, $viewargs) {
-    $views = dirname(__DIR__) . '/views';
-    $cache = dirname(__DIR__) . '/storage/cache';
-    $blade = new BladeOne($views, $cache,BladeOne::MODE_DEBUG);
+    function view($viewname, $viewargs)
+    {
+        $views = dirname(__DIR__) . '/views';
+        $cache = dirname(__DIR__) . '/storage/cache';
+        $blade = new BladeOne($views, $cache, BladeOne::MODE_DEBUG);
 
-    return $blade->run($viewname, $viewargs);
-}
+        return $blade->run($viewname, $viewargs);
+    }
+
+    function logger(){
+
+        $stream= new StreamHandler(__DIR__.'/storage/logs/my_app.log', Logger::DEBUG);
+        $logger= new Logger('test');
+        $logger->pushHandler($stream);
+
+        return $logger;
+    }
+

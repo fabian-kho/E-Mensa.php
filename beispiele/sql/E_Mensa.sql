@@ -1,5 +1,5 @@
 CREATE DATABASE E_Mensa;
-ALTER DATABASE test CHARACTER SET='utf8mb4'  COLLATE='utf8mb4_unicode_ci';
+ALTER DATABASE e_mensa CHARACTER SET='utf8mb4'  COLLATE='utf8mb4_unicode_ci';
 
 USE E_Mensa;
 

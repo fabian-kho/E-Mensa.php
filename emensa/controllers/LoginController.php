@@ -1,5 +1,6 @@
 <?php
-
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 class LoginController
 {
     public function check(RequestData $rd)
@@ -20,13 +21,16 @@ class LoginController
 
         /** Weiterleitung abhängig vom Erfolg der Anmeldung */
         $_SESSION['login_result_message'] = null;
+        $log=logger();
         if ($found) {
             $_SESSION['login_ok'] = true;
             $_SESSION["name"] = $email;
+            $log->info('Anmeldung', ['email'=>$email]);
             header('Location: /werbeseite');
         } else {
             $_SESSION['login_result_message'] =
                 'Email- oder Passwort falsch';
+            $log->warning('Versuchte Anmeldung',['email'=>$email]);
             header('Location: /anmeldung');
         }
         mysqli_close($link);
@@ -37,9 +41,15 @@ class LoginController
         $msg = $_SESSION['login_result_message'] ?? null;
         return view('login.anmeldung', ['msg' => $msg]);
     }
-    public function logout()
+    public function logout(RequestData $rd)
     {
         $_SESSION['login_ok'] = false;
+        $email = $rd->query['email'] ?? false;
+        $stream= new StreamHandler(__DIR__.'/storage/logs/my_app.log', Logger::DEBUG);
+        $logger= new Logger('Informationen');
+        $logger->pushHandler($stream);
+
+        $logger->info('Abmeldung', ['email'=>$email]);
         header('Location: /werbeseite');
     }
 }

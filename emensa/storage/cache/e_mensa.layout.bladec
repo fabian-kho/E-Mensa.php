@@ -9,8 +9,6 @@
 <header>
  <?php $this->startSection('header'); ?>
  <?php echo $this->yieldSection(); ?>
- <?php $this->startSection('nav'); ?>
- <?php echo $this->yieldSection(); ?>
 </header>
 <main>
  <?php $this->startSection('main'); ?>

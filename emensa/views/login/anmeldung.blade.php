@@ -21,9 +21,9 @@
         <input class="email" type="email" name="email" align="center" placeholder="Email">
         <input class="password" type="password" name="password" align="center" placeholder="Passwort">
         <!--Im LoginController wird das Salt "emensa2020" angehängt und das Passwort wird gehasht -->
+        <br>
         <nav class="abschicken"><button class="submit" type="submit" >Anmelden</button></nav>
-
-        <br><br>
+        <br>
         <p class="error">{{$msg}}</p>
     </form>
 </div>
