@@ -82,6 +82,8 @@ class ExampleController
 
     public function wunschgerichte()
     {
+
+
         $vars = [
             'fehler_WG' => $fehler_WG = wunschgericht_anmeldung()
         ];
