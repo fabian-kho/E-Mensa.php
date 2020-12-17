@@ -64,11 +64,6 @@ class ExampleController
 
     public function werbeseite()
     {
-        /*$stream= new StreamHandler(__DIR__.'/storage/logs/my_app.log', Logger::DEBUG);
-        $logger= new Logger('Informationen');
-        $logger->pushHandler($stream);
-        $logger->warning('test123');*/
-
        $log=logger();
        $log->info('Dies ist ein Seitenaufruf');
 

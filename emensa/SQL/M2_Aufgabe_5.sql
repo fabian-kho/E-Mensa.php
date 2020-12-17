@@ -11,7 +11,6 @@ SELECT erfasst_am ,name AS 'Gerichtname' FROM gericht ORDER BY name DESC ;
 SELECT  name, beschreibung FROM gericht ORDER BY name DESC LIMIT 5;
 
 /*----5-----*/
-SELECT  name, beschreibung FROM gericht ORDER BY name DESC LIMIT 10 OFFSET  5;
 
 /*----6-----*/
 SELECT DISTINCT typ FROM allergen;
