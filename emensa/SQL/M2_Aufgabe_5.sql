@@ -64,8 +64,9 @@ VALUES (2,'Currywurst mit Pommes', 'nichts','2020-08-25',0,0,4,2.3);
 
 SELECT * FROM gericht;
 
-INSERT INTO gericht_hat_kategorie
-VALUES (2,3);
+
+INSERT INTO `gericht_hat_kategorie` (`kategorie_id`, `gericht_id`) VALUES
+(2, 1);
 
 SELECT * FROM gericht_hat_kategorie ORDER BY gericht_id ASC ;
 

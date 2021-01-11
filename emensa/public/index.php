@@ -166,7 +166,7 @@ function connectdb_PDO()
     $host = 'localhost';
     $db = 'e_mensa';        //Datenbank
     $user = 'root';
-    $pass = 'Leonie3009';
+    $pass = 'root';
     $port = "3306";
     $charset = 'utf8mb4';
 

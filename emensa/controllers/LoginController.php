@@ -4,6 +4,7 @@
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
+
 class LoginController
 {
     public function check(RequestData $rd)

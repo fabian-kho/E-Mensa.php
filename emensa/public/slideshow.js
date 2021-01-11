@@ -16,3 +16,9 @@ function showDivs(n) {
     }
     x[slideIndex - 1].style.display = "flex";
 }
+function yourFunction(){
+    if(window.screen.width <= 600) {
+        plusDivs(+1)
+        setTimeout(yourFunction, 5000);
+    }
+}

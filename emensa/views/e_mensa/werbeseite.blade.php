@@ -5,33 +5,49 @@
 @section('title','E-Mensa')
 
 @section('head')
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Werbeseite</title>
     <link rel="stylesheet" type="text/css" href="css/style_css.css">
+
     <script type="text/javascript" src="slideshow.js"></script>
 
     <!-- Icon Kit -->
     <script src="https://kit.fontawesome.com/2661bde70a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
 @endsection
 
 @section('header')
 
-        <img class="logo" src="img/EMensa_Logo_neu.png" alt="Logo" width="250" height="150">
 
-        <ul class="nav">
-            <li>
-                @if ($_SESSION['login_ok'])
-                    <a href="/abmeldung">{{$_SESSION["name"]}} Abmelden</a>
-                @else
-                    <a href="/anmeldung">Anmelden</a>
-                @endif
-            </li>
-            <li><a href="#ankündigung">Ankündigung</a></li>
-            <li><a href="#speisen">Speisen</a></li>
-            <li><a href="#zahlen">Zahlen</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-            <li><a href="#wichtig">Wichtig für uns</a></li>
-        </ul>
+        <div class="topnav" id="myTopnav">
+            <img class="logo" src="img/EMensa_Logo_neu.png" alt="Logo" >
+            <a href="#ankündigung">Ankündigung</a>
+            <a href="#speisen">Speisen</a>
+            <a href="#zahlen">Zahlen</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="#wichtig">Wichtig für uns</a>
+
+
+            @if ($_SESSION['login_ok'])
+                <a href="/abmeldung">{{$_SESSION["name"]}} Abmelden</a>
+            @else
+                <a href="/anmeldung">Anmelden</a>
+            @endif
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
 
 @endsection
 
@@ -84,8 +100,9 @@
     <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 
     <script>
-        var slideIndex = 1;
+        var slideIndex = 0;
         showDivs(slideIndex);
+        yourFunction();
     </script>
 
     <section id="speisen">
@@ -97,7 +114,7 @@
                 <th>Preis extern</th>
             </tr>
             @forelse($gerichte as $a)
-                <td>{{$a['name']}} <span id="allergenCode" style='font-size: medium; float: right'>{{$a['code']}}</span></td>
+                <td>{{$a['name']}} <span id="allergenCode" >{{$a['code']}}</span></td>
                 <td>{{$a['preis_intern']}}</td>
                 <td>{{$a['preis_extern']}}</td>
                 </tr>
@@ -125,11 +142,11 @@
 
         </section>
     <!--Wunschgericht-------------------------------------------------------------------------------------->
+
     <h6><a id="wunschgerichtLink" href="/wunschgerichte">Wunschgericht</a></h6>
     <p id="wunschgericht">Wenn Sie Gerichte haben die Sie sich wünschen, klicken Sie einfach auf die Überschrift um ihr
         persönliches Wunschgericht zu erstellen.
         Mit etwas Glück gibt es ihr Gericht schon bald bei uns im Angebot.</p>
-
     <!--Zahlen----------------------------------------------------->
     <section id="zahlen">
         <h3>E-Mensa in Zahlen</h3>
@@ -148,34 +165,40 @@
         <form method="post">
             <fieldset>
 
+                <div id="formular">
                 <i class="fa fa-user icon"></i>
                 <label for="name"></label><input type="text" id="name" name="name" size="30"
                                                  placeholder="Bitte geben Sie Ihren Namen ein"
                                                  required>
-                <br><br>
+                </div>
 
+                <div id="formular">
                 <i class="fa fa-envelope icon"></i>
                 <label for="email"></label><input type="text" id="email" name="email" size="30"
                                                   placeholder="Bitte geben Sie Ihre E-Mail ein"
                                                   required>
-                <br><br>
+                </div>
 
+                <div id="formular">
                 <i class="fas fa-language icon"></i>
                 <label for="sprache"></label><select name="sprache" id="sprache" size="1">
                     <option value="English">English</option>
                     <option value="Deutsch" selected>Deutsch</option>
                     <option value="Denglisch">Denglisch</option>
                 </select>
-                <br><br>
+                </div>
 
+                <div id="formular">
                 <i class="fas fa-lock icon" id="lock"></i>
-                <input title="Zustimmung zum Datenschutz" type="checkbox" id="Datenschutz" name="Datenschutz" required>
-                <br>
+                <input title="Zustimmung zum Datenschutz" type="checkbox" class="Datenschutz" name="Datenschutz" required>
+                </div>
 
+                <div id="formular">
                 <input name="submit" id="submit" type="submit" value="Zum Newsletter anmelden"><br><br>
+                </div>
             </fieldset>
         </form>
-        <p>@if(!empty($fehler) && $fehler!= 'stored'){{$fehler}}
+        <p id="fehler">@if(!empty($fehler) && $fehler!= 'stored'){{$fehler}}
             @elseif($fehler === 'stored') Erfolgreich zum Newsletter angemeldet!
                 @endif
         </p>

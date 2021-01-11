@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <title>Wunschgerichte</title>
     <link rel="stylesheet" type="text/css" href="css/wunschgerichte_style.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
 @endsection
 
 

@@ -1,7 +1,7 @@
 USE E_Mensa;
 
 /*Suppe**/
-SELECT *
+CREATE VIEW view_suppe AS SELECT *
 FROM gericht
 WHERE name LIKE '%suppe%';
 
@@ -13,14 +13,15 @@ ORDER BY anzahlanmeldungen DESC;
 /*view_kategoriegerichte_vegetarisch**/
 CREATE VIEW view_kategoriegerichte_vegetarisch AS
 SELECT
-    ghk.gericht_id as gerichtID,
+    k.name as Kategorie,
     gericht.id   as ID,
     gericht.name AS Gericht,
-    gericht.beschreibung,
-    gericht.vegetarisch,
-    gericht.preis_extern,
-    gericht.preis_intern
+    gericht.vegetarisch
+
 FROM gericht
          Left JOIN  gericht_hat_kategorie ghk on gericht.id = ghk.gericht_id
+        LEFT JOIN kategorie k on k.id = ghk.Kategorie_id
 WHERE vegetarisch=true
 ;
+
+select * FROM gericht where vegetarisch;
