@@ -29,6 +29,10 @@ return array(
     '/anmeldung_verifizieren' => 'LoginController@check',
     '/abmeldung' => 'LoginController@logout',
 
+    //bewertung
+    '/bewertung' => 'ExampleController@bewertung',
+
+
 
 
 );

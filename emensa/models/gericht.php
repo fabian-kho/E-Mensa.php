@@ -13,6 +13,17 @@ function db_gericht_select_all() {
     return $data;
 }
 
+function db_gericht_select_all_name() {
+    $link = connectdb();
+
+    $sql = "SELECT id, name FROM gericht ORDER BY name asc ";
+    $result = mysqli_query($link, $sql);
+
+    $data = mysqli_fetch_all($result, MYSQLI_BOTH);
+    mysqli_close($link);
+    return $data;
+}
+
 function db_gerichtBilder_select_all() {
     $link = connectdb();
 
@@ -25,7 +36,7 @@ function db_gerichtBilder_select_all() {
     return $data;
 }
 
-function db_gericht_select_all_new()
+function db_gericht_select_all_and_allergen()
 {
     $link = connectdb();
 

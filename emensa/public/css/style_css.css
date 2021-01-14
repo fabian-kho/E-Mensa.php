@@ -64,13 +64,14 @@ header {
 }
 
 .topnav a {
-    float: left;
-    display: block;
+    margin-top: 4%;
+    float: bottom;
+    display: inline-block;
     color: #110903;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .topnav a:hover {
@@ -171,7 +172,7 @@ header {
 }
 
 .box > img {
-    width: 200%;
+    width: 100%;
     height: calc(100% - 10vh);
     object-fit: cover;
     transition: .5s;
@@ -194,7 +195,7 @@ header {
 }
 
 .box:hover {
-    flex: 1 1 50%;
+    flex: 1 1 20%;
 }
 
 .box:hover > img {
@@ -308,6 +309,7 @@ header {
 }
 
 #allergenCode {
+    float: right;
     font-size: small;
     float: bottom;
 }
@@ -322,6 +324,49 @@ header {
 #zeile1 {
     background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
 }
+
+/*--Bewertung--------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+
+    #Gerichtebewertung input[type=submit] {
+        margin-bottom: 10;
+        margin-right: 20px;
+        color: black;
+        background-color: white;
+        border-color: grey;
+        border-radius: 12px;
+    }
+    #gerichtbewerten{
+        margin-bottom: 5px;
+    }
+    .fa-star-half-alt{
+     width: 90%;
+    }
+    #Gerichtebewertung #formular{
+        width: 100%;
+        margin-left: 25px;
+    }
+}
+
+#Gerichtebewertung fieldset{
+    margin-left: -35px;
+}
+#gerichtbewerten{
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    #Gerichtebewertung fieldset {
+        margin-left: -35px;
+    }
+    #gerichtbewerten{
+        margin-right: 10px;
+    }
+
+}
+
+
 
 /*--Wunschgericht--------------------------------------------------------------------------------------*/
 
@@ -375,12 +420,12 @@ fieldset {
         margin-bottom: 15px;
     }
 
-    #kontakt .icon {
+    #kontakt .icon, #Gerichtebewertung .icon {
         border-radius: 12px;
         margin-bottom: 5px;
     }
 
-    #name, #email, #sprache {
+    #name, #email, #sprache, #gerichtbewerten{
         border-radius: 12px;
         margin-right: 20px;
     }
@@ -389,7 +434,6 @@ fieldset {
     .fa-envelope, .fa-language, .fa-lock, .fa-user {
         margin-left: -20px;
     }
-
 
 }
 
@@ -400,7 +444,7 @@ fieldset label, select {
 
 
 /*Styling der ICONS*/
-#kontakt .icon {
+#kontakt .icon, #Gerichtebewertung .icon  {
     padding: 10px;
     background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
     color: white;
@@ -412,7 +456,7 @@ fieldset label, select {
 
 @media screen and (min-width: 600px) {
     /*Icons*/
-    .fa-envelope, .fa-language, .fa-lock {
+    .fa-envelope, .fa-language, .fa-lock, .fa-star-half-alt{
         margin-left: 20px;
     }
 
@@ -432,6 +476,7 @@ fieldset label, select {
 
 /*Styling des checkbox des Datenschutzes*/
 .Datenschutz {
+    margin-top: 10px;
     align-content: center;
     height: 25px;
     width: 25px;
@@ -441,24 +486,23 @@ fieldset label, select {
 
 /*Styling des Newsletter Submit buttons*/
 
-#formular input[type=submit] {
+#kontakt input[type=submit] {
+    margin-bottom: 10;
     margin-right: 20px;
     color: black;
     background-color: white;
-    border-color: rgb(179, 89, 0);
+    border-color: grey;
+    border-radius: 12px;
+}
+#Gerichtebewertung input[type=submit] {
+    margin-bottom: 10;
+    margin-right: 20px;
+    color: black;
+    background-color: white;
+    border-color: grey;
     border-radius: 12px;
 }
 
-/*Button submit nicht anzeigen*/
-@media screen and (min-width: 600px) {
-    .Datenschutz:checked ~ #submit {
-        visibility: visible;
-    }
-    #submit {
-         visibility: hidden;
-     }
-
-}
 /*Text unter letzter Section
 section + p {
     text-align: center;
@@ -466,14 +510,15 @@ section + p {
 }*/
 
 /*Newsletter formatieren*/
-#name, #email, #sprache {
+#name, #email, #sprache,#gerichtbewerten {
     border: 1px solid grey;
     border-bottom-right-radius: 12px;
     border-top-right-radius: 12px;
 }
 
+
 /*Hover effect*/
-#name:hover, #email:hover, #sprache:hover {
+#name:hover, #email:hover, #sprache:hover, #gerichtbewerten:hover {
     border: 3px solid black;
 }
 
@@ -495,8 +540,10 @@ section + p {
 }
 
 /*Überschriften*/
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 , h7 {
     font-size: larger;
+        font-weight: bold;
+
 }
 
 /*Pfeile vor Liste*/

@@ -19,7 +19,7 @@
                 <input class="name" name="name" type="text" placeholder="Name"/>
             </label>
             <label>
-                <input class="email" type="email" name="email" align="center" placeholder="Email">
+                <input class="gericht" type="email" name="email" align="center" placeholder="Email">
             </label>
             <label>
                 <input class="gerichtName" name="gerichtName" type="text"  placeholder="Name des Gerichtes"/>

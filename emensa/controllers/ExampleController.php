@@ -5,6 +5,8 @@ require_once('../models/allergene.php');
 require_once('../models/zaehler.php');
 require_once('../models/newsletter.php');
 require_once('../models/wunschgerichte.php');
+require_once('../models/bewerten.php');
+
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 class ExampleController
@@ -68,13 +70,14 @@ class ExampleController
        $log->info('Dies ist ein Seitenaufruf');
 
         $vars = [
-            'gerichte' => $gerichte = db_gericht_select_all_new(),
+            'gerichte' => $gerichte = db_gericht_select_all_and_allergen(),
+            'gerichtnamen' => $gerichtnamen =  db_gericht_select_all_name(),
             'allergene' => $allergene = db_allergene_select_all_new(),
             'besucher' => $besucher = zaehlerBesucher(),
             'anmeldungen' => $anmeldungen = zaehlerAnmeldungen(),
             'anzahlGerichte' => $anzahlGerichte = zaehlerGerichte(),
             'fehler' => $fehler = newsletter_anmeldung(),
-            'bilder' => $bilder = db_gerichtBilder_select_all()
+            'bilder' => $bilder = db_gerichtBilder_select_all(),
 
         ];
         return view('e_mensa.werbeseite', $vars);
@@ -82,12 +85,28 @@ class ExampleController
 
     public function wunschgerichte()
     {
-
-
         $vars = [
             'fehler_WG' => $fehler_WG = wunschgericht_anmeldung()
         ];
         return view('e_mensa.wunschgerichte', $vars);
+    }
+
+    public function bewertung()
+    {
+        //Nur angemeldete Benutzer können Gerichte bewerten
+        if($_SESSION['login_ok'] == true) {
+
+            $vars = [
+                'fehler_WG' => $fehler_WG = bewertung_eintragen(),
+                'array' => $array = gericht_bewerten(),
+            ];
+
+            return view('bewertung.bewertung', $vars);
+        }
+        else{
+            $msg = $_SESSION['login_result_message'] ?? null;
+            return view('login.anmeldung', ['msg' => $msg]);
+        }
     }
 
 }

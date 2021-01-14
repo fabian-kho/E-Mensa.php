@@ -23,7 +23,7 @@ body {
     font-size: 23px;
 }
 
-.email,.gerichtName,.name,.beschreibung {
+.gericht,.gerichtName,.name,.beschreibung {
     width: 76%;
     color: rgb(38, 50, 56);
     font-weight: 700;
@@ -46,7 +46,7 @@ body {
 
 
 
-.email:focus, .password:focus {
+.gericht:focus, .bemerkung:focus {
     border: 1px solid rgba(0, 0, 0, 0.18) !important;
 
 }
@@ -55,7 +55,7 @@ body {
     cursor: pointer;
     border-radius: 5em;
     color: #fff;
-    background: linear-gradient(to right, #73492B, #B19784);
+    background: linear-gradient(to right, #E7DBD1, #E7DBD1,#E7DBD1,white);
     border: 0;
     padding: 10px 40px;
     font-family: 'Ubuntu', sans-serif;

@@ -1,7 +1,6 @@
 @extends('e_mensa.layout')
 
 
-
 @section('title','E-Mensa')
 
 @section('head')
@@ -19,35 +18,35 @@
 @section('header')
 
 
-        <div class="topnav" id="myTopnav">
-            <img class="logo" src="img/EMensa_Logo_neu.png" alt="Logo" >
-            <a href="#ankündigung">Ankündigung</a>
-            <a href="#speisen">Speisen</a>
-            <a href="#zahlen">Zahlen</a>
-            <a href="#kontakt">Kontakt</a>
-            <a href="#wichtig">Wichtig für uns</a>
+    <div class="topnav" id="myTopnav">
+        <img class="logo" src="img/EMensa_Logo_neu.png" alt="Logo">
+        <a href="#ankündigung">Ankündigung</a>
+        <a href="#speisen">Speisen</a>
+        <a href="#zahlen">Zahlen</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#wichtig">Wichtig für uns</a>
 
 
-            @if ($_SESSION['login_ok'])
-                <a href="/abmeldung">{{$_SESSION["name"]}} Abmelden</a>
-            @else
-                <a href="/anmeldung">Anmelden</a>
-            @endif
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-        </div>
+        @if ($_SESSION['login_ok'])
+            <a href="/abmeldung">{{$_SESSION["name"]}} Abmelden</a>
+        @else
+            <a href="/anmeldung">Anmelden</a>
+        @endif
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
             }
-        </script>
+        }
+    </script>
 
 @endsection
 
@@ -114,7 +113,7 @@
                 <th>Preis extern</th>
             </tr>
             @forelse($gerichte as $a)
-                <td>{{$a['name']}} <span id="allergenCode" >{{$a['code']}}</span></td>
+                <td>{{$a['name']}} <span id="allergenCode">{{$a['code']}}</span></td>
                 <td>{{$a['preis_intern']}}</td>
                 <td>{{$a['preis_extern']}}</td>
                 </tr>
@@ -131,16 +130,39 @@
         <input title="Allergene anzeigen" type="checkbox" id="AllergenButton" name="AllergenButton" required>
 
         <ul id="AllergenListe" class="AllergenListe">
-        @forelse($allergene as $a)
+            @forelse($allergene as $a)
                 <li><i class="fas fa-angle-right"></i>
                     {{$a['Allergen']}}
                     {{$a['Code']}}</li>
-        @empty
-            <td>Leer!!!!!!!!!!</td></tr>
-        @endforelse
+            @empty
+                <td>Leer!!!!!!!!!!</td></tr>
+            @endforelse
         </ul>
 
-        </section>
+    </section>
+
+    <!--Bewertungen-------------------------------------------------------------------------------------->
+    <section id="Gerichtebewertung">
+        <h7>Bewertung</h7>
+        <p>Wählen Sie ein Gericht aus um es zu bewerten.</p>
+        <form method="get" action="/bewertung">
+            <fieldset>
+                <div id="formular">
+                    <i class="fas fa-star-half-alt icon"></i>
+                    <label for="gerichtbewerten"></label><select name="gerichtbewerten" id="gerichtbewerten" size="1">
+                        @forelse($gerichtnamen as $a)
+                            <option value="{{$a['name']}}" >{{$a['name']}}</option>
+                        @empty
+                            <option value="Leer" selected>Leer</option>
+                        @endforelse
+                    </select>
+                    <input name="bewertung" id="bewertung" type="submit" value="Bewerten"><br><br>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+
     <!--Wunschgericht-------------------------------------------------------------------------------------->
 
     <h6><a id="wunschgerichtLink" href="/wunschgerichte">Wunschgericht</a></h6>
@@ -166,41 +188,42 @@
             <fieldset>
 
                 <div id="formular">
-                <i class="fa fa-user icon"></i>
-                <label for="name"></label><input type="text" id="name" name="name" size="30"
-                                                 placeholder="Bitte geben Sie Ihren Namen ein"
-                                                 required>
+                    <i class="fa fa-user icon"></i>
+                    <label for="name"></label><input type="text" id="name" name="name" size="30"
+                                                     placeholder="Bitte geben Sie Ihren Namen ein"
+                                                     required>
                 </div>
 
                 <div id="formular">
-                <i class="fa fa-envelope icon"></i>
-                <label for="email"></label><input type="text" id="email" name="email" size="30"
-                                                  placeholder="Bitte geben Sie Ihre E-Mail ein"
-                                                  required>
+                    <i class="fa fa-envelope icon"></i>
+                    <label for="email"></label><input type="text" id="email" name="email" size="30"
+                                                      placeholder="Bitte geben Sie Ihre E-Mail ein"
+                                                      required>
                 </div>
 
                 <div id="formular">
-                <i class="fas fa-language icon"></i>
-                <label for="sprache"></label><select name="sprache" id="sprache" size="1">
-                    <option value="English">English</option>
-                    <option value="Deutsch" selected>Deutsch</option>
-                    <option value="Denglisch">Denglisch</option>
-                </select>
+                    <i class="fas fa-language icon"></i>
+                    <label for="sprache"></label><select name="sprache" id="sprache" size="1">
+                        <option value="English">English</option>
+                        <option value="Deutsch" selected>Deutsch</option>
+                        <option value="Denglisch">Denglisch</option>
+                    </select>
                 </div>
 
                 <div id="formular">
-                <i class="fas fa-lock icon" id="lock"></i>
-                <input title="Zustimmung zum Datenschutz" type="checkbox" class="Datenschutz" name="Datenschutz" required>
+                    <i class="fas fa-lock icon" id="lock"></i>
+                    <input title="Zustimmung zum Datenschutz" type="checkbox" class="Datenschutz" name="Datenschutz"
+                           required>
                 </div>
 
                 <div id="formular">
-                <input name="submit" id="submit" type="submit" value="Zum Newsletter anmelden"><br><br>
+                    <input name="submit" id="submit" type="submit" value="Zum Newsletter anmelden"><br><br>
                 </div>
             </fieldset>
         </form>
         <p id="fehler">@if(!empty($fehler) && $fehler!= 'stored'){{$fehler}}
             @elseif($fehler === 'stored') Erfolgreich zum Newsletter angemeldet!
-                @endif
+            @endif
         </p>
 
     </section>
