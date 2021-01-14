@@ -1,6 +1,6 @@
 @extends('e_mensa.layout')
 
-@section('title','Login')
+@section('title','Bewertung')
 
 @section('head')
         <!DOCTYPE html>

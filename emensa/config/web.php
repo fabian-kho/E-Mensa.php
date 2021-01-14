@@ -31,6 +31,10 @@ return array(
 
     //bewertung
     '/bewertung' => 'ExampleController@bewertung',
+    '/bewertungen' => 'ExampleController@bewertungen',
+    '/meinebewertungen' => 'ExampleController@meinebewertungen',
+
+
 
 
 

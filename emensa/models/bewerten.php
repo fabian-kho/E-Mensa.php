@@ -33,23 +33,45 @@ function gericht_bewerten()
     return $vars;
 }
 
-/*function db_gerichtBilder_select_Rating() {
+function db_all_ratings() {
+
+    $link = connectdb();
+
+    $sql = "SELECT bemerkung, sterne, erstellt_am AS date,email,name AS Gericht FROM bewertung
+            JOIN benutzer_bewertung bb on bewertung.id = bb.bewertungs_id
+            LEFT JOIN benutzer b on b.id = bb.benutzer_id
+            LEFT JOIN bewertung_gericht bg on bewertung.id = bg.bewertungs_id
+            LEFT JOIN gericht g on g.id = bg.gericht_id";
+
+    $result = mysqli_query($link, $sql);
+
+    $data = mysqli_fetch_all($result, MYSQLI_BOTH);
+    mysqli_close($link);
+
+
+
+    return $data;
+}
+function db_user_ratings() {
 
     $pdo=connectdb_PDO();
 
-    //Id des Gerichtes herausfinden
-    $stmt = $pdo->prepare("Select id From gericht where name = ?");
-    $stmt->execute([$_POST['gerichtName']]);
-    $gerichtid = $stmt->fetch();
+    $sql = "SELECT bemerkung, sterne, erstellt_am AS date,email,name AS Gericht FROM bewertung 
+            JOIN benutzer_bewertung bb on bewertung.id = bb.bewertungs_id
+            LEFT JOIN benutzer b on b.id = bb.benutzer_id
+            LEFT JOIN bewertung_gericht bg on bewertung.id = bg.bewertungs_id
+            LEFT JOIN gericht g on g.id = bg.gericht_id
+            WHERE email = ?";
 
-    //Bild des aktuellen Gerichtes herausfinden
-    $stmt = $pdo->prepare("SELECT bildname,name FROM gericht WHERE id=?");
-    $stmt->execute([$gerichtid]);
-    $gerichtbild = $stmt->fetch();
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$_SESSION["name"]]);
+    $bewertungsid = $stmt->fetchAll();
 
-    return $gerichtbild['bildname'];
+
+    return $bewertungsid;
 }
-*/
+
+
 function bewertung_eintragen(){
 
     $pdo=connectdb_PDO();

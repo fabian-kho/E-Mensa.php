@@ -1,6 +1,6 @@
 <?php $_shouldextend[1]=1; ?>
 
-<?php $this->startSection('title','Login'); ?>
+<?php $this->startSection('title','Bewertung'); ?>
 
 <?php $this->startSection('head'); ?>
  <!DOCTYPE html>
@@ -19,6 +19,7 @@
 <?php $this->stopSection(); ?>
 
 <?php $this->startSection('main'); ?>
+ <body>
  <div class="grid-container">
  <div class="main">
  <p class="sign" align="center">Bewertung</p>

@@ -43,3 +43,31 @@ function zaehlerGerichte(){
     return $anzahl_gerichte;
 }
 
+function zaehlerBewertungen(){
+    $link = connectdb();
+    //Counter für Gerichte
+    $sql_tmp = "SELECT count(id) as anzahl FROM bewertung";
+
+    $anzahl_gerichte = mysqli_fetch_assoc(mysqli_query($link, $sql_tmp));
+
+    return $anzahl_gerichte;
+}
+
+function zaehler_user_Bewertungen(){
+
+
+    $pdo=connectdb_PDO();
+
+    $sql = "SELECT count(email) as anzahl FROM bewertung 
+            JOIN benutzer_bewertung bb on bewertung.id = bb.bewertungs_id
+            LEFT JOIN benutzer b on b.id = bb.benutzer_id
+            WHERE email = ?";
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$_SESSION["name"]]);
+    $bewertungsid = $stmt->fetch();
+
+
+    return $bewertungsid;
+
+}

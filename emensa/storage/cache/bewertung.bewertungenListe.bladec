@@ -1,0 +1,75 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title','Bewertungen'); ?>
+
+<?php $this->startSection('head'); ?>
+ <!DOCTYPE html>
+<html lang="de">
+<head>
+ <link rel="stylesheet" href="css/liste.css">
+ <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+ <link rel="stylesheet" href="node_modules/jquery-bar-rating/dist/themes/fontawesome-stars.css">
+
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Bewertung</title>
+</head>
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('main'); ?>
+ <body>
+ <div class="main">
+ <div class="card-container">
+
+ <?php for($i=0;$i<$anzahlbewertungen['anzahl'];$i++): ?>
+ <div class="card">
+ <header class="article-header">
+ <div>
+ <div class="category-title">
+ <span class="date"><?php echo \htmlentities($bewertung[$i]['date'], ENT_QUOTES, 'UTF-8', false); ?></span>
+ </div>
+ </div>
+ <h2 class="article-title"><?php echo \htmlentities($bewertung[$i]['Gericht'], ENT_QUOTES, 'UTF-8', false); ?></h2>
+ </header>
+ <div>
+ <text><?php echo \htmlentities($bewertung[$i]['bemerkung'], ENT_QUOTES, 'UTF-8', false); ?></text>
+ </div>
+ <div class="author">
+ <div class="profile"></div>
+ <div class="info">
+ <div class="caption">Author</div>
+ <div class="name"><?php echo \htmlentities($bewertung[$i]['email'], ENT_QUOTES, 'UTF-8', false); ?></div>
+ </div>
+ </div>
+ <div style="margin: 1rem 0 1rem;">
+ <div>
+ <select id="example<?php echo \htmlentities($i, ENT_QUOTES, 'UTF-8', false); ?>">
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ </select>
+ </div>
+ </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script src="node_modules/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+ <?php endfor; ?>
+ <script type="text/javascript">
+ <?php for($i=0;$i<$anzahlbewertungen['anzahl'];$i++): ?>
+ $(function() {
+ $('#example<?php echo \htmlentities($i, ENT_QUOTES, 'UTF-8', false); ?>').barrating('show', {
+ theme: 'fontawesome-stars',
+ initialRating: '<?php echo \htmlentities($bewertung[$i]['sterne'], ENT_QUOTES, 'UTF-8', false); ?>',
+ readonly: 'true',
+ });
+ });
+ <?php endfor; ?>
+ </script>
+ </div>
+ </body>
+</html>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('e_mensa.layout'); } ?>

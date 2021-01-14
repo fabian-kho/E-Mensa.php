@@ -108,5 +108,40 @@ class ExampleController
             return view('login.anmeldung', ['msg' => $msg]);
         }
     }
+    public function bewertungen()
+    {
+        //Nur angemeldete Benutzer können Gerichte bewerten
+        if($_SESSION['login_ok'] == true) {
+
+            $vars = [
+                'bewertung' => $bewertung = db_all_ratings(),
+                'anzahlbewertungen' => $anzahlbewertungen = zaehlerBewertungen(),
+            ];
+
+            return view('bewertung.bewertungenListe', $vars);
+        }
+        else{
+            $msg = $_SESSION['login_result_message'] ?? null;
+            return view('login.anmeldung', ['msg' => $msg]);
+        }
+    }
+    public function meinebewertungen()
+    {
+        //Nur angemeldete Benutzer können Gerichte bewerten
+        if($_SESSION['login_ok'] == true) {
+
+            $vars = [
+                'mybewertung' => $mybewertung = db_user_ratings(),
+                'anzahl_user_bewertungen' => $anzahl_user_bewertungen = zaehler_user_Bewertungen(),
+
+            ];
+
+            return view('bewertung.meinebewertungen', $vars);
+        }
+        else{
+            $msg = $_SESSION['login_result_message'] ?? null;
+            return view('login.anmeldung', ['msg' => $msg]);
+        }
+    }
 
 }
