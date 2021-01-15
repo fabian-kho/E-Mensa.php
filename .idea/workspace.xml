@@ -13,12 +13,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="Aufgabe 2 gelöst">
+    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="Aufgabe 2 gefixt">
+      <change afterPath="$PROJECT_DIR$/emensa/public/drag.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/public/css/liste.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/liste.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/public/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/style_css.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/public/db/besucher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/db/besucher.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/bewertung.meinebewertungen.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/bewertung.meinebewertungen.bladec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/public/slideshow.js" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/slideshow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -283,7 +287,7 @@
       <workItem from="1610443629844" duration="20104000" />
       <workItem from="1610602428014" duration="341000" />
       <workItem from="1610623322144" duration="30062000" />
-      <workItem from="1610708822777" duration="26420000" />
+      <workItem from="1610708822777" duration="29378000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -488,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610736437626</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Aufgabe 2 gefixt">
+      <created>1610737043658</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1610737043658</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +522,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/emensa/jquery-bar-rating" />
     </ignored-roots>
-    <MESSAGE value="E_Mensa.sql added" />
     <MESSAGE value="Aufgabe_5.sql added" />
     <MESSAGE value="Aufgabe 7 erledigt.&#10;Änderungen in CSS file." />
     <MESSAGE value="Aufgabe 7 update." />
@@ -536,7 +546,8 @@
     <MESSAGE value="Delete button uner /meinebewertungen hinzugefügt &amp; Slideshow buttons entfernt" />
     <MESSAGE value="Navigationsbar angepasst" />
     <MESSAGE value="Aufgabe 2 gelöst" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 2 gelöst" />
+    <MESSAGE value="Aufgabe 2 gefixt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 2 gefixt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -12,6 +12,7 @@
 
 
     <script type="text/javascript" src="slideshow.js"></script>
+    <script src="drag.js"></script>
 
     <!-- Icon Kit -->
     <script src="https://kit.fontawesome.com/2661bde70a.js" crossorigin="anonymous"></script>
@@ -59,6 +60,7 @@
             function closeForm() {
                 document.getElementById("myForm").style.display = "none";
             }
+
         </script>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -218,6 +220,27 @@
                     });
                 });
                 @endfor
+                    $.fn.attachDragger = function(){
+                    var attachment = false, lastPosition, position, difference;
+                    $( $(this)).on("mousedown mouseup mousemove",function(e){
+                        if( e.type == "mousedown" ) attachment = true, lastPosition = [e.clientX, e.clientY];
+                        if( e.type == "mouseup" ) attachment = false;
+                        if( e.type == "mousemove" && attachment == true ){
+                            position = [e.clientX, e.clientY];
+                            difference = [ (position[0]-lastPosition[0]), (position[1]-lastPosition[1]) ];
+                            $(this).scrollLeft( $(this).scrollLeft() - difference[0] );
+                            $(this).scrollTop( $(this).scrollTop() - difference[1] );
+                            lastPosition = [e.clientX, e.clientY];
+                        }
+                    });
+                    $(window).on("mouseup", function(){
+                        attachment = false;
+                    });
+                }
+                $(document).ready(function(){
+                    $(".card-container").attachDragger();
+                });
+
             </script>
         </div>
     </section>

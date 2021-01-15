@@ -8,8 +8,9 @@
 
 /**Allgemein--------------------------------------------------------*/
 hr {
-    height: 3px;
-    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+    height: 5px;
+    background-image: linear-gradient(white, #E7DBD1, white);
+    border-style: none;
 }
 
 main {
@@ -89,8 +90,12 @@ header {
     .topnav a:not(:last-child) {
         display: none;
     }
+    .topnav button{
+        display: none;
+    }
 
     .topnav a.icon {
+        margin-top: 0px;
         float: right;
         display: block;
     }
@@ -105,6 +110,11 @@ header {
     }
 
     .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive button {
         float: none;
         display: block;
         text-align: left;
@@ -265,7 +275,7 @@ header {
 
 /**Erste Zeile der Tabelle*/
 #zeile1 {
-    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+    background-color:#E7DBD1;
 }
 
 /*--Bewertung--------------------------------------------------------------------------------------*/
@@ -340,7 +350,7 @@ header {
 #zahlen p:nth-child(1) {
     color: white;
     border: 2px solid;
-    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+    background-color:#E7DBD1;
     border-radius: 12px;
 }
 
@@ -389,7 +399,7 @@ fieldset label, select {
 /*Styling der ICONS*/
 #kontakt .icon, #Gerichtebewertung .icon  {
     padding: 10px;
-    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+    background-color: #E7DBD1;
     color: white;
     min-width: 50px;
     text-align: center;
@@ -550,7 +560,7 @@ footer ul {
 /*Design vom icon*/
 #Allergene .icon {
     padding: 5px;
-    background-image: linear-gradient(to right, rgb(179, 89, 0), rgb(38, 38, 38));
+    background-color:#E7DBD1;
     color: white;
     min-width: 45px;
     text-align: center;
@@ -593,7 +603,20 @@ footer ul {
     cursor: pointer;
     opacity: 0.8;
 }
-
+@media screen and (max-width: 600px) {
+    .open-button {
+        position: absolute;
+        right: 10%;
+        margin-top: -12px;
+        background-color: #E7DBD1;
+        font-size: 100%;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
 /* The popup form - hidden by default */
 .form-popup {
     border-radius:20px ;
@@ -638,13 +661,17 @@ footer ul {
     opacity: 1;
 }
 
-
-
+.card-container {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
 
 .card-container {
     width: 94%;
     position: relative;
-    overflow-x: overlay;
+    overflow-x: hidden;
     display: flex;
     background-color: white;
     padding: 3.5rem;

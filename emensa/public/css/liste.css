@@ -148,21 +148,26 @@ body {
     .white:not(:first-child) {
         margin-left: -130px;
     }
-
-    .white:hover {
-        transform: translateY(-1rem);
-    }
-    .white:hover~.white{
-        transform: translateX(130px);
-    }
     .green:not(:first-child) {
         margin-left: -130px;
     }
 
+    .white:hover {
+        transform: translateY(-1rem);
+    }
     .green:hover {
         transform: translateY(-1rem);
     }
-    .green:hover~.white{
+    .white:hover~.white {
+        transform: translateX(130px);
+    }
+    .green:hover~.green {
+        transform: translateX(130px);
+    }
+    .white:hover~.green {
+        transform: translateX(130px);
+    }
+    .green:hover~.white {
         transform: translateX(130px);
     }
 
@@ -313,23 +318,29 @@ body {
     .white:not(:first-child) {
         margin-left: -130px;
     }
-
-    .white:hover {
-        transform: translateY(-1rem);
-    }
-    .white:hover~.white{
-        transform: translateX(130px);
-    }
     .green:not(:first-child) {
         margin-left: -130px;
     }
 
+    .white:hover {
+        transform: translateY(-1rem);
+    }
     .green:hover {
         transform: translateY(-1rem);
     }
-    .green:hover~.white{
+    .white:hover~.white {
         transform: translateX(130px);
     }
+    .green:hover~.green {
+        transform: translateX(130px);
+    }
+    .white:hover~.green {
+        transform: translateX(130px);
+    }
+    .green:hover~.white {
+        transform: translateX(130px);
+    }
+
 }
 
 
