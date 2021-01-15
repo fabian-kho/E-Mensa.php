@@ -25,18 +25,18 @@
         <div class="card-container">
 
             @for($i=0;$i<$anzahl_user_bewertungen['anzahl'];$i++)
-
                 <div class="card">
+                    <form method="post">
                     <header class="article-header">
                         <div>
                             <div class="category-title">
-                                <span class="date">{{$mybewertung[$i]['date']}}</span>
-                                <form action="delete.php" method="post">
-                                <button id="nobutton" onclick=""><i class="far fa-trash-alt"></i></button>
-                                </form>
+                                <input type="hidden" name="ID{{$i}}" value="{{$mybewertung[$i]['ID']}}" />
+                                <span class="date" >{{$mybewertung[$i]['date']}}</span>
+                                    <button id="nobutton" type="submit" name="delete"><i class="far fa-trash-alt"></i></button>
+
                             </div>
                         </div>
-                        <h2 class="article-title">{{$mybewertung[$i]['Gericht']}}</h2>
+                        <h2 class="article-title" name="gerichtName">{{$mybewertung[$i]['Gericht']}}</h2>
                     </header>
                     <div>
                         <text>{{$mybewertung[$i]['bemerkung']}}</text>
@@ -59,11 +59,22 @@
                             </select>
                         </div>
                     </div>
+                </form>
                 </div>
+                @endfor
+                @if($anzahl_user_bewertungen['anzahl']==null)
+                    <div class="card">
+                        <form method="post">
+                            <div class="leer">
+                                <text>Sie haben noch keine Bewertung geschrieben.</text>
+                            </div>
+                        </form>
+                    </div>
+                @endif
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
                 <script src="node_modules/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
-            @endfor
-            <script type="text/javascript">
+
+                <script type="text/javascript">
                 @for($i=0;$i<$anzahl_user_bewertungen['anzahl'];$i++)
                 $(function() {
                     $('#example{{$i}}').barrating('show', {

@@ -1,7 +1,4 @@
 <?php
-/**
- * Diese Datei regelt die Anmeldung zum Newsletter
- */
 
 $GlobalgerichtId=0;
 
@@ -56,7 +53,7 @@ function db_user_ratings() {
 
     $pdo=connectdb_PDO();
 
-    $sql = "SELECT bemerkung, sterne, erstellt_am AS date,email,name AS Gericht FROM bewertung 
+    $sql = "SELECT  bewertung.id as ID,bemerkung, sterne, erstellt_am AS date,email,name AS Gericht FROM bewertung
             JOIN benutzer_bewertung bb on bewertung.id = bb.bewertungs_id
             LEFT JOIN benutzer b on b.id = bb.benutzer_id
             LEFT JOIN bewertung_gericht bg on bewertung.id = bg.bewertungs_id
@@ -135,8 +132,9 @@ function bewertung_eintragen(){
                 $pdo->commit();     //pdo übergeben
 
 
-                $fehler='stored';
+                $fehler='Bewertung abgegeben';
 
+                header('Location: /werbeseite');
 
             } catch (PDOException $e) {
                 echo $e->getMessage();

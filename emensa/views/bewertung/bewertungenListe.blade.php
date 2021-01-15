@@ -54,9 +54,19 @@
                         </div>
                     </div>
                 </div>
+                 @endfor
+                @if($anzahl_user_bewertungen['anzahl']==null)
+                    <div class="card">
+                        <form method="post">
+                            <div class="leer">
+                                <text>Es wurden noch keine Bewertungen geschrieben.</text>
+                            </div>
+                        </form>
+                    </div>
+                @endif
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
                 <script src="node_modules/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
-                @endfor
+
                 <script type="text/javascript">
                     @for($i=0;$i<$anzahlbewertungen['anzahl'];$i++)
                     $(function() {

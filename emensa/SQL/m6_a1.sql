@@ -27,6 +27,24 @@ create table bewertung_gericht
             on update cascade
 );
 
+ALTER TABLE bewertung_gericht
+    DROP CONSTRAINT bewertung_gericht_gericht_id_fk,
+    DROP CONSTRAINT bewertung_gericht_bewertung_id_fk;
+
+ALTER TABLE bewertung_gericht
+    ADD CONSTRAINT bewertung_gericht_gericht_id_fk
+        FOREIGN KEY (gericht_id)
+            REFERENCES gericht (id)
+            ON DELETE CASCADE
+                On UPDATE Cascade,
+    ADD CONSTRAINT bewertung_gericht_bewertung_id_fk
+        FOREIGN KEY (bewertungs_id)
+            REFERENCES  bewertung (id)
+            ON DELETE CASCADE
+            On UPDATE Cascade;
+
+
+
 create table benutzer_bewertung
 (
     benutzer_id bigint       not null,
@@ -39,9 +57,18 @@ create table benutzer_bewertung
             on update cascade
 );
 
-/*ALTER TABLE kategorie
-    ADD CONSTRAINT kategorie_kategorie_eltern_id_fk
-        FOREIGN KEY (eltern_id) REFERENCES kategorie(id);
+ALTER TABLE benutzer_bewertung
+    DROP CONSTRAINT benutzer_bewertung_benutzer_id_fk,
+    DROP CONSTRAINT benutzer_bewertung_bewertung_id_fk;
 
-
-Select * FROM wunschgericht LIMIT 5;*/
+ALTER TABLE benutzer_bewertung
+    ADD CONSTRAINT benutzer_bewertung_benutzer_id_fk
+        FOREIGN KEY (benutzer_id)
+            REFERENCES benutzer (id)
+            ON DELETE CASCADE
+            On UPDATE Cascade,
+    ADD CONSTRAINT benutzer_bewertung_bewertung_id_fk
+        FOREIGN KEY (bewertungs_id)
+            REFERENCES  bewertung (id)
+            ON DELETE CASCADE
+            On UPDATE Cascade;

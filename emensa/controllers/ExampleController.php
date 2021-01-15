@@ -6,6 +6,7 @@ require_once('../models/zaehler.php');
 require_once('../models/newsletter.php');
 require_once('../models/wunschgerichte.php');
 require_once('../models/bewerten.php');
+require_once('../models/delete.php');
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
@@ -78,6 +79,7 @@ class ExampleController
             'anzahlGerichte' => $anzahlGerichte = zaehlerGerichte(),
             'fehler' => $fehler = newsletter_anmeldung(),
             'bilder' => $bilder = db_gerichtBilder_select_all(),
+            'Alert' => $Alert = bewertung_eintragen(),
 
         ];
         return view('e_mensa.werbeseite', $vars);
@@ -133,6 +135,7 @@ class ExampleController
             $vars = [
                 'mybewertung' => $mybewertung = db_user_ratings(),
                 'anzahl_user_bewertungen' => $anzahl_user_bewertungen = zaehler_user_Bewertungen(),
+                'fehler'=> $fehler = bewertung_delete()
 
             ];
 

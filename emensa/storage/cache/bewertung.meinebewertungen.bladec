@@ -25,16 +25,18 @@
  <div class="card-container">
 
  <?php for($i=0;$i<$anzahl_user_bewertungen['anzahl'];$i++): ?>
-
  <div class="card">
+ <form method="post">
  <header class="article-header">
  <div>
  <div class="category-title">
- <span class="date"><?php echo \htmlentities($mybewertung[$i]['date'], ENT_QUOTES, 'UTF-8', false); ?></span>
- <button id="nobutton"><i class="far fa-trash-alt"></i></button>
+ <input type="hidden" name="ID<?php echo \htmlentities($i, ENT_QUOTES, 'UTF-8', false); ?>" value="<?php echo \htmlentities($mybewertung[$i]['ID'], ENT_QUOTES, 'UTF-8', false); ?>" />
+ <span class="date" ><?php echo \htmlentities($mybewertung[$i]['date'], ENT_QUOTES, 'UTF-8', false); ?></span>
+ <button id="nobutton" type="submit" name="delete"><i class="far fa-trash-alt"></i></button>
+
  </div>
  </div>
- <h2 class="article-title"><?php echo \htmlentities($mybewertung[$i]['Gericht'], ENT_QUOTES, 'UTF-8', false); ?></h2>
+ <h2 class="article-title" name="gerichtName"><?php echo \htmlentities($mybewertung[$i]['Gericht'], ENT_QUOTES, 'UTF-8', false); ?></h2>
  </header>
  <div>
  <text><?php echo \htmlentities($mybewertung[$i]['bemerkung'], ENT_QUOTES, 'UTF-8', false); ?></text>
@@ -57,10 +59,21 @@
  </select>
  </div>
  </div>
+ </form>
  </div>
+ <?php endfor; ?>
+ <?php if($anzahl_user_bewertungen['anzahl']==null): ?>
+ <div class="card">
+ <form method="post">
+ <div class="leer">
+ <text>Sie haben noch keine Bewertung geschrieben.</text>
+ </div>
+ </form>
+ </div>
+ <?php endif; ?>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
  <script src="node_modules/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
- <?php endfor; ?>
+
  <script type="text/javascript">
  <?php for($i=0;$i<$anzahl_user_bewertungen['anzahl'];$i++): ?>
  $(function() {
@@ -72,6 +85,7 @@
  });
  <?php endfor; ?>
  </script>
+ </div>
  </div>
  </body>
 </html>

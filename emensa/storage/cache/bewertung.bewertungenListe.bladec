@@ -69,6 +69,7 @@
  <?php endfor; ?>
  </script>
  </div>
+ </div>
  </body>
 </html>
 <?php $this->stopSection(); ?>

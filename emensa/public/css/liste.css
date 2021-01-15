@@ -110,6 +110,11 @@ body {
     border: none;
 }
 
+.leer{
+    margin-top: 40%;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 600px) {
     body {
         background-color: #E7DBD1;

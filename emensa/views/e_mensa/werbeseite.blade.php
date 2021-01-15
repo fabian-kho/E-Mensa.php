@@ -95,8 +95,6 @@
             </div>
         </div>
     @endfor
-    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 
     <script>
         var slideIndex = 0;
@@ -160,6 +158,8 @@
                 </div>
             </fieldset>
         </form>
+        <p id="fehler">{{$Alert}}
+        </p>
     </section>
 
 

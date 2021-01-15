@@ -42,18 +42,12 @@ header {
     border-radius: 50px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
 }
-@media screen and (min-width: 600px) {
-    .logo{
-
-
-    }
-}
 
 .logo {
     float: left;
     width: 15%;
     height: auto;
-    margin-top: 5px;
+    margin-top: 12px;
 
 }
 
@@ -97,9 +91,6 @@ header {
         float: right;
         display: block;
     }
-}
-
-@media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;
     }
@@ -205,69 +196,18 @@ header {
 
 /*W3 Slideshow ***********************************************************/
 
-@media screen and (max-width: 600px) {
-    .w3-button{
-        display: none;
-    }
-}
+
 @media screen and (min-width: 600px) {
 
-    .w3-display-left {
-        position: absolute;
-        top: 90%;
-        left: 10%;
-        transform: translate(0%, -50%);
-        -ms-transform: translate(-0%, -50%)
-    }
-
-    .w3-display-right {
-        position: absolute;
-        top: 90%;
-        right: 10%;
-        transform: translate(0%, -50%);
-        -ms-transform: translate(0%, -50%)
-    }
 
     .container {
         display: none;
-    }
-
-    .w3-button:hover {
-        color: #000 !important;
-        background-color: #ccc !important
-    }
-
-    .w3-button:disabled {
-        cursor: not-allowed;
-        opacity: 0.3
     }
 
     .w3-disabled *, :disabled * {
         pointer-events: none
     }
 
-    .w3-button {
-        border: none;
-        display: inline-block;
-        padding: 8px 16px;
-        vertical-align: middle;
-        overflow: hidden;
-        text-decoration: none;
-        color: inherit;
-        background-color: inherit;
-        text-align: center;
-        cursor: pointer;
-        white-space: nowrap
-    }
-
-    .w3-button {
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none
-    }
 }
 /**Tabelle--------------------------------------------------------*/
 #gerichtTabelle {
@@ -633,4 +573,8 @@ footer ul {
 #AllergenListe {
     display: none;
 }
+
+
+/*User Drop-Down*/
+
 
