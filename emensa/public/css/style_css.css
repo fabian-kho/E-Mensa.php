@@ -8,9 +8,14 @@
 
 /**Allgemein--------------------------------------------------------*/
 hr {
-    height: 5px;
-    background-image: linear-gradient(white, #E7DBD1, white);
+    height: 1px;
+    background: linear-gradient(to left, #100e17, white 25%, white 75%,#100e17 100%);
     border-style: none;
+}
+
+body{
+    background-color: #100e17;
+    color: white;
 }
 
 main {
@@ -37,9 +42,9 @@ section {
 
 
 header {
-
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
     overflow: hidden;
-    background-color: #E7DBD1;
     border-radius: 50px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
 }
@@ -70,11 +75,14 @@ header {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
+    color: white;
 }
 
 .topnav a:hover {
-    background-color: #F1E9E4;
-    color: black;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    color: white;
 }
 
 .topnav a.active {
@@ -167,11 +175,13 @@ header {
 /*--Images--------------------------------------------------------*/
 
 .box {
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
     flex: 1;
     overflow: hidden;
     transition: .5s;
     margin: 0 2%;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
     line-height: 0;
 }
 
@@ -224,8 +234,11 @@ header {
 }
 /**Tabelle--------------------------------------------------------*/
 #gerichtTabelle {
+    border-spacing: 0;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
     font-family: 'Ubuntu', sans-serif;
-    border-collapse: collapse;
     /**Dünne ränder*/
     width: 100%;
 }
@@ -240,21 +253,25 @@ header {
 
 /**alle Spalten*/
 #gerichtTabelle td, #gerichtTabelle th {
-    border: 1px solid #ddd;
     padding: 8px;
 }
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
 
-/**nth-child() gibt jeder zweiten Spalte eine graue Farbe*/
-#gerichtTabelle tr:nth-child(even) {
-    background-color: #f2f2f2;
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
 }
 
 #gerichtTabelle tr:hover {
     background-color: #ddd;
+    color: black;
 }
 
 /**Zeilen der ersten Spalte */
 #gerichtTabelle th {
+
+    background-color: #17141d;
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -273,9 +290,21 @@ header {
     }
 }
 
+table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+th, td  {
+    padding: 1em;
+
+}
+
 /**Erste Zeile der Tabelle*/
 #zeile1 {
-    background-color:#E7DBD1;
+    border-radius: 16px;
+    background-color: #17141d;
 }
 
 /*--Bewertung--------------------------------------------------------------------------------------*/
@@ -285,6 +314,9 @@ header {
     #Gerichtebewertung input[type=submit] {
         margin-bottom: 10;
         margin-right: 20px;
+        border-radius: 16px;
+        background-color: #17141d;
+        box-shadow: -1rem 0 2rem  #000;
         color: black;
         background-color: white;
         border-color: grey;
@@ -325,7 +357,7 @@ header {
 
 #wunschgerichtLink {
     text-decoration: none;
-    color: black;
+    color: white;
 
 }
 
@@ -349,9 +381,9 @@ header {
 
 #zahlen p:nth-child(1) {
     color: white;
-    border: 2px solid;
-    background-color:#E7DBD1;
-    border-radius: 12px;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
 }
 
 /**Newsletter--------------------------------------------------------*/
@@ -397,10 +429,11 @@ fieldset label, select {
 
 
 /*Styling der ICONS*/
-#kontakt .icon, #Gerichtebewertung .icon  {
+    #kontakt .icon, #Gerichtebewertung .icon  {
     padding: 10px;
-    background-color: #E7DBD1;
-    color: white;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
     min-width: 50px;
     text-align: center;
     border-bottom-left-radius: 12px;
@@ -440,20 +473,22 @@ fieldset label, select {
 /*Styling des Newsletter Submit buttons*/
 
 #kontakt input[type=submit] {
-    margin-bottom: 10;
-    margin-right: 20px;
-    color: black;
-    background-color: white;
-    border-color: grey;
-    border-radius: 12px;
+    margin-left: 25px;
+    border-radius: 16px;
+    color: white;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    border-style: none;
 }
 #Gerichtebewertung input[type=submit] {
-    margin-bottom: 10;
     margin-right: 20px;
-    color: black;
-    background-color: white;
-    border-color: grey;
-    border-radius: 12px;
+    margin-left: 20px;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    border-style: none;
+    color: white;
+
 }
 
 /*Text unter letzter Section
@@ -464,7 +499,6 @@ section + p {
 
 /*Newsletter formatieren*/
 #name, #email, #sprache,#gerichtbewerten {
-    border: 1px solid grey;
     border-bottom-right-radius: 12px;
     border-top-right-radius: 12px;
 }
@@ -560,8 +594,9 @@ footer ul {
 /*Design vom icon*/
 #Allergene .icon {
     padding: 5px;
-    background-color:#E7DBD1;
-    color: white;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
     min-width: 45px;
     text-align: center;
     border-bottom-left-radius: 12px;
@@ -595,7 +630,9 @@ footer ul {
     position: absolute;
     right: 2%;
     top: 40%;
-    background-color: #E7DBD1;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
     font-size: 100%;
     color: white;
     padding: 16px 20px;
@@ -608,7 +645,9 @@ footer ul {
         position: absolute;
         right: 10%;
         margin-top: -12px;
-        background-color: #E7DBD1;
+        border-radius: 16px;
+        background-color: #17141d;
+        box-shadow: -1rem 0 3rem #000;
         font-size: 100%;
         color: white;
         padding: 16px 20px;
@@ -624,7 +663,7 @@ footer ul {
     position: fixed;
     right: 15px;
     bottom: 10px;
-    border: 3px solid #E7DBD1;
+    border: 3px solid #ddd;
     z-index: 9;
 }
 
@@ -633,7 +672,9 @@ footer ul {
     border-radius:20px ;
     max-width: 300px;
     padding: 5px;
-    background-color: white;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
 }
 
 
@@ -641,7 +682,9 @@ footer ul {
 /* Set a style for the submit/login button */
 .form-container .btn {
     border-radius: 20px;
-    background-color: #4CAF50;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -651,10 +694,6 @@ footer ul {
     opacity: 0.8;
 }
 
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-    background-color: #E7DBD1;
-}
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
@@ -673,7 +712,8 @@ footer ul {
     position: relative;
     overflow-x: hidden;
     display: flex;
-    background-color: white;
+    border-radius: 16px;
+    background-color: #100e17;
     padding: 3.5rem;
     border-radius: 1.5em;
     margin-top: 20px;
@@ -687,8 +727,8 @@ footer ul {
     min-width: 300px;
     height: 350px;
     border-radius: 16px;
-    background-color: #E7DBD1;
-    box-shadow: -1rem 0 2rem -1rem #000;
+    background-color: #17141d;
+    box-shadow: -1rem 0 2rem  #000;
     display: flex;
     flex-direction: column;
     padding: 1.5rem;

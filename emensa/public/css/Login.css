@@ -2,12 +2,15 @@
 
 @media screen and (max-width: 600px) {
     body {
-        background-color: #E7DBD1;
+        background-color: #100e17;
         font-family: 'Ubuntu', sans-serif;
     }
 
     .main {
-        background-color: #FFFFFF;
+        height: 350px;
+        border-radius: 16px;
+        background-color: #17141d;
+        box-shadow: -1rem 0 3rem #000;
         width: 90%;
         height: 90%;
         margin: 7em auto;
@@ -17,7 +20,7 @@
 
     .sign {
         padding-top: 40px;
-        color: #73492B;
+        color: #555352;
         font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
         font-size: 23px;
@@ -86,8 +89,9 @@
     .submit {
         cursor: pointer;
         border-radius: 5em;
-        color: #fff;
-        background: linear-gradient(to right, #E7DBD1, #E7DBD1,#E7DBD1,white);
+        color: #555352;
+        border-radius: 16px;
+        background-color: #100E17;
         border: 0;
         padding-left: 40px;
         padding-right: 40px;
@@ -96,7 +100,6 @@
         font-family: 'Ubuntu', sans-serif;
         margin-left: 32.5%;
         font-size: 13px;
-        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
     }
 
     /**Fehlermeldung--------------------------------------------------------*/
@@ -112,12 +115,14 @@
 }
 @media screen and (min-width: 600px) {
     body {
-        background-color: #E7DBD1;
+        background-color: #100e17;
         font-family: 'Ubuntu', sans-serif;
     }
 
     .main {
-        background-color: #FFFFFF;
+        border-radius: 16px;
+        background-color: #17141d;
+        box-shadow: -1rem 0 3rem #000;
         width: 400px;
         height: 400px;
         margin: 7em auto;
@@ -127,7 +132,7 @@
 
     .sign {
         padding-top: 40px;
-        color: #73492B;
+        color: #555352;
         font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
         font-size: 23px;
@@ -196,8 +201,9 @@
     .submit {
         cursor: pointer;
         border-radius: 5em;
-        color: #fff;
-        background: linear-gradient(to right, #E7DBD1, #E7DBD1,#E7DBD1,white);
+        color: #555352;
+        border-radius: 16px;
+        background-color: #100E17;
         border: 0;
         padding-left: 40px;
         padding-right: 40px;
@@ -206,7 +212,6 @@
         font-family: 'Ubuntu', sans-serif;
         margin-left: 32.5%;
         font-size: 13px;
-        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
     }
 
     /**Fehlermeldung--------------------------------------------------------*/

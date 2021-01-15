@@ -15,12 +15,12 @@ body {
 
 @media screen and (max-width: 600px) {
     body {
-        background-color: #E7DBD1;
+        background-color: #100e17;
         font-family: 'Ubuntu', sans-serif;
     }
 
     .main {
-        background-color: #FFFFFF;
+        background-color: #100e17;
         width: 90%;
         height: 500px;
         margin: 2em auto;
@@ -29,7 +29,7 @@ body {
     }
     .card-container {
         position: relative;
-        overflow-x: scroll;
+        overflow-x: hidden;
         display: flex;
         background-color: #100e17;
         padding: 3rem;
@@ -187,7 +187,7 @@ body {
 
 @media screen and (min-width: 600px) {
     body {
-        background-color: #E7DBD1;
+        background-color: #100e17;
         font-family: 'Ubuntu', sans-serif;
     }
 
@@ -202,7 +202,7 @@ body {
     .card-container {
         width: 100%;
         position: relative;
-        overflow-x: scroll;
+        overflow-x: hidden;
         display: flex;
         background-color: #100e17;
         padding: 7.5rem;
@@ -343,7 +343,12 @@ body {
 
 }
 
-
+.card-container {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
 
 
 
