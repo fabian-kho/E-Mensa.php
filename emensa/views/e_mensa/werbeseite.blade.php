@@ -198,7 +198,7 @@
                     </form>
                 </div>
             @endfor
-            @if($highlightsAnzahl['anzahl']==null)
+            @if($highlightsAnzahl['anzahl']==0)
                 <div class="card">
                     <form method="post">
                         <div class="leer">

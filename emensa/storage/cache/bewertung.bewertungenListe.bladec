@@ -21,6 +21,7 @@
 
 <?php $this->startSection('main'); ?>
  <body>
+ <a href="/werbeseite"><button class="homebutton"><i class="fas fa-home"></i></button></a>
  <div class="main">
  <div class="card-container">
 
@@ -56,7 +57,6 @@
  <option value="2">2</option>
  <option value="3">3</option>
  <option value="4">4</option>
- <option value="5">5</option>
  </select>
  </div>
  </div>
@@ -76,6 +76,26 @@
  });
  });
  <?php endfor; ?>
+ $.fn.attachDragger = function(){
+ var attachment = false, lastPosition, position, difference;
+ $( $(this)).on("mousedown mouseup mousemove",function(e){
+ if( e.type == "mousedown" ) attachment = true, lastPosition = [e.clientX, e.clientY];
+ if( e.type == "mouseup" ) attachment = false;
+ if( e.type == "mousemove" && attachment == true ){
+ position = [e.clientX, e.clientY];
+ difference = [ (position[0]-lastPosition[0]), (position[1]-lastPosition[1]) ];
+ $(this).scrollLeft( $(this).scrollLeft() - difference[0] );
+ $(this).scrollTop( $(this).scrollTop() - difference[1] );
+ lastPosition = [e.clientX, e.clientY];
+ }
+ });
+ $(window).on("mouseup", function(){
+ attachment = false;
+ });
+ }
+ $(document).ready(function(){
+ $(".card-container").attachDragger();
+ });
  </script>
  </div>
  </div>

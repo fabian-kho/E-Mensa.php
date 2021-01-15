@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bars-movie/latest/css/bars-movie.min.css">
     <link rel="stylesheet" href="node_modules/jquery-bar-rating/dist/themes/bars-movie.css">
 
+    <!-- Icon Kit -->
+    <script src="https://kit.fontawesome.com/2661bde70a.js" crossorigin="anonymous"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bewertung</title>
@@ -20,6 +22,8 @@
 
 @section('main')
     <body>
+    <a href="/werbeseite"><button class="homebutton"><i class="fas fa-home"></i></button></a>
+
     <div class="grid-container">
     <div class="main">
         <p class="sign" align="center">Bewertung</p>
@@ -33,7 +37,7 @@
                 <option value="2">gut</option>
                 <option value="3">sehr gut</option>
             </select>
-                <nav class="abschicken"><button class="submit" name="submit" id="submit" type="submit" >Anmelden</button></nav>
+                <nav class="abschicken"><button class="submit" name="submit" id="submit" type="submit" >Bewerten</button></nav>
             </div>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
             <script src="node_modules/jquery-bar-rating/dist/jquery.barrating.min.js"></script>

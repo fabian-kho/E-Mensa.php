@@ -59,6 +59,8 @@ body {
     border-radius: 16px;
     background-color: #100e17;
     box-shadow: -1rem 0 3rem #000;
+    border-style: none;
+    color: #8a8a8a;
     padding: 10px 40px;
     font-family: 'Ubuntu', sans-serif;
     margin-left: 27.5%;

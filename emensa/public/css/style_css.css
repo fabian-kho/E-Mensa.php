@@ -431,13 +431,12 @@ fieldset label, select {
 /*Styling der ICONS*/
     #kontakt .icon, #Gerichtebewertung .icon  {
     padding: 10px;
-    border-radius: 16px;
     background-color: #17141d;
     box-shadow: -1rem 0 3rem #000;
     min-width: 50px;
     text-align: center;
-    border-bottom-left-radius: 12px;
-    border-top-left-radius: 12px;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
 }
 
 @media screen and (min-width: 600px) {
