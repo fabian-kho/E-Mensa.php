@@ -13,21 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="Logo geändert">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/bewertung.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/bewertung.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/liste.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/liste.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/meine_liste.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/meine_liste.css" afterDir="false" />
+    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="design update">
       <change beforePath="$PROJECT_DIR$/emensa/public/db/besucher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/db/besucher.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertung.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertung.bladec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertungenListe.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertungenListe.bladec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/bewertung.meinebewertungen.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/bewertung.meinebewertungen.bladec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/bewertung.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/bewertung.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/bewertungenListe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/bewertungenListe.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/meinebewertungen.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/meinebewertungen.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +280,7 @@
       <workItem from="1610443629844" duration="20104000" />
       <workItem from="1610602428014" duration="341000" />
       <workItem from="1610623322144" duration="30062000" />
-      <workItem from="1610708822777" duration="37207000" />
+      <workItem from="1610708822777" duration="37509000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -525,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610744850254</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="design update">
+      <created>1610748513729</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1610748513729</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +543,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/emensa/jquery-bar-rating" />
     </ignored-roots>
-    <MESSAGE value="Aufgabe 7 update." />
     <MESSAGE value="-Code bereinigt...&#10;-Push des Ordners Beispiele" />
     <MESSAGE value="Die Variable $fehler war nicht deklariert.." />
     <MESSAGE value="Variablennamen auf Sinnhaftigkeit geprüft und geändert." />
@@ -573,7 +567,8 @@
     <MESSAGE value="Aufgabe 2 gefixt" />
     <MESSAGE value="Design geändert" />
     <MESSAGE value="Logo geändert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logo geändert" />
+    <MESSAGE value="design update" />
+    <option name="LAST_COMMIT_MESSAGE" value="design update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

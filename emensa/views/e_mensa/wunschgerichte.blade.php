@@ -8,10 +8,15 @@
     <link rel="stylesheet" type="text/css" href="css/wunschgerichte_style.css">
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
+
+    <script src="https://kit.fontawesome.com/2661bde70a.js" crossorigin="anonymous"></script>
+
 @endsection
 
 
 @section('main')
+
+    <a href="/werbeseite"><button class="homebutton"><i class="fas fa-home"></i></button></a>
     <div class="main">
         <p class="sign" align="center">Wunschgericht</p>
         <form class="form1" method="post">
