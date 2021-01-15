@@ -1304,3 +1304,5 @@
 [2021-01-15T20:57:00.269183+00:00] test.INFO: Dies ist ein Seitenaufruf [] []
 [2021-01-15T20:57:35.735121+00:00] test.INFO: Anmeldung {"email":"admin@emensa.example"} []
 [2021-01-15T20:57:35.760380+00:00] test.INFO: Dies ist ein Seitenaufruf [] []
+[2021-01-15T21:03:48.912287+00:00] test.INFO: Dies ist ein Seitenaufruf [] []
+[2021-01-15T21:07:01.108769+00:00] test.INFO: Dies ist ein Seitenaufruf [] []

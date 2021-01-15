@@ -13,19 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="Aufgabe 2 gefixt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/liste.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/liste.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/meine_liste.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/meine_liste.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/style_css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/wunschgerichte_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/wunschgerichte_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/db/besucher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/db/besucher.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/bewertung.meinebewertungen.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/bewertung.meinebewertungen.bladec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/bewertungenListe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/bewertungenListe.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/meinebewertungen.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/meinebewertungen.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="Design geändert" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -289,7 +277,7 @@
       <workItem from="1610443629844" duration="20104000" />
       <workItem from="1610602428014" duration="341000" />
       <workItem from="1610623322144" duration="30062000" />
-      <workItem from="1610708822777" duration="33755000" />
+      <workItem from="1610708822777" duration="34088000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -508,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610740097971</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Design geändert">
+      <created>1610744268546</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1610744268546</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +526,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/emensa/jquery-bar-rating" />
     </ignored-roots>
-    <MESSAGE value="Aufgabe_5.sql added" />
     <MESSAGE value="Aufgabe 7 erledigt.&#10;Änderungen in CSS file." />
     <MESSAGE value="Aufgabe 7 update." />
     <MESSAGE value="-Code bereinigt...&#10;-Push des Ordners Beispiele" />
@@ -556,7 +550,8 @@
     <MESSAGE value="Navigationsbar angepasst" />
     <MESSAGE value="Aufgabe 2 gelöst" />
     <MESSAGE value="Aufgabe 2 gefixt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 2 gefixt" />
+    <MESSAGE value="Design geändert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design geändert" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
