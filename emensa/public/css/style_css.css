@@ -614,6 +614,7 @@ footer ul {
 }
 
 
+
 /* Set a style for the submit/login button */
 .form-container .btn {
     border-radius: 20px;
@@ -643,7 +644,7 @@ footer ul {
 .card-container {
     width: 94%;
     position: relative;
-    overflow-x: scroll;
+    overflow-x: overlay;
     display: flex;
     background-color: white;
     padding: 3.5rem;

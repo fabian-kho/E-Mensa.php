@@ -63,7 +63,7 @@
  </div>
  <?php endfor; ?>
  <?php if($anzahl_user_bewertungen['anzahl']==null): ?>
- <div class="white">
+ <div class="card">
  <form method="post">
  <div class="leer">
  <text>Sie haben noch keine Bewertung geschrieben.</text>

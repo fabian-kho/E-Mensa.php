@@ -73,14 +73,13 @@ function db_highlight_ratings() {
     $result = mysqli_query($link, $sql);
     $data = mysqli_fetch_all($result, MYSQLI_BOTH);
 
-
     mysqli_close($link);
     return $data;
 }
 
 function db_user_ratings() {
 
-    $link = connectdb();
+    $pdo=connectdb_PDO();
 
     $sql = "SELECT  bewertung.id as ID,bemerkung, sterne, erstellt_am AS date,email,name AS Gericht FROM bewertung
             JOIN benutzer_bewertung bb on bewertung.id = bb.bewertungs_id
@@ -89,11 +88,11 @@ function db_user_ratings() {
             LEFT JOIN gericht g on g.id = bg.gericht_id
             WHERE email = ?";
 
-    $result = mysqli_query($link, $sql);
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$_SESSION["name"]]);
+    $bewertungsid = $stmt->fetchAll();
 
-
-    mysqli_close($link);
-    return $result;
+    return $bewertungsid;
 
 }
 
