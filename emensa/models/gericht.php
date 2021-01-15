@@ -46,6 +46,7 @@ function db_gericht_select_all_and_allergen()
                     ORDER BY name ASC";
 
     $result = mysqli_query($link, $sql);
+
     $i=0;
     while($row = mysqli_fetch_assoc($result)) {
         $row['preis_intern']= number_format($row['preis_intern'], 2, ',', '.');

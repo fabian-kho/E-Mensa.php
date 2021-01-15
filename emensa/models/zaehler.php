@@ -71,3 +71,20 @@ function zaehler_user_Bewertungen(){
     return $bewertungsid;
 
 }
+function zaehler_highlight_Bewertungen(){
+
+
+    $link = connectdb();
+
+    $sql = "SELECT count(highlight) as anzahl FROM bewertung 
+            WHERE highlight = true";
+
+    $result = mysqli_query($link, $sql);
+    $row = mysqli_fetch_assoc($result);
+
+    mysqli_close($link);
+
+    return $row;
+
+}
+

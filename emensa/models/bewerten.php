@@ -34,24 +34,53 @@ function db_all_ratings() {
 
     $link = connectdb();
 
-    $sql = "SELECT bemerkung, sterne, erstellt_am AS date,email,name AS Gericht FROM bewertung
+    $sql = "SELECT bewertung.id as ID ,bemerkung, sterne, erstellt_am AS date,email,name AS Gericht, highlight  FROM bewertung
             JOIN benutzer_bewertung bb on bewertung.id = bb.bewertungs_id
             LEFT JOIN benutzer b on b.id = bb.benutzer_id
             LEFT JOIN bewertung_gericht bg on bewertung.id = bg.bewertungs_id
-            LEFT JOIN gericht g on g.id = bg.gericht_id";
+            LEFT JOIN gericht g on g.id = bg.gericht_id  Order By erstellt_am DESC ";
 
     $result = mysqli_query($link, $sql);
 
-    $data = mysqli_fetch_all($result, MYSQLI_BOTH);
+    $i=0;
+    while($row = mysqli_fetch_assoc($result)) {
+        if($row['highlight']==1)
+        $row['highlight']= 'green';
+        else
+            $row['highlight']= 'white';
+
+        $data[$i]=$row;
+        $i++;
+    }
+
+    //var_dump($data);
+
     mysqli_close($link);
-
-
-
     return $data;
 }
+
+function db_highlight_ratings() {
+
+    $link = connectdb();
+
+    $sql = "SELECT  bemerkung, sterne ,name AS Gericht FROM bewertung
+            JOIN benutzer_bewertung bb on bewertung.id = bb.bewertungs_id
+            LEFT JOIN benutzer b on b.id = bb.benutzer_id
+            LEFT JOIN bewertung_gericht bg on bewertung.id = bg.bewertungs_id
+            LEFT JOIN gericht g on g.id = bg.gericht_id
+            WHERE highlight = true";
+
+    $result = mysqli_query($link, $sql);
+    $data = mysqli_fetch_all($result, MYSQLI_BOTH);
+
+
+    mysqli_close($link);
+    return $data;
+}
+
 function db_user_ratings() {
 
-    $pdo=connectdb_PDO();
+    $link = connectdb();
 
     $sql = "SELECT  bewertung.id as ID,bemerkung, sterne, erstellt_am AS date,email,name AS Gericht FROM bewertung
             JOIN benutzer_bewertung bb on bewertung.id = bb.bewertungs_id
@@ -60,12 +89,12 @@ function db_user_ratings() {
             LEFT JOIN gericht g on g.id = bg.gericht_id
             WHERE email = ?";
 
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([$_SESSION["name"]]);
-    $bewertungsid = $stmt->fetchAll();
+    $result = mysqli_query($link, $sql);
 
 
-    return $bewertungsid;
+    mysqli_close($link);
+    return $result;
+
 }
 
 
@@ -147,4 +176,19 @@ function bewertung_eintragen(){
 
 }
 
+function is_admin()
+{
+    $pdo=connectdb_PDO();
 
+    $sql = "SELECT  admin FROM bewertung
+            JOIN benutzer_bewertung bb on bewertung.id = bb.bewertungs_id
+            LEFT JOIN benutzer b on b.id = bb.benutzer_id
+            WHERE email = ?";
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$_SESSION["name"]]);
+    $admin = $stmt->fetch();
+
+
+    return $admin;
+}

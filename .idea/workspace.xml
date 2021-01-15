@@ -13,13 +13,26 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="Delete button uner /meinebewertungen hinzugefügt &amp; Slideshow buttons entfernt">
+    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="Navigationsbar angepasst">
+      <change afterPath="$PROJECT_DIR$/emensa/public/css/homepage_rating.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emensa/public/css/meine_liste.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/SQL/m6_a1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/SQL/m6_a1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/controllers/ExampleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/controllers/ExampleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/models/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/models/bewerten.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/bewerten.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/models/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/models/gericht.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/gericht.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/models/zaehler.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/zaehler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/public/css/liste.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/liste.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/public/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/style_css.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/public/db/besucher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/db/besucher.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertungenListe.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertungenListe.bladec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/bewertung.meinebewertungen.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/bewertung.meinebewertungen.bladec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/bewertungenListe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/bewertungenListe.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/meinebewertungen.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/meinebewertungen.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -285,7 +298,7 @@
       <workItem from="1610443629844" duration="20104000" />
       <workItem from="1610602428014" duration="341000" />
       <workItem from="1610623322144" duration="30062000" />
-      <workItem from="1610708822777" duration="10903000" />
+      <workItem from="1610708822777" duration="25734000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -476,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610715803314</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Navigationsbar angepasst">
+      <created>1610720024525</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1610720024525</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +519,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/emensa/jquery-bar-rating" />
     </ignored-roots>
-    <MESSAGE value="Aufgabe 2 erledigt." />
     <MESSAGE value="Aufgabe 4 erledigt." />
     <MESSAGE value="E_Mensa.sql added" />
     <MESSAGE value="Aufgabe_5.sql added" />
@@ -524,7 +543,8 @@
     <MESSAGE value="Ein Gericht kann nun unter /bewertung Bewertet werden." />
     <MESSAGE value="Aufgabe 1 Update" />
     <MESSAGE value="Delete button uner /meinebewertungen hinzugefügt &amp; Slideshow buttons entfernt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete button uner /meinebewertungen hinzugefügt &amp; Slideshow buttons entfernt" />
+    <MESSAGE value="Navigationsbar angepasst" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navigationsbar angepasst" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

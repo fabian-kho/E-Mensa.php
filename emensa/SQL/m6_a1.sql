@@ -72,3 +72,8 @@ ALTER TABLE benutzer_bewertung
             REFERENCES  bewertung (id)
             ON DELETE CASCADE
             On UPDATE Cascade;
+
+UPDATE bewertung SET highlight = !highlight
+WHERE id = 6;
+
+Select highlight From bewertung WHERE id = 6

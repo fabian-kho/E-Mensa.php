@@ -7,6 +7,10 @@
     <title>Werbeseite</title>
     <link rel="stylesheet" type="text/css" href="css/style_css.css">
 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/jquery-bar-rating/dist/themes/fontawesome-stars.css">
+
+
     <script type="text/javascript" src="slideshow.js"></script>
 
     <!-- Icon Kit -->
@@ -25,6 +29,7 @@
         <a href="#zahlen">Zahlen</a>
         <a href="#kontakt">Kontakt</a>
         <a href="#wichtig">Wichtig für uns</a>
+        <a href="#meinungen">Meinungen unserer Gäste</a>
 
         <button class="open-button" onclick="openForm()"><i class="far fa-user-circle" id="lock"></i></button>
 
@@ -35,6 +40,7 @@
                     <a href="/abmeldung">{{$_SESSION["name"]}} Abmelden</a>
                     <a href="/meinebewertungen">Meine Bewertungen</a>
                     <a href="/bewertungen">Alle Bewertungen</a>
+
                 @else
                     <a href="/anmeldung">Anmelden</a>
                 @endif
@@ -161,6 +167,59 @@
             @endforelse
         </ul>
 
+    </section>
+    <!--Bewertungen-------------------------------------------------------------------------------------->
+    <section id="meinungen">
+        <h7>Meinungen unserer Gäste</h7>
+
+        <div class="card-container">
+
+            @for($i=0;$i<$highlightsAnzahl['anzahl'];$i++)
+                <div class="card">
+                    <form method="post">
+                        <h2 class="article-title" name="gerichtName">{{$highlights[$i]['Gericht']}}</h2>
+                        </header>
+                        <div>
+                            <text class="bemerkung">{{$highlights[$i]['bemerkung']}}</text>
+                        </div>
+                        <div id="stars">
+                            <div>
+                                <select id="example{{$i}}">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            @endfor
+            @if($highlightsAnzahl['anzahl']==null)
+                <div class="card">
+                    <form method="post">
+                        <div class="leer">
+                            <text class="bemerkung">Es wurde noch keine Bewertung hervorgehoben.</text>
+                        </div>
+                    </form>
+                </div>
+            @endif
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+            <script src="node_modules/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+
+            <script type="text/javascript">
+                @for($i=0;$i<$highlightsAnzahl['anzahl'];$i++)
+                $(function() {
+                    $('#example{{$i}}').barrating('show', {
+                        theme: 'fontawesome-stars',
+                        initialRating: '{{$highlights[$i]['sterne']}}',
+                        readonly: 'true',
+                    });
+                });
+                @endfor
+            </script>
+        </div>
     </section>
 
     <!--Bewertungen-------------------------------------------------------------------------------------->

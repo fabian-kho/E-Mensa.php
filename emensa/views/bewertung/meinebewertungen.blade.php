@@ -6,7 +6,7 @@
         <!DOCTYPE html>
 <html lang="de">
 <head>
-    <link rel="stylesheet" href="css/liste.css">
+    <link rel="stylesheet" href="css/meine_liste.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/jquery-bar-rating/dist/themes/fontawesome-stars.css">
@@ -39,7 +39,7 @@
                         <h2 class="article-title" name="gerichtName">{{$mybewertung[$i]['Gericht']}}</h2>
                     </header>
                     <div>
-                        <text>{{$mybewertung[$i]['bemerkung']}}</text>
+                        <text class="bemerkung">{{$mybewertung[$i]['bemerkung']}}</text>
                     </div>
                     <div class="author">
                         <div class="profile"></div>
@@ -48,7 +48,7 @@
                             <div class="name">{{$mybewertung[$i]['email']}}</div>
                         </div>
                     </div>
-                    <div style="margin: 1rem 0 1rem;">
+                    <div id="stars">
                         <div>
                             <select id="example{{$i}}">
                                 <option value="1">1</option>

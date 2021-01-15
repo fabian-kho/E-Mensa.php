@@ -80,6 +80,8 @@ class ExampleController
             'fehler' => $fehler = newsletter_anmeldung(),
             'bilder' => $bilder = db_gerichtBilder_select_all(),
             'Alert' => $Alert = bewertung_eintragen(),
+            'highlights' => $highlights = db_highlight_ratings(),
+            'highlightsAnzahl' => $highlightsAnzahl = zaehler_highlight_Bewertungen(),
 
         ];
         return view('e_mensa.werbeseite', $vars);
@@ -115,9 +117,13 @@ class ExampleController
         //Nur angemeldete Benutzer können Gerichte bewerten
         if($_SESSION['login_ok'] == true) {
 
+
+
             $vars = [
                 'bewertung' => $bewertung = db_all_ratings(),
                 'anzahlbewertungen' => $anzahlbewertungen = zaehlerBewertungen(),
+                'color' => $color = bewertung_highlight(),
+                'admin' => $admin = is_admin()
             ];
 
             return view('bewertung.bewertungenListe', $vars);
