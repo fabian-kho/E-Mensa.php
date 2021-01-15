@@ -26,12 +26,35 @@
         <a href="#kontakt">Kontakt</a>
         <a href="#wichtig">Wichtig für uns</a>
 
+        <button class="open-button" onclick="openForm()"><i class="far fa-user-circle" id="lock"></i></button>
 
-        @if ($_SESSION['login_ok'])
-            <a href="/abmeldung">{{$_SESSION["name"]}} Abmelden</a>
-        @else
-            <a href="/anmeldung">Anmelden</a>
-        @endif
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+
+                @if ($_SESSION['login_ok'])
+                    <a href="/abmeldung">{{$_SESSION["name"]}} Abmelden</a>
+                    <a href="/meinebewertungen">Meine Bewertungen</a>
+                    <a href="/bewertungen">Alle Bewertungen</a>
+                @else
+                    <a href="/anmeldung">Anmelden</a>
+                @endif
+                <button type="button" class="btn cancel" onclick="openForm()">Close</button>
+            </form>
+        </div>
+
+        <script>
+            function openForm() {
+                if (document.getElementById("myForm").style.display == "block")
+                    document.getElementById("myForm").style.display = "none";
+                else
+                document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -87,6 +110,7 @@
             </div>
             <div class="box">
                 @if(file_exists($bilder[$i]['bildname']))
+
                     <img src="img/gerichte/00_image_missing.jpg">
                 @else
                     <img src="img/gerichte/{{$bilder[$i]['bildname']}}">

@@ -50,11 +50,14 @@ header {
     margin-top: 12px;
 
 }
+    
 
 .topnav {
     font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
-    overflow: hidden;
+    position: relative;
+    overflow:visible;
+
 }
 
 .topnav a {
@@ -576,5 +579,62 @@ footer ul {
 
 
 /*User Drop-Down*/
+/* Style The Dropdown Button */
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    position: absolute;
+    right: 2%;
+    top: 40%;
+    background-color: #E7DBD1;
+    font-size: 100%;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
 
+/* The popup form - hidden by default */
+.form-popup {
+    border-radius:20px ;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    bottom: 10px;
+    border: 3px solid #E7DBD1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    border-radius:20px ;
+    max-width: 300px;
+    padding: 5px;
+    background-color: white;
+}
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: #E7DBD1;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
 

@@ -13,24 +13,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="Aufgabe 1 Update">
+    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="Delete button uner /meinebewertungen hinzugefügt &amp; Slideshow buttons entfernt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/SQL/m6_a1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/SQL/m6_a1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/controllers/ExampleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/controllers/ExampleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/models/bewerten.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/bewerten.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/models/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/css/liste.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/liste.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/public/css/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/css/style_css.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/public/db/besucher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/db/besucher.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/public/slideshow.js" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/slideshow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertung.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertung.bladec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertungenListe.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertungenListe.bladec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/storage/cache/bewertung.meinebewertungen.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/bewertung.meinebewertungen.bladec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/e_mensa.werbeseite.bladec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/bewertung.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/bewertung.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/bewertungenListe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/bewertungenListe.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/meinebewertungen.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/meinebewertungen.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/e_mensa/werbeseite.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -296,7 +285,7 @@
       <workItem from="1610443629844" duration="20104000" />
       <workItem from="1610602428014" duration="341000" />
       <workItem from="1610623322144" duration="30062000" />
-      <workItem from="1610708822777" duration="6671000" />
+      <workItem from="1610708822777" duration="10903000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -480,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610657304888</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Delete button uner /meinebewertungen hinzugefügt &amp; Slideshow buttons entfernt">
+      <created>1610715803314</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1610715803314</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +523,8 @@
     <MESSAGE value="Homepage und Login page sind jetzt responsive" />
     <MESSAGE value="Ein Gericht kann nun unter /bewertung Bewertet werden." />
     <MESSAGE value="Aufgabe 1 Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 1 Update" />
+    <MESSAGE value="Delete button uner /meinebewertungen hinzugefügt &amp; Slideshow buttons entfernt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete button uner /meinebewertungen hinzugefügt &amp; Slideshow buttons entfernt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
