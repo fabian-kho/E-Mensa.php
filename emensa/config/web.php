@@ -30,9 +30,9 @@ return array(
     '/abmeldung' => 'LoginController@logout',
 
     //bewertung
-    '/bewertung' => 'ExampleController@bewertung',
-    '/bewertungen' => 'ExampleController@bewertungen',
-    '/meinebewertungen' => 'ExampleController@meinebewertungen',
+    '/bewertung' => 'RatingController@bewertung',
+    '/bewertungen' => 'RatingController@bewertungen',
+    '/meinebewertungen' => 'RatingController@meinebewertungen',
 
 
 

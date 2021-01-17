@@ -28,7 +28,7 @@
     <div class="main">
         <p class="sign" align="center">Bewertung</p>
         <form class="form1" method="post">
-            <textarea class="gericht" type="text" name="gerichtName" align="center" placeholder="{{$array['namen']}}">{{$array['namen']}}</textarea>
+            <textarea disabled class="gericht" type="text" name="gerichtName" align="center" placeholder="{{$array['namen']}}">{{$array['namen']}}</textarea>
             <textarea class="bemerkung" type="text" name="bemerkung" align="center" placeholder="Bemerkung min. 5 Zeichen"></textarea>
             <div class="bewertung">
             <select id="example-movie" name="rating">

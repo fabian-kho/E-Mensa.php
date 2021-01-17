@@ -2,34 +2,6 @@
 
 $GlobalgerichtId=0;
 
-function gericht_bewerten()
-{
-    if (isset($_GET['bewertung'])) {
-
-        $namen= $_GET['gerichtbewerten'];
-
-        $pdo=connectdb_PDO();
-
-        //Id des Gerichtes herausfinden
-        $stmt = $pdo->prepare("Select id From gericht where name = ?");
-        $stmt->execute([$namen]);
-        $gerichtid = $stmt->fetch();
-
-        //Bild des aktuellen Gerichtes herausfinden
-        $stmt = $pdo->prepare("SELECT bildname FROM gericht WHERE id=?");
-        $stmt->execute([$gerichtid['id']]);
-        $gerichtbild = $stmt->fetch();
-
-        $bild= $gerichtbild['bildname'];
-
-        $vars = [
-            'namen' => $namen,
-            'bild' => $bild
-        ];
-    }
-    return $vars;
-}
-
 function db_all_ratings() {
 
     $link = connectdb();

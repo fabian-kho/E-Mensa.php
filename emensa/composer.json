@@ -4,6 +4,12 @@
         "eftec/bladeone": "^3.47",
       "ext-mysqli": "*",
       "ext-pdo": "*",
-      "monolog/monolog": "^2.2"
-    }
+      "monolog/monolog": "^2.2",
+        "illuminate/database": "^8.22"
+    },
+  "autoload": {
+    "classmap": [
+      "models"
+    ]
+  }
 }

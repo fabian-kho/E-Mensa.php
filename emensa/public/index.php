@@ -5,9 +5,9 @@ const CONFIG_WEBROUTES = '../config/web.php';
 const CONFIG_DB = '../config/db.php';
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
-
 require_once $_SERVER['DOCUMENT_ROOT']."/../vendor/autoload.php";
 use eftec\bladeone\BladeOne;
+require_once "../config/orm.php";
 
 /* Routing Script for PHP Dev Server */
 $verbosity = 0;
@@ -166,7 +166,7 @@ function connectdb_PDO()
     $host = 'localhost';
     $db = 'e_mensa';        //Datenbank
     $user = 'root';
-    $pass = 'root';
+    $pass = 'root123';
     $port = "3306";
     $charset = 'utf8mb4';
 
