@@ -28,7 +28,7 @@
     <div class="main">
         <p class="sign" align="center">Bewertung</p>
         <form class="form1" method="post">
-            <textarea disabled class="gericht" type="text" name="gerichtName" align="center" placeholder="{{$array['namen']}}">{{$array['namen']}}</textarea>
+            <textarea disabled class="gericht" type="text" name="gerichtName" align="center" placeholder="{{$array[0]->name}}">{{$array['namen']}}</textarea>
             <textarea class="bemerkung" type="text" name="bemerkung" align="center" placeholder="Bemerkung min. 5 Zeichen"></textarea>
             <div class="bewertung">
             <select id="example-movie" name="rating">
@@ -50,10 +50,10 @@
             </script>
         </form>
     </div>
-        <div class="main"> @if(is_null($array['bild']))
+        <div class="main"> @if(is_null($array[0]->bildname))
                 <img class="gerichtbild" src="img/gerichte/00_image_missing.jpg">
             @else
-                <img class="gerichtbild" src="img/gerichte/{{$array['bild']}}">
+                <img class="gerichtbild" src="img/gerichte/{{$array[0]->bildname}}">
             @endif
         </div>
     </div>

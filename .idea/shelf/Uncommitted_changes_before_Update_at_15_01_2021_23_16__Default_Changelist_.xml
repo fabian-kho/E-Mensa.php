@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_15_01_2021_23_16_[Default_Changelist]" date="1610749055342" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_01_2021_23_16_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 15.01.2021 23:16 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="emensa/vendor/bin/carbon" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_01_2021_23_16_[Default_Changelist]/carbon" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="emensa/vendor/symfony/console/Resources/bin/hiddeninput.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_01_2021_23_16_[Default_Changelist]/hiddeninput.exe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="emensa/vendor/nesbot/carbon/bin/carbon" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_01_2021_23_16_[Default_Changelist]/carbon1" />
+  </binary>
+</changelist>

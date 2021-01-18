@@ -6,7 +6,6 @@ require_once('../models/zaehler.php');
 require_once('../models/newsletter.php');
 require_once('../models/wunschgerichte.php');
 require_once('../models/bewerten.php');
-require_once('../models/delete.php');
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;

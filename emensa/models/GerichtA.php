@@ -1,11 +1,18 @@
 <?php
 use Illuminate\Database\Eloquent\Model;
-
+use \Illuminate\Database\Capsule\Manager as DB;
 class GerichtA extends Model{
 
     protected $primaryKey= 'id';
     protected $table= 'gericht';
     //protected $fillable = ['name','vegetarisch','vegan','preis_intern' ,'preis_extern' ];
+
+    public function gericht_bewerten($name)
+    {
+        $test= DB::select("SELECT bildname,name FROM gericht WHERE name = ?", [$name]);
+        return $test;
+
+    }
 
     public function getPreisIntern(){
         $price= $this->attributes['preis_intern'];

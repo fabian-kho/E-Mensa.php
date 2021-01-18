@@ -2,8 +2,8 @@
 require_once('../models/GerichtA.php');
 require_once('../models/BewertungA.php');
 require_once('../models/bewerten.php');
-require_once('../models/delete.php');
 require_once('../models/gericht.php');
+require_once('../models/zaehler.php');
 use \Illuminate\Database\Capsule\Manager as DB;
 
 class RatingController
@@ -15,21 +15,23 @@ class RatingController
 
             $data = $_GET['gerichtbewerten'];
 
-            $Bewertung=GerichtA::query()
-                ->where('name', $data);
-            echo $Bewertung->beschreibung;
-/*
-             $vars = [
+             /*$vars = [
                   'fehler_WG' => $fehler_WG = bewertung_eintragen(),
-                  'array' => $array = gericht_bewerten($data),
+                  'array' => $array = GerichtA::gericht_bewerten($data),
               ];
+            */
+            $result=GerichtA::gericht_bewerten($data);
 
-              return view('bewertung.bewertung', $vars);
+            $vars = [
+                'fehler_WG' => $fehler_WG = bewertung_eintragen(),
+                'array' => $array = $result,
+            ];
+             return view('bewertung.bewertung', $vars);
           }
           else{
               $msg = $_SESSION['login_result_message'] ?? null;
               return view('login.anmeldung', ['msg' => $msg]);
-*/
+
         }
     }
 
@@ -43,7 +45,7 @@ class RatingController
             $vars = [
                 'bewertung' => $bewertung = db_all_ratings(),
                 'anzahlbewertungen' => $anzahlbewertungen = zaehlerBewertungen(),
-                'color' => $color = bewertung_highlight(),
+                'color' => $color = BewertungA::bewertung_highlight(),
                 'admin' => $admin = is_admin()
             ];
 
@@ -62,7 +64,7 @@ class RatingController
             $vars = [
                 'mybewertung' => $mybewertung = db_user_ratings(),
                 'anzahl_user_bewertungen' => $anzahl_user_bewertungen = zaehler_user_Bewertungen(),
-                'fehler'=> $fehler = bewertung_delete()
+                'fehler'=> $fehler = BewertungA::bewertung_delete()
 
             ];
 
