@@ -13,18 +13,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="Aufgabe 3 initial commit">
-      <change afterPath="$PROJECT_DIR$/emensa/vendor/symfony/service-contracts/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emensa/vendor/symfony/translation-contracts/.gitignore" afterDir="false" />
+    <list default="true" id="8c4249e5-d76c-4a0f-9426-fe341c0d51df" name="Default Changelist" comment="Test commit">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e7f23f4-090e-4242-8937-e1195426b7f9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e7f23f4-090e-4242-8937-e1195426b7f9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/controllers/RatingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/controllers/RatingController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/models/BewertungA.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/BewertungA.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/models/GerichtA.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/models/GerichtA.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emensa/models/delete.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/public/db/besucher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/public/db/besucher.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertung.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/cache/bewertung.bewertung.bladec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/storage/logs/my_app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/bewertung.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/bewertung.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/bewertungenListe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/bewertungenListe.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emensa/views/bewertung/meinebewertungen.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/emensa/views/bewertung/meinebewertungen.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="M5_Monolog" />
+        <entry key="$PROJECT_DIR$" value="M6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -319,7 +319,7 @@
       <workItem from="1610913760583" duration="400000" />
       <workItem from="1610980896394" duration="7000" />
       <workItem from="1610987691319" duration="1145000" />
-      <workItem from="1610989245818" duration="4957000" />
+      <workItem from="1610989245818" duration="9404000" />
     </task>
     <task id="LOCAL-00001" summary="Aufgabe 2 erledigt.">
       <created>1605270652110</created>
@@ -566,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610913963250</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Test commit">
+      <created>1610994484447</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1610994484447</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,7 +596,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/emensa/jquery-bar-rating" />
     </ignored-roots>
-    <MESSAGE value="Die Variable $fehler war nicht deklariert.." />
     <MESSAGE value="Variablennamen auf Sinnhaftigkeit geprüft und geändert." />
     <MESSAGE value="Augabe 1 erledigt.&#10;-Datenbankstruktur erweitert&#10;-wunschgericht.php hinzugefügt" />
     <MESSAGE value="Meldung 'Erfolgreich zum Newsletter angemeldet!' hinzugefügt" />
@@ -614,7 +620,8 @@
     <MESSAGE value="Logo geändert" />
     <MESSAGE value="design update" />
     <MESSAGE value="Aufgabe 3 initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 3 initial commit" />
+    <MESSAGE value="Test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="916" y="91" key="#PHP" timestamp="1610749068606">
@@ -625,22 +632,22 @@
       <screen x="0" y="0" width="3115" height="1304" />
     </state>
     <state x="1326" y="322" key="FileChooserDialogImpl/0.0.3115.1304@0.0.3115.1304" timestamp="1610988835119" />
-    <state width="1415" height="324" key="GridCell.Tab.0.bottom" timestamp="1610994204149">
+    <state width="1424" height="355" key="GridCell.Tab.0.bottom" timestamp="1610997646320">
       <screen x="0" y="0" width="3115" height="1304" />
     </state>
-    <state width="1415" height="324" key="GridCell.Tab.0.bottom/0.0.3115.1304@0.0.3115.1304" timestamp="1610994204149" />
-    <state width="1415" height="324" key="GridCell.Tab.0.center" timestamp="1610994204149">
+    <state width="1424" height="355" key="GridCell.Tab.0.bottom/0.0.3115.1304@0.0.3115.1304" timestamp="1610997646320" />
+    <state width="1424" height="355" key="GridCell.Tab.0.center" timestamp="1610997646320">
       <screen x="0" y="0" width="3115" height="1304" />
     </state>
-    <state width="1415" height="324" key="GridCell.Tab.0.center/0.0.3115.1304@0.0.3115.1304" timestamp="1610994204149" />
-    <state width="1415" height="324" key="GridCell.Tab.0.left" timestamp="1610994204149">
+    <state width="1424" height="355" key="GridCell.Tab.0.center/0.0.3115.1304@0.0.3115.1304" timestamp="1610997646320" />
+    <state width="1424" height="355" key="GridCell.Tab.0.left" timestamp="1610997646320">
       <screen x="0" y="0" width="3115" height="1304" />
     </state>
-    <state width="1415" height="324" key="GridCell.Tab.0.left/0.0.3115.1304@0.0.3115.1304" timestamp="1610994204149" />
-    <state width="1415" height="324" key="GridCell.Tab.0.right" timestamp="1610994204149">
+    <state width="1424" height="355" key="GridCell.Tab.0.left/0.0.3115.1304@0.0.3115.1304" timestamp="1610997646320" />
+    <state width="1424" height="355" key="GridCell.Tab.0.right" timestamp="1610997646320">
       <screen x="0" y="0" width="3115" height="1304" />
     </state>
-    <state width="1415" height="324" key="GridCell.Tab.0.right/0.0.3115.1304@0.0.3115.1304" timestamp="1610994204149" />
+    <state width="1424" height="355" key="GridCell.Tab.0.right/0.0.3115.1304@0.0.3115.1304" timestamp="1610997646320" />
     <state width="239" height="692" key="HiddenNamespacesPopup" timestamp="1610988329502">
       <screen x="0" y="0" width="3115" height="1304" />
     </state>
@@ -649,10 +656,10 @@
       <screen x="0" y="0" width="3115" height="1304" />
     </state>
     <state x="1835" y="530" key="NewPhpFileDialog/0.0.3115.1304@0.0.3115.1304" timestamp="1610797878117" />
-    <state x="923" y="315" key="Vcs.Push.Dialog.v2" timestamp="1610913977086">
+    <state x="923" y="315" key="Vcs.Push.Dialog.v2" timestamp="1610994496153">
       <screen x="0" y="0" width="3115" height="1304" />
     </state>
-    <state x="923" y="315" key="Vcs.Push.Dialog.v2/0.0.3115.1304@0.0.3115.1304" timestamp="1610913977086" />
+    <state x="923" y="315" key="Vcs.Push.Dialog.v2/0.0.3115.1304@0.0.3115.1304" timestamp="1610994496153" />
     <state x="1805" y="523" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610797535148">
       <screen x="0" y="0" width="3115" height="1304" />
     </state>

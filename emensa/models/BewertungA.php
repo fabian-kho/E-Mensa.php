@@ -7,6 +7,7 @@ class BewertungA extends Model {
     protected $primaryKey= 'id';
     protected $table= 'bewertung';
     protected $attributes = ['name'=>'test'];
+    public $timestamps = false;
 
     function bewertung_delete()
     {

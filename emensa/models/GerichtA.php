@@ -26,22 +26,20 @@ class GerichtA extends Model{
         return $priceExtern;
     }
 
-    public function setVegetarian($value){
+    public function setvegetarischAttribute($value){
         $value = str_replace(' ', '', $value);
-        if (stristr('ja',$value) === TRUE || stristr('yes',$value) === TRUE) {
-            $this->attributes['vegetarisch'] = true;
-        }
-        else {
-            $this->attributes['vegetarisch'] = false;
+        if (stristr($value, "yes") or stristr($value, "ja")){
+            $this->attributes['vegetarisch'] = 1;
+        }else if(stristr($value, "no") or stristr($value, "nein")){
+            $this->attributes['vegetarisch'] = 0;
         }
     }
 
-    public function setVegan($value){
+    public function setveganAttribute($value){
         $value = str_replace(' ', '', $value);
-        if (stristr('ja',$value) === TRUE || stristr('yes',$value) === TRUE) {
+        if (stristr($value, "yes") or stristr($value, "ja")){
             $this->attributes['vegan'] = true;
-        }
-        else {
+        }else if(stristr($value, "no") or stristr($value, "nein")){
             $this->attributes['vegan'] = false;
         }
     }

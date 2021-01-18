@@ -13,6 +13,14 @@ class RatingController
         //Nur angemeldete Benutzer können Gerichte bewerten
         if($_SESSION['login_ok'] == true) {
 
+            $test= GerichtA::query()
+                ->where('name', 'Pilzpfanne')
+                ->first();
+            //var_dump($test);
+            $test->vegetarisch="nein";
+            $test->save();
+            echo $test->vegetarisch;
+
             $data = $_GET['gerichtbewerten'];
 
              /*$vars = [

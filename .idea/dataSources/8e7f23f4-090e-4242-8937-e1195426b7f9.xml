@@ -1375,255 +1375,260 @@ SELECT|jobs:null
       <DataType>varchar(200)|0s</DataType>
       <DefaultExpression>&apos;00_image_missing.jpg&apos;</DefaultExpression>
     </column>
-    <index id="409" parent="343" name="name">
+    <column id="409" parent="343" name="updated_at">
+      <Position>10</Position>
+      <DataType>varchar(200)|0s</DataType>
+      <Collation>utf8_general_ci</Collation>
+    </column>
+    <index id="410" parent="343" name="name">
       <ColNames>name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="410" parent="343" name="idx_name">
+    <index id="411" parent="343" name="idx_name">
       <ColNames>name</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="411" parent="343" name="PRIMARY">
+    <key id="412" parent="343" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="412" parent="343" name="name">
+    <key id="413" parent="343" name="name">
       <ColNames>name</ColNames>
       <UnderlyingIndexName>name</UnderlyingIndexName>
     </key>
-    <column id="413" parent="344" name="code">
+    <column id="414" parent="344" name="code">
       <Position>1</Position>
       <DataType>char(4)|0s</DataType>
     </column>
-    <column id="414" parent="344" name="gericht_id">
+    <column id="415" parent="344" name="gericht_id">
       <Position>2</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="415" parent="344" name="change_allergen">
+    <index id="416" parent="344" name="change_allergen">
       <ColNames>code</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="416" parent="344" name="delete_from_allergen">
+    <index id="417" parent="344" name="delete_from_allergen">
       <ColNames>gericht_id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="417" parent="344" name="change_allergen">
+    <foreign-key id="418" parent="344" name="change_allergen">
       <ColNames>code</ColNames>
       <RefTableName>allergen</RefTableName>
       <RefColNames>code</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="418" parent="344" name="gericht_hat_allergen_allergen_allergencode_fk">
+    <foreign-key id="419" parent="344" name="gericht_hat_allergen_allergen_allergencode_fk">
       <ColNames>code</ColNames>
       <RefTableName>allergen</RefTableName>
       <RefColNames>code</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="419" parent="344" name="delete_from_allergen">
+    <foreign-key id="420" parent="344" name="delete_from_allergen">
       <ColNames>gericht_id</ColNames>
       <RefTableName>gericht</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="420" parent="344" name="gericht_hat_allergen_gericht_gerichtid_fk">
+    <foreign-key id="421" parent="344" name="gericht_hat_allergen_gericht_gerichtid_fk">
       <ColNames>gericht_id</ColNames>
       <RefTableName>gericht</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="421" parent="345" name="gericht_id">
+    <column id="422" parent="345" name="gericht_id">
       <Position>1</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="422" parent="345" name="Kategorie_id">
+    <column id="423" parent="345" name="Kategorie_id">
       <Position>2</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="423" parent="345" name="gericht_hat_kategorie">
+    <index id="424" parent="345" name="gericht_hat_kategorie">
       <ColNames>gericht_id
 Kategorie_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="424" parent="345" name="kategorie_in_verwendung">
+    <index id="425" parent="345" name="kategorie_in_verwendung">
       <ColNames>Kategorie_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="425" parent="345" name="PRIMARY">
+    <key id="426" parent="345" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>gericht_id
 Kategorie_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="426" parent="345" name="gericht_hat_kategorie">
+    <key id="427" parent="345" name="gericht_hat_kategorie">
       <ColNames>gericht_id
 Kategorie_id</ColNames>
       <UnderlyingIndexName>gericht_hat_kategorie</UnderlyingIndexName>
     </key>
-    <foreign-key id="427" parent="345" name="delete_from_kategorie">
+    <foreign-key id="428" parent="345" name="delete_from_kategorie">
       <ColNames>gericht_id</ColNames>
       <RefTableName>gericht</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="428" parent="345" name="gericht_hat_kategorie_gericht_gerichtid_fk">
+    <foreign-key id="429" parent="345" name="gericht_hat_kategorie_gericht_gerichtid_fk">
       <ColNames>gericht_id</ColNames>
       <RefTableName>gericht</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="429" parent="345" name="gericht_hat_kategorie_kategorie_kategorieid_fk">
+    <foreign-key id="430" parent="345" name="gericht_hat_kategorie_kategorie_kategorieid_fk">
       <ColNames>Kategorie_id</ColNames>
       <RefTableName>kategorie</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="430" parent="345" name="kategorie_in_verwendung">
+    <foreign-key id="431" parent="345" name="kategorie_in_verwendung">
       <ColNames>Kategorie_id</ColNames>
       <RefTableName>kategorie</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="431" parent="346" name="id">
+    <column id="432" parent="346" name="id">
       <Position>1</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="432" parent="346" name="name">
+    <column id="433" parent="346" name="name">
       <Position>2</Position>
       <DataType>varchar(80)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="433" parent="346" name="eltern_id">
+    <column id="434" parent="346" name="eltern_id">
       <Position>3</Position>
       <DataType>tinyint(4)|0s</DataType>
     </column>
-    <column id="434" parent="346" name="bildname">
+    <column id="435" parent="346" name="bildname">
       <Position>4</Position>
       <DataType>varchar(80)|0s</DataType>
     </column>
-    <index id="435" parent="346" name="kategorie_kategorie_eltern_id_fk">
+    <index id="436" parent="346" name="kategorie_kategorie_eltern_id_fk">
       <ColNames>eltern_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="436" parent="346" name="PRIMARY">
+    <key id="437" parent="346" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="437" parent="346" name="kategorie_kategorie_eltern_id_fk">
+    <foreign-key id="438" parent="346" name="kategorie_kategorie_eltern_id_fk">
       <ColNames>eltern_id</ColNames>
       <RefTableName>kategorie</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="438" parent="347" name="id">
+    <column id="439" parent="347" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="439" parent="347" name="name">
+    <column id="440" parent="347" name="name">
       <Position>2</Position>
       <DataType>varchar(80)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="440" parent="347" name="beschreibung">
+    <column id="441" parent="347" name="beschreibung">
       <Position>3</Position>
       <DataType>varchar(800)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="441" parent="347" name="erstellt_am">
+    <column id="442" parent="347" name="erstellt_am">
       <Position>4</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="442" parent="347" name="PRIMARY">
+    <key id="443" parent="347" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="443" parent="348" name="anzahlanmeldungen">
+    <column id="444" parent="348" name="anzahlanmeldungen">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="444" parent="349" name="Kategorie">
+    <column id="445" parent="349" name="Kategorie">
       <Position>1</Position>
       <DataType>varchar(80)|0s</DataType>
     </column>
-    <column id="445" parent="349" name="ID">
+    <column id="446" parent="349" name="ID">
       <Position>2</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="446" parent="349" name="Gericht">
+    <column id="447" parent="349" name="Gericht">
       <Position>3</Position>
       <DataType>varchar(80)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="447" parent="349" name="vegetarisch">
+    <column id="448" parent="349" name="vegetarisch">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="448" parent="350" name="id">
+    <column id="449" parent="350" name="id">
       <Position>1</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="449" parent="350" name="name">
+    <column id="450" parent="350" name="name">
       <Position>2</Position>
       <DataType>varchar(80)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="450" parent="350" name="beschreibung">
+    <column id="451" parent="350" name="beschreibung">
       <Position>3</Position>
       <DataType>varchar(800)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="451" parent="350" name="erfasst_am">
+    <column id="452" parent="350" name="erfasst_am">
       <Position>4</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="452" parent="350" name="vegetarisch">
+    <column id="453" parent="350" name="vegetarisch">
       <Position>5</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="453" parent="350" name="vegan">
+    <column id="454" parent="350" name="vegan">
       <Position>6</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="454" parent="350" name="preis_extern">
+    <column id="455" parent="350" name="preis_extern">
       <Position>7</Position>
       <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="455" parent="350" name="preis_intern">
+    <column id="456" parent="350" name="preis_intern">
       <Position>8</Position>
       <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="456" parent="350" name="bildname">
+    <column id="457" parent="350" name="bildname">
       <Position>9</Position>
       <DataType>varchar(200)|0s</DataType>
     </column>
-    <argument id="457" parent="351" name="EMAIL">
+    <argument id="458" parent="351" name="EMAIL">
       <Position>1</Position>
       <DataType>varchar(100)|0s</DataType>
     </argument>
-    <argument id="458" parent="352" name="EMAIL">
+    <argument id="459" parent="352" name="EMAIL">
       <Position>1</Position>
       <DataType>varchar(100)|0s</DataType>
     </argument>
-    <argument id="459" parent="353" name="EMAIL">
+    <argument id="460" parent="353" name="EMAIL">
       <Position>1</Position>
       <DataType>varchar(100)|0s</DataType>
     </argument>
